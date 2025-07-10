@@ -18,9 +18,9 @@ recently I have been getting into fishing and would like to make a program to he
 - [x] Most used bait
 - [x] Average fish per trip
     ## Visual Stats
-    - [] Best location
-    - [] Best time of day 
-    - [] Best water temp
+    - [ ] Best location
+    - [ ] Best time of day 
+    - [ ] Best water temp
 
 ## Analysis (Planned)
 - [ ] Show most caught fish by month
