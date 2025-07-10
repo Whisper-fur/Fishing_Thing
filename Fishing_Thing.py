@@ -39,7 +39,46 @@ def view_logs():
                 print(" | ".join(row))
 
     except FileNotFoundError:
-        print("No log file found yet. Go catch some fish first!")      
+        print("No log file found yet. Go catch some fish first!")    
+
+def edit_logs():
+    filename = "fishing_log.csv"
+    with open(filename, mode="r") as file:
+        reader = csv.reader(file)
+        header = next(reader)
+        rows = list(reader)
+
+    if not rows:
+        print("No logs to edit.")
+        return
+
+    print("\nSelect a log to edit:")
+    for i, row in enumerate(rows, start=1):
+        print(f"{i}. {' | '.join(row)}")  
+
+    try:
+        index = int(input("Enter the number of the log to edit: ")) - 1
+        if index < 0 or index >= len(rows):
+            print("Invalid selection.")
+            return
+    except ValueError:
+        print("Invalid input.")
+        return
+        
+    selected_row = rows[index]
+    print("\nEditing this entry:")
+    for i, value in enumerate(selected_row):
+        new_value = input(f"{header[i]} (leave blank to keep '{value}'): ").strip()
+        if new_value:
+            selected_row[i] = new_value
+
+    with open(filename, mode="w", newline="") as file:
+        writer = csv.writer(file)
+        writer.writerow(header)
+        writer.writerows(rows)
+
+    print("Log updated successfully.")    
+
 
 def delete_log():
     filename = "fishing_log.csv"
@@ -49,10 +88,10 @@ def delete_log():
         rows = list(reader)
 
     if not rows:
-        print("🚫 No logs to delete.")
+        print("No logs to delete.")
         return
 
-    print("\n🗑️ Select a log to delete:")
+    print("\n Select a log to delete:")
     for i, row in enumerate(rows, start=1):
         print(f"{i}. {' | '.join(row)}")
 
@@ -79,7 +118,7 @@ def delete_log():
         writer.writerow(header)
         writer.writerows(rows)
 
-    print("✅ Log deleted successfully.")
+    print("Log deleted successfully.")
  
 ## Stats Section
 def stats():
@@ -149,22 +188,24 @@ def menu():
         print("\n=== Fishing Tracker Menu ===")
         print("1. Log new trip")
         print("2. View past logs") 
-        print("3. Delete a log")
-        print("4. Basic Stat overview")
-        print("5. Catch Rate by Lake")
-        print("6. Visual Analysis (Coming Soon)")
-        print("0. Exit")
-        choice = input("Choose an option (1-5 or type 'exit' to leave.): ")
+        print("3. Edit a log")
+        print("4. Delete a log")
+        print("5. Basic Stat overview")
+        print("6. Catch Rate by Lake")
+        print("7. Visual Analysis (Coming Soon)")
+        choice = input("Choose an option (1-6 or type 'exit' to leave.): ")
 
         if choice == "1":
             log_trip()
         elif choice == "2":
             view_logs()
         elif choice == "3":
-            delete_log()
+            edit_logs()
         elif choice == "4":
-            stats()
+            delete_log()
         elif choice == "5":
+            stats()
+        elif choice == "6":
             catch_rate()
         elif choice == "exit":
             print("Tight lines! Goodbye.")
