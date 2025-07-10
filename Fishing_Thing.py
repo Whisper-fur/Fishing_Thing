@@ -1,14 +1,41 @@
 import csv
 from datetime import datetime
+from collections import Counter
 
 
 
 def stats():
-   print('Total number of trips logged: ') 
-   print('Total number of fish caught: ')
-   print('Most common fish species: ')
-   print('Most used bait: ')
-   print('Average fish per trip: ')
+   with open("fishing_log.csv", mode="r") as file:
+        reader = csv.reader(file)
+        next(reader)  # Skip header
+        rows = list(reader)
+
+        trips = len(rows)
+
+        fish = 0
+        for row in rows: #[5]
+            fish = fish + int(row[5])
+
+        fish_species_caught = [
+            row[4] for row in rows 
+            if len(row) > 4 and row[4].strip().lower() not in ["", "none"]]
+        fish_species_counts = Counter(fish_species_caught)
+        most_caught_fish_species = fish_species_counts.most_common(1)[0]    
+
+        bait_used = [row[6] for row in rows if len(row) > 6 and row[6].strip() != ""]
+        bait_counts = Counter(bait_used)
+        most_used_bait = bait_counts.most_common(1)[0]
+
+   print('Total number of trips logged: ' + str(trips)) 
+   print('Total number of fish caught: ' + str(fish))
+   print('Most common fish species: ' + str(most_caught_fish_species))
+   print('Most used bait: ' + str(most_used_bait))
+   print('Average fish per trip: ' + str(fish/trips))
+
+   print('These stats will be coming soon! with visuals')
+   print('Best location: ')
+   print('Best time of day: ')
+   print('Best Water Temp: ')
 
 def log_trip():
     date = input("Date (YYYY-MM-DD): ") or datetime.today().strftime('%Y-%m-%d')
