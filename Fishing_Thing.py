@@ -1,6 +1,6 @@
 import csv
 from datetime import datetime
-from collections import Counter
+from collections import Counter, defaultdict
 
 
 
@@ -36,6 +36,33 @@ def stats():
    print('Best location: ')
    print('Best time of day: ')
    print('Best Water Temp: ')
+
+def catch_rate():
+    with open("fishing_log.csv", mode="r") as file:
+        reader = csv.reader(file)
+        next(reader)  # Skip header
+        rows = list(reader)
+
+    trips_by_location = defaultdict(int)
+    fish_by_location = defaultdict(int)
+
+    for row in rows:
+        if len(row) > 5:
+            location = row[2].strip()
+            trips_by_location[location] += 1
+
+            if row[4].strip().lower() != "none":
+                try:
+                    fish_by_location[location] += int(row[5])
+                except ValueError:
+                    pass
+
+    print("\n🎣 Catch Rate by Lake:")
+    for location in sorted(trips_by_location.keys()):
+        trips = trips_by_location[location]
+        fish = fish_by_location.get(location, 0)
+        avg = round(fish / trips, 2) if trips else 0
+        print(f"{location}: {fish} fish / {trips} trips → {avg} per trip")
 
 def log_trip():
     date = input("Date (YYYY-MM-DD): ") or datetime.today().strftime('%Y-%m-%d')
@@ -95,7 +122,10 @@ def menu():
         print("1. Log new trip")
         print("2. View past logs")
         print("3. Exit")
-        choice = input("Choose an option (1-3): ")
+        print("4. Delete a log")
+        print("5. Stat overview")
+        print("6. Catch Rate by Lake")
+        choice = input("Choose an option (1-6): ")
 
         if choice == "1":
             log_trip()
@@ -107,9 +137,11 @@ def menu():
             delete_log()
         elif choice == "5":
             stats()
+        elif choice == "6":
+            catch_rate()
             break
         else:
-            print("Invalid option. Please choose 1, 2, or 3.")
+            print("Invalid option.")
 menu()
 def view_logs():
     print("I'll be adding this in soon. Keep catching fish until then, the data helps")
