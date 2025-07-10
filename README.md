@@ -11,6 +11,17 @@ recently I have been getting into fishing and would like to make a program to he
 - [ ] Delete/edit a log
 - [ ] Import/export logs (CSV)
 
+## Stats 
+- [x] Total trips
+- [x] Total fish 
+- [x] Most common fish species
+- [x] Most used bait
+- [x] Average fish per trip
+    ## Visual Stats
+    - [] Best location
+    - [] Best time of day 
+    - [] Best water temp
+
 ## Analysis (Planned)
 - [ ] Show most caught fish by month
 - [ ] Graph catch rate by time of day
