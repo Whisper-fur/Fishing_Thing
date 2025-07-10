@@ -42,18 +42,45 @@ def view_logs():
         print("No log file found yet. Go catch some fish first!")      
 
 def delete_log():
-    with open("fishing_log.csv", mode="r") as file:
-            reader = csv.reader(file)
-            header = next(reader) 
-            
-    #Add in the feature to remove the row here.
-
-    with open("fishing_log.csv", mode="r") as file:
+    filename = "fishing_log.csv"
+    with open(filename, mode="r") as file:
         reader = csv.reader(file)
+        header = next(reader)
         rows = list(reader)
-    print('You made it here so it seems like the reader is working')
 
+    if not rows:
+        print("🚫 No logs to delete.")
+        return
 
+    print("\n🗑️ Select a log to delete:")
+    for i, row in enumerate(rows, start=1):
+        print(f"{i}. {' | '.join(row)}")
+
+    try:
+        index = int(input("Enter the number of the log to delete: ")) - 1
+        if index < 0 or index >= len(rows):
+            print("Invalid selection.")
+            return
+    except ValueError:
+        print("Invalid input.")
+        return
+
+    print("\nYou selected:")
+    print(" | ".join(rows[index]))
+    confirm = input("Are you sure you want to delete this? (y/n): ").strip().lower()
+    if confirm != "y":
+        print("Deletion canceled.")
+        return
+
+    del rows[index]
+
+    with open(filename, mode="w", newline="") as file:
+        writer = csv.writer(file)
+        writer.writerow(header)
+        writer.writerows(rows)
+
+    print("✅ Log deleted successfully.")
+ 
 ## Stats Section
 def stats():
    with open("fishing_log.csv", mode="r") as file:
