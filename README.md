@@ -8,7 +8,7 @@ recently I have been getting into fishing and would like to make a program to he
 ## Core Logging
 - [x] Log fishing trip (date, time, location, fish caught, bait, etc.)
 - [x] View all logs
-- [ ] Delete/edit a log
+- [x] Delete/edit a log
 - [ ] Import/export logs (CSV)
 
 ## Stats 
