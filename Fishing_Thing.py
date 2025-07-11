@@ -1,4 +1,5 @@
 import csv
+import matplotlib.pyplot as plt
 from datetime import datetime
 from collections import Counter, defaultdict
 
@@ -181,6 +182,35 @@ def catch_rate():
         avg = round(fish / trips, 2) if trips else 0
         print(f"{location}: {fish} fish / {trips} trips → {avg} per trip")
 
+## Visual Stats with matplotlib
+
+def plot_fish_by_lake():
+    with open("fishing_log.csv", mode="r") as file:
+        reader = csv.reader(file)
+        header = next(reader)
+        rows = list(reader)
+
+    fish_by_location = defaultdict(int)
+
+    for row in rows:
+        if len(row) > 5 and row[4].strip().lower() != "none":
+            try:
+                location = row[2].strip()
+                fish = int(row[5])
+                fish_by_location[location] += fish
+            except ValueError:
+                pass
+
+    locations = list(fish_by_location.keys())
+    fish_counts = list(fish_by_location.values())
+
+    plt.bar(locations, fish_counts, color='skyblue')
+    plt.xlabel('Location')
+    plt.ylabel('Number of Fish Caught')
+    plt.title('Fish Caught by Location')
+    plt.xticks(rotation=45)
+    plt.tight_layout()
+    plt.show()
 
 
 def menu():
@@ -192,7 +222,7 @@ def menu():
         print("4. Delete a log")
         print("5. Basic Stat overview")
         print("6. Catch Rate by Lake")
-        print("7. Visual Analysis (Coming Soon)")
+        print("7. Visual Analysis (Fish by Lake)")
         choice = input("Choose an option (1-6 or type 'exit' to leave.): ")
 
         if choice == "1":
@@ -207,6 +237,8 @@ def menu():
             stats()
         elif choice == "6":
             catch_rate()
+        elif choice == "7":
+            plot_fish_by_lake()
         elif choice == "exit":
             print("Tight lines! Goodbye.")
             break
