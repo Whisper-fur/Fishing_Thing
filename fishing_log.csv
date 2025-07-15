@@ -1,101 +1,48 @@
-Date,Time,Location,Weather,Fish Caught,Amount of Fish,Bait Used,Water Temp (°F),Wind Speed (mph)
-2025-04-01,14:15 AM,Powderhorn Lake,Stormy,Walleye,1,Crankbait,66.5,1
-2025-04-02,14:30 AM,Cedar Lake,Overcast,Perch,0,Spinnerbait,74.2,19
-2025-04-03,11:00 PM,Powderhorn Lake,Sunny,Muskie,5,Worms,73.2,1
-2025-04-04,14:45 AM,Minnehaha Creek,Foggy,Bluegill,6,Spinnerbait,76.7,1
-2025-04-05,5:30 PM,Powderhorn Lake,Overcast,Bass,3,Soft Plastics,56.5,6
-2025-04-06,6:15 AM,Mississippi River,Overcast,Northern Pike,5,Worms,70.1,8
-2025-04-07,5:30 PM,Mississippi River,Stormy,Crappie,4,Artificial Lure,77.2,4
-2025-04-08,17:00 AM,Bde Maka Ska,Foggy,Northern Pike,2,Minnows,79.6,4
-2025-04-09,14:00 AM,Mississippi River,Rainy,Perch,3,Minnows,69.7,2
-2025-04-10,13:30 AM,Lake Nokomis,Clear,Muskie,0,Spinnerbait,65.1,19
-2025-04-11,7:00 PM,Lake Harriet,Windy,None,0,Crankbait,65.9,6
-2025-04-12,18:00 PM,Lake of the Isles,Sunny,Crappie,6,Live Bait,75.6,10
-2025-04-13,18:15 AM,Lake Nokomis,Foggy,Sunfish,1,Topwater,56.5,3
-2025-04-14,14:15 PM,Lake Calhoun,Partly Cloudy,Bass,3,Soft Plastics,74.4,3
-2025-04-15,18:30 AM,Cedar Lake,Clear,Crappie,5,Crankbait,77.4,18
-2025-04-16,9:45 PM,Lake Harriet,Stormy,Perch,7,Live Bait,63.2,16
-2025-04-17,6:00 PM,Bde Maka Ska,Stormy,Perch,2,Soft Plastics,76.9,18
-2025-04-18,12:00 PM,Lake of the Isles,Hot and humid,Crappie,4,Spinnerbait,76.0,1
-2025-04-19,5:15 PM,Lake Harriet,Stormy,Walleye,1,Live Bait,72.3,15
-2025-04-20,11:00 AM,Minnehaha Creek,Stormy,Catfish,2,Spinnerbait,64.7,19
-2025-04-21,16:30 PM,Bryant Lake,Windy,Bluegill,1,Live Bait,77.1,18
-2025-04-22,5:15 PM,Lake Calhoun,Stormy,None,0,Minnows,77.2,20
-2025-04-23,7:15 PM,Mississippi River,Windy,Muskie,6,Artificial Lure,57.5,18
-2025-04-24,11:00 AM,Mississippi River,Cloudy,Perch,3,Soft Plastics,60.3,14
-2025-04-25,18:30 PM,Cedar Lake,Windy,Bluegill,1,Live Bait,58.7,5
-2025-04-26,6:15 PM,Lake Harriet,Sunny,Walleye,5,Spinnerbait,74.6,16
-2025-04-27,7:45 AM,Lake of the Isles,Partly Cloudy,Bass,3,Live Bait,58.2,5
-2025-04-28,5:00 AM,Cedar Lake,Hot and humid,Perch,0,Topwater,59.6,2
-2025-04-29,14:45 AM,Cedar Lake,Windy,Bluegill,4,Spinnerbait,65.6,0
-2025-04-30,13:15 AM,Powderhorn Lake,Hot and humid,Crappie,0,Spinnerbait,66.8,10
-2025-05-01,14:30 PM,Lake Calhoun,Partly Cloudy,Crappie,5,Crankbait,74.8,10
-2025-05-02,11:15 PM,Lake Calhoun,Rainy,Walleye,4,Soft Plastics,64.1,9
-2025-05-03,14:45 AM,Lake Calhoun,Cloudy,Northern Pike,6,Crankbait,64.6,19
-2025-05-04,13:45 PM,Lake of the Isles,Rainy,Bluegill,1,Minnows,67.4,11
-2025-05-05,10:00 PM,Bryant Lake,Foggy,None,0,Minnows,56.4,20
-2025-05-06,15:45 PM,Lake Harriet,Overcast,Muskie,5,Soft Plastics,61.1,17
-2025-05-07,14:00 PM,Cedar Lake,Partly Cloudy,Bluegill,1,Artificial Lure,55.0,18
-2025-05-08,12:45 AM,Lake Calhoun,Foggy,None,0,Minnows,62.2,14
-2025-05-09,14:15 AM,Bryant Lake,Hot and humid,Crappie,6,Live Bait,64.9,14
-2025-05-10,8:30 AM,Lake of the Isles,Partly Cloudy,Bass,5,Topwater,77.1,3
-2025-05-11,9:15 AM,Mississippi River,Clear,Sunfish,3,Crankbait,68.5,8
-2025-05-12,10:15 PM,Cedar Lake,Partly Cloudy,Catfish,6,Live Bait,60.5,16
-2025-05-13,6:15 AM,Minnehaha Creek,Partly Cloudy,Perch,6,Topwater,63.1,0
-2025-05-14,14:45 AM,Cedar Lake,Foggy,Muskie,4,Crankbait,60.9,1
-2025-05-15,11:30 AM,Mississippi River,Foggy,Northern Pike,7,Worms,68.0,16
-2025-05-16,18:15 PM,Powderhorn Lake,Windy,None,0,Worms,62.3,19
-2025-05-17,15:15 PM,Bde Maka Ska,Sunny,Crappie,4,Worms,67.1,8
-2025-05-18,9:15 AM,Bde Maka Ska,Rainy,Walleye,5,Spinnerbait,69.0,4
-2025-05-19,16:15 PM,Lake of the Isles,Hot and humid,Bluegill,6,Worms,70.8,5
-2025-05-20,15:45 AM,Minnehaha Creek,Cloudy,Catfish,6,Live Bait,75.6,19
-2025-05-21,6:15 AM,Bde Maka Ska,Partly Cloudy,Walleye,6,Artificial Lure,78.0,12
-2025-05-22,8:30 AM,Bde Maka Ska,Sunny,Bass,7,Soft Plastics,76.4,18
-2025-05-23,6:00 PM,Lake of the Isles,Hot and humid,Bluegill,4,Worms,71.6,1
-2025-05-24,17:45 PM,Powderhorn Lake,Hot and humid,Perch,5,Topwater,66.1,14
-2025-05-25,11:00 AM,Bde Maka Ska,Foggy,None,0,Worms,74.0,19
-2025-05-26,10:30 AM,Cedar Lake,Cloudy,Walleye,0,Crankbait,71.7,3
-2025-05-27,16:30 AM,Lake of the Isles,Hot and humid,Muskie,2,Artificial Lure,60.7,16
-2025-05-28,7:15 AM,Minnehaha Creek,Partly Cloudy,None,0,Minnows,67.8,16
-2025-05-29,5:45 AM,Cedar Lake,Partly Cloudy,Muskie,5,Worms,70.1,9
-2025-05-30,11:30 PM,Lake of the Isles,Overcast,Walleye,2,Worms,79.5,4
-2025-05-31,9:15 AM,Powderhorn Lake,Cloudy,Bass,3,Topwater,76.6,2
-2025-06-01,17:30 AM,Bryant Lake,Cloudy,Walleye,3,Topwater,79.9,13
-2025-06-02,7:45 PM,Bde Maka Ska,Windy,Crappie,1,Topwater,59.4,17
-2025-06-03,18:30 PM,Cedar Lake,Stormy,Muskie,5,Spinnerbait,66.2,6
-2025-06-04,16:00 PM,Lake Nokomis,Hot and humid,Northern Pike,6,Crankbait,59.3,7
-2025-06-05,6:15 PM,Minnehaha Creek,Cloudy,Bluegill,2,Spinnerbait,63.9,6
-2025-06-06,14:45 AM,Mississippi River,Overcast,None,0,Crankbait,66.9,1
-2025-06-07,9:15 AM,Lake Harriet,Hot and humid,Sunfish,2,Crankbait,77.2,0
-2025-06-08,10:00 PM,Lake Nokomis,Cloudy,Crappie,4,Worms,69.8,16
-2025-06-09,13:00 PM,Bde Maka Ska,Partly Cloudy,Muskie,3,Minnows,79.1,12
-2025-06-10,12:00 PM,Powderhorn Lake,Sunny,Catfish,7,Spinnerbait,67.9,6
-2025-06-11,17:00 AM,Lake Nokomis,Foggy,Catfish,7,Crankbait,73.2,14
-2025-06-12,14:00 PM,Lake Nokomis,Foggy,Bass,1,Worms,77.4,8
-2025-06-13,13:15 AM,Minnehaha Creek,Overcast,Perch,1,Soft Plastics,79.7,4
-2025-06-14,15:15 AM,Bryant Lake,Foggy,Catfish,6,Worms,78.0,1
-2025-06-15,7:30 AM,Bryant Lake,Partly Cloudy,Northern Pike,0,Soft Plastics,65.1,6
-2025-06-16,12:30 PM,Lake Nokomis,Rainy,Bass,6,Spinnerbait,78.5,12
-2025-06-17,13:45 AM,Lake Harriet,Foggy,Perch,2,Crankbait,75.4,10
-2025-06-18,11:30 PM,Mississippi River,Overcast,Crappie,6,Crankbait,61.2,4
-2025-06-19,6:00 PM,Cedar Lake,Overcast,None,0,Worms,60.4,10
-2025-06-20,11:15 AM,Lake Nokomis,Cloudy,Muskie,3,Live Bait,64.4,3
-2025-06-21,12:15 AM,Cedar Lake,Partly Cloudy,Muskie,4,Minnows,70.0,3
-2025-06-22,5:15 PM,Powderhorn Lake,Clear,Catfish,2,Minnows,75.8,2
-2025-06-23,6:15 AM,Cedar Lake,Overcast,Northern Pike,4,Crankbait,75.7,8
-2025-06-24,18:00 PM,Lake Calhoun,Foggy,Muskie,1,Spinnerbait,72.5,15
-2025-06-25,6:30 AM,Lake Nokomis,Stormy,Sunfish,6,Worms,78.7,2
-2025-06-26,6:45 PM,Bde Maka Ska,Foggy,None,0,Worms,61.3,19
-2025-06-27,6:00 PM,Lake of the Isles,Sunny,Crappie,4,Topwater,65.9,11
-2025-06-28,16:45 PM,Cedar Lake,Rainy,Perch,3,Spinnerbait,64.8,4
-2025-06-29,15:15 AM,Mississippi River,Cloudy,None,0,Crankbait,60.1,12
-2025-06-30,5:30 AM,Mississippi River,Stormy,Bluegill,0,Minnows,60.5,7
-2025-07-01,9:00 PM,Bryant Lake,Partly Cloudy,None,0,Soft Plastics,55.8,8
-2025-07-02,11:30 AM,Bryant Lake,Foggy,Bluegill,7,Live Bait,70.9,16
-2025-07-03,13:45 PM,Lake Harriet,Foggy,Bluegill,5,Topwater,59.8,2
-2025-07-04,15:15 PM,Lake of the Isles,Stormy,Catfish,6,Artificial Lure,62.5,19
-2025-07-05,6:30 PM,Mississippi River,Hot and humid,Perch,5,Spinnerbait,73.0,2
-2025-07-06,5:45 PM,Lake Calhoun,Sunny,None,0,Artificial Lure,69.3,7
-2025-07-07,5:15 PM,Mississippi River,Partly Cloudy,None,0,Crankbait,62.7,2
-2025-07-08,16:00 AM,Powderhorn Lake,Cloudy,Northern Pike,5,Soft Plastics,66.6,9
-2025-07-09,8:15 AM,Lake Harriet,Rainy,Catfish,7,Live Bait,75.9,13
+Date,Time,Location,Weather,Fish Caught,Amount,Bait,Temperature,Wind Speed
+2025-07-04,09:00,Riverbend,Sunny,Bass,4,Worms,26,8
+2025-07-05,10:00,Lakeview,Cloudy,Trout,6,Fly,21,7
+2025-07-06,11:00,Riverbend,Sunny,Catfish,3,Bread,27,12
+2025-07-07,12:00,Lakeview,Rainy,Bass,2,Worms,23,20
+2025-07-08,13:00,Riverbend,Cloudy,Trout,4,Fly,24,6
+2025-07-09,14:00,Lakeview,Sunny,Catfish,5,Bread,28,9
+2025-07-10,15:00,Riverbend,Rainy,Bass,3,Worms,22,18
+2025-07-11,06:00,Lakeview,Sunny,Trout,7,Fly,25,10
+2025-07-12,07:30,Riverbend,Cloudy,Bass,6,Worms,20,5
+2025-07-13,08:15,Lakeview,Rainy,Catfish,4,Bread,22,15
+2025-07-14,09:45,Riverbend,Sunny,Trout,8,Fly,26,8
+2025-07-15,10:30,Lakeview,Cloudy,Bass,5,Worms,21,7
+2025-07-16,11:00,Riverbend,Sunny,Catfish,6,Bread,27,12
+2025-07-17,12:30,Lakeview,Rainy,Trout,3,Fly,23,20
+2025-07-18,13:15,Riverbend,Cloudy,Bass,7,Worms,24,6
+2025-07-19,14:45,Lakeview,Sunny,Catfish,8,Bread,28,9
+2025-07-20,15:30,Riverbend,Rainy,Trout,4,Fly,22,18
+2025-07-21,06:00,Lakeview,Sunny,Bass,9,Worms,25,10
+2025-07-22,07:30,Riverbend,Cloudy,Catfish,5,Bread,20,5
+2025-07-23,08:15,Lakeview,Rainy,Trout,6,Fly,22,15
+2025-07-24,09:45,Riverbend,Sunny,Bass,7,Worms,26,8
+2025-07-25,10:30,Lakeview,Cloudy,Catfish,4,Bread,21,7
+2025-07-26,11:00,Riverbend,Sunny,Trout,8,Fly,27,12
+2025-07-27,12:30,Lakeview,Rainy,Bass,5,Worms,23,20
+2025-07-28,13:15,Riverbend,Cloudy,Catfish,6,Bread,24,6
+2025-07-29,14:45,Lakeview,Sunny,Trout,7,Fly,28,9
+2025-07-30,15:30,Riverbend,Rainy,Bass,4,Worms,22,18
+2025-07-31,06:00,Lakeview,Sunny,Catfish,8,Bread,25,10
+2025-08-01,07:30,Riverbend,Cloudy,Trout,9,Fly,20,5
+2025-08-02,08:15,Lakeview,Rainy,Bass,6,Worms,22,15
+2025-08-03,09:45,Riverbend,Sunny,Catfish,7,Bread,26,8
+2025-08-04,10:30,Lakeview,Cloudy,Trout,5,Fly,21,7
+2025-08-05,11:00,Riverbend,Sunny,Bass,8,Worms,27,12
+2025-08-06,12:30,Lakeview,Rainy,Catfish,4,Bread,23,20
+2025-08-07,13:15,Riverbend,Cloudy,Trout,6,Fly,24,6
+2025-08-08,14:45,Lakeview,Sunny,Bass,7,Worms,28,9
+2025-08-09,15:30,Riverbend,Rainy,Catfish,5,Bread,22,18
+2025-08-10,06:00,Lakeview,Sunny,Trout,8,Fly,25,10
+2025-08-11,07:30,Riverbend,Cloudy,Bass,9,Worms,20,5
+2025-08-12,08:15,Lakeview,Rainy,Catfish,6,Bread,22,15
+2025-08-13,09:45,Riverbend,Sunny,Trout,7,Fly,26,8
+2025-08-14,10:30,Lakeview,Cloudy,Bass,5,Worms,21,7
+2025-08-15,11:00,Riverbend,Sunny,Catfish,8,Bread,27,12
+2025-08-16,12:30,Lakeview,Rainy,Trout,4,Fly,23,20
+2025-08-17,13:15,Riverbend,Cloudy,Bass,6,Worms,24,6
+2025-08-18,14:45,Lakeview,Sunny,Catfish,7,Bread,28,9
+2025-08-19,15:30,Riverbend,Rainy,Trout,5,Fly,22,18
