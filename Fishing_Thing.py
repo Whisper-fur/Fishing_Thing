@@ -284,8 +284,9 @@ class FishingLogApp:
             ("Edit Logs", self.edit_logs),
             ("Delete Log", self.delete_log),
             ("Show Stats", self.show_stats),
-            ("Visualize Fish by Lake", self.plot_fish_by_lake),
-        
+            #("Visualize Fish by Lake", self.plot_fish_by_lake),
+            ("Bait Efficiency", self.bait_efficiency)
+
         ]
 
         for i, (text, command) in enumerate(buttons):
@@ -511,6 +512,9 @@ class FishingLogApp:
             messagebox.showerror("Error", "No log file found.")
 
     def show_stats(self):
+        # Hide the input frame as it's not needed for showing stats
+        self.input_frame.pack_forget()
+
         with open("fishing_log.csv", mode="r") as file:
             reader = csv.reader(file)
             next(reader)
@@ -561,7 +565,65 @@ class FishingLogApp:
             label = tk.Label(self.result_frame, text="No logs found. Please add a new trip.", anchor="w")
             label.pack(fill=tk.X)
 
+
+    def bait_efficiency(self):
+        # Hide the input frame as it's not needed for bait efficiency
+        self.input_frame.pack_forget()
+
+        # Clear the result frame
+        for widget in self.result_frame.winfo_children():
+            widget.destroy()
+
+        try:
+            with open("fishing_log.csv", mode="r") as file:
+                reader = csv.reader(file)
+                next(reader)  # Skip header
+                rows = list(reader)
+
+            bait_usage = defaultdict(int)
+            fish_by_bait = defaultdict(int)
+
+            for row in rows:
+                if len(row) > 6 and row[6].strip() != "":
+                    bait = row[6].strip()
+                    bait_usage[bait] += 1
+                    if len(row) > 5 and row[5].strip().isdigit():
+                        fish_by_bait[bait] += int(row[5])
+
+            # Prepare data for the bar chart
+            bait_efficiency_data = sorted(
+                ((bait, fish_by_bait[bait] / bait_usage[bait]) for bait in bait_usage),
+                key=lambda x: x[1],
+                reverse=True
+            )
+            baits = [item[0] for item in bait_efficiency_data]
+            efficiency = [item[1] for item in bait_efficiency_data]
+
+            # Create the bar chart
+            fig, ax = plt.subplots()
+            ax.bar(baits, efficiency, color='skyblue')
+            ax.set_xlabel('Bait')
+            ax.set_ylabel('Efficiency (Fish per Use)')
+            ax.set_title('Bait Efficiency Ranking')
+            ax.set_xticklabels(baits, rotation=45)
+
+            # Display the plot dynamically sized with the window
+            canvas = FigureCanvasTkAgg(fig, master=self.result_frame)
+            canvas.draw()
+            canvas.get_tk_widget().pack(side=tk.TOP, fill=tk.BOTH, expand=True)
+
+            # Close the figure to prevent memory leaks
+            plt.close(fig)
+
+        except FileNotFoundError:
+            label = tk.Label(self.result_frame, text="No logs found. Please add a new trip.", anchor="w")
+            label.pack(fill=tk.X)
+
+
     def plot_fish_by_lake(self):
+        # Hide the input frame as it's not needed for plotting fish by lake
+        self.input_frame.pack_forget()
+
         with open("fishing_log.csv", mode="r") as file:
             reader = csv.reader(file)
             header = next(reader)
@@ -588,7 +650,17 @@ class FishingLogApp:
         ax.set_title('Fish Caught by Location')
         ax.set_xticklabels(locations, rotation=45)
 
-        self.display_plot(fig)
+        # Clear previous widgets in the result frame
+        for widget in self.result_frame.winfo_children():
+            widget.destroy()
+
+        # Display the plot dynamically sized with the window
+        canvas = FigureCanvasTkAgg(fig, master=self.result_frame)
+        canvas.draw()
+        canvas.get_tk_widget().pack(side=tk.TOP, fill=tk.BOTH, expand=True)
+
+        # Close the figure to prevent memory leaks
+        plt.close(fig)
 
 def main():
     root = tk.Tk()
