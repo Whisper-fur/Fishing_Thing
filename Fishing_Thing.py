@@ -5,6 +5,7 @@ from collections import Counter, defaultdict
 import tkinter as tk
 from tkinter import messagebox
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
+import pandas as pd
 
 
 #Logging Section 
@@ -267,8 +268,8 @@ def trip_recommendations():
 ## GUI Section 
 class FishingLogApp:
     def __init__(self, root):
-        self.root = root
         root.title("Fishing Logbook")
+        root.attributes("-fullscreen", True)  # Open the GUI in full screen
 
         # Set default window size
         root.geometry("800x600")
@@ -283,9 +284,10 @@ class FishingLogApp:
             ("View Logs", self.view_logs),
             ("Edit Logs", self.edit_logs),
             ("Delete Log", self.delete_log),
-            ("Show Stats", self.show_stats),
+            #("Show Stats", self.show_stats),
             #("Visualize Fish by Lake", self.plot_fish_by_lake),
-            ("Bait Efficiency", self.bait_efficiency)
+            ("Bait Efficiency", self.bait_efficiency),
+            ("Catch Rate over time", self.catch_rate_over_time),
 
         ]
 
@@ -365,12 +367,8 @@ class FishingLogApp:
         # Close the figure to prevent memory leaks
         plt.close(fig)
 
-    def new_trip(self):
-        user_input = self.input_entry.get()
-        self.input_entry.delete(0, tk.END)
-        log_trip()  # Modify log_trip to accept user_input if needed
-        self.display_result("Trip logged successfully!")
-        self.load_logs()
+    def new_trip(self): #TODO: Implement new trip functionality
+        return
 
     def view_logs(self):
         # Hide the input frame as it's not needed for viewing logs
@@ -619,6 +617,60 @@ class FishingLogApp:
             label = tk.Label(self.result_frame, text="No logs found. Please add a new trip.", anchor="w")
             label.pack(fill=tk.X)
 
+    def catch_rate_over_time(self):
+        # Hide the input frame as it's not needed for plotting catch rate over time
+        self.input_frame.pack_forget()
+
+        with open("fishing_log.csv", mode="r") as file:
+            reader = csv.reader(file)
+            header = next(reader)
+            rows = list(reader)
+
+        # Group data by weeks
+        weekly_catch = defaultdict(int)
+        weekly_trips = defaultdict(int)
+
+        for row in rows:
+            if len(row) > 5 and row[5].strip().isdigit():
+                try:
+                    date = datetime.strptime(row[0], "%Y-%m-%d")
+                    week = date.strftime("%Y-W%U")  # Format as Year-WeekNumber
+                    fish_caught = int(row[5])
+                    weekly_catch[week] += fish_caught
+                    weekly_trips[week] += 1
+                except ValueError:
+                    pass
+
+        weeks = sorted(weekly_catch.keys())
+        catch_rates = [
+            round(weekly_catch[week] / weekly_trips[week], 2) if weekly_trips[week] > 0 else 0
+            for week in weeks
+        ]
+
+        # Ensure pandas DataFrame is created correctly
+        df = pd.DataFrame({'week': weeks, 'rate': catch_rates})
+        df['moving_avg'] = df['rate'].rolling(window=5, center=True).mean()
+
+        # Create the line graph
+        fig, ax = plt.subplots()
+        ax.plot(df['week'], df['rate'], color='steelblue', linewidth=2.5, marker='o', markersize=6, label='Catch Rate')
+        ax.plot(df['week'], df['rate'].rolling(window=5, center=True).mean(), color='orange', linestyle='--', linewidth=2, label='3-week Moving Avg')
+
+        ax.set_xlabel("Week")
+        ax.set_ylabel("Catch Rate (Fish per Trip)")
+        ax.set_title("Catch Rate Over Time (Grouped by Weeks)")
+        ax.tick_params(axis="x", rotation=45)
+        ax.grid(True, linestyle='--', alpha=0.5)
+
+        # Adjust x-axis ticks for better readability
+        ax.set_xticks(df['week'][::1])  # Display every week
+        ax.legend()
+
+        # Display the plot dynamically sized with the window
+        self.display_plot(fig)
+
+        # Close the figure to prevent memory leaks
+        plt.close(fig)
 
     def plot_fish_by_lake(self):
         # Hide the input frame as it's not needed for plotting fish by lake
