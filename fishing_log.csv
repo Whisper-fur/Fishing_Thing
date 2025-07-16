@@ -1,580 +1,101 @@
-Date,Time,Location,Weather,Fish Caught,Amount,Bait,Temperature,Wind Speed
-2025-07-04,09:00,Riverbend,Sunny,Bass,4,Worms,26,8
-2025-07-05,10:00,Lakeview,Cloudy,Trout,6,Fly,21,7
-2025-07-06,11:00,Riverbend,Sunny,Catfish,3,Bread,27,12
-2025-07-07,12:00,Lakeview,Rainy,Bass,2,Worms,23,20
-2025-07-08,13:00,Riverbend,Cloudy,Trout,4,Fly,24,6
-2025-07-09,14:00,Lakeview,Sunny,Catfish,5,Bread,28,9
-2025-07-10,15:00,Riverbend,Rainy,Bass,3,Worms,22,18
-2025-07-11,06:00,Lakeview,Sunny,Trout,7,Fly,25,10
-2025-07-12,07:30,Riverbend,Cloudy,Bass,6,Worms,20,5
-2025-07-13,08:15,Lakeview,Rainy,Catfish,4,Bread,22,15
-2025-07-14,09:45,Riverbend,Sunny,Trout,8,Fly,26,8
-2025-07-15,10:30,Lakeview,Cloudy,Bass,5,Worms,21,7
-2025-07-16,11:00,Riverbend,Sunny,Catfish,6,Bread,27,12
-2025-07-17,12:30,Lakeview,Rainy,Trout,3,Fly,23,20
-2025-07-18,13:15,Riverbend,Cloudy,Bass,7,Worms,24,6
-2025-07-19,14:45,Lakeview,Sunny,Catfish,8,Bread,28,9
-2025-07-20,15:30,Riverbend,Rainy,Trout,4,Fly,22,18
-2025-07-21,06:00,Lakeview,Sunny,Bass,9,Worms,25,10
-2025-07-22,07:30,Riverbend,Cloudy,Catfish,5,Bread,20,5
-2025-07-23,08:15,Lakeview,Rainy,Trout,6,Fly,22,15
-2025-07-24,09:45,Riverbend,Sunny,Bass,7,Worms,26,8
-2025-07-25,10:30,Lakeview,Cloudy,Catfish,4,Bread,21,7
-2025-07-26,11:00,Riverbend,Sunny,Trout,8,Fly,27,12
-2025-07-27,12:30,Lakeview,Rainy,Bass,5,Worms,23,20
-2025-07-28,13:15,Riverbend,Cloudy,Catfish,6,Bread,24,6
-2025-07-29,14:45,Lakeview,Sunny,Trout,7,Fly,28,9
-2025-07-30,15:30,Riverbend,Rainy,Bass,4,Worms,22,18
-2025-07-31,06:00,Lakeview,Sunny,Catfish,8,Bread,25,10
-2025-08-01,07:30,Riverbend,Cloudy,Trout,9,Fly,20,5
-2025-08-02,08:15,Lakeview,Rainy,Bass,6,Worms,22,15
-2025-08-03,09:45,Riverbend,Sunny,Catfish,7,Bread,26,8
-2025-08-04,10:30,Lakeview,Cloudy,Trout,5,Fly,21,7
-2025-08-05,11:00,Riverbend,Sunny,Bass,8,Worms,27,12
-2025-08-06,12:30,Lakeview,Rainy,Catfish,4,Bread,23,20
-2025-08-07,13:15,Riverbend,Cloudy,Trout,6,Fly,24,6
-2025-08-08,14:45,Lakeview,Sunny,Bass,7,Worms,28,9
-2025-08-09,15:30,Riverbend,Rainy,Catfish,5,Bread,22,18
-2025-08-10,06:00,Lakeview,Sunny,Trout,8,Fly,25,10
-2025-08-11,07:30,Riverbend,Cloudy,Bass,9,Worms,20,5
-2025-08-12,08:15,Lakeview,Rainy,Catfish,6,Bread,22,15
-2025-08-13,09:45,Riverbend,Sunny,Trout,7,Fly,26,8
-2025-08-14,10:30,Lakeview,Cloudy,Bass,5,Worms,21,7
-2025-08-15,11:00,Riverbend,Sunny,Catfish,8,Bread,27,12
-2025-08-16,12:30,Lakeview,Rainy,Trout,4,Fly,23,20
-2025-08-17,13:15,Riverbend,Cloudy,Bass,6,Worms,24,6
-2025-08-18,14:45,Lakeview,Sunny,Catfish,7,Bread,28,9
-2025-08-19,15:30,Riverbend,Rainy,Trout,5,Fly,22,18
-2025-08-20,07:00,Riverbend,Sunny,Salmon,10,Crickets,18,12
-2025-08-21,08:30,Lakeview,Windy,Pike,3,Minnows,20,15
-2025-08-22,09:15,Riverbend,Foggy,Carp,5,Corn,22,8
-2025-08-23,10:45,Lakeview,Stormy,Perch,2,Cheese,19,25
-2025-08-24,11:30,Riverbend,Sunny,Salmon,7,Crickets,26,10
-2025-08-25,12:00,Lakeview,Cloudy,Pike,4,Minnows,21,7
-2025-08-26,13:45,Riverbend,Rainy,Carp,6,Corn,23,18
-2025-08-27,14:30,Lakeview,Windy,Perch,3,Cheese,24,20
-2025-08-28,15:15,Riverbend,Foggy,Salmon,8,Crickets,25,9
-2025-08-29,06:45,Lakeview,Stormy,Pike,2,Minnows,22,30
-2025-08-30,07:30,Riverbend,Sunny,Carp,9,Corn,27,6
-2025-08-31,08:15,Lakeview,Cloudy,Perch,5,Cheese,20,8
-2025-09-01,09:00,Riverbend,Rainy,Salmon,6,Crickets,24,15
-2025-09-02,10:30,Lakeview,Windy,Pike,7,Minnows,23,12
-2025-09-03,11:15,Riverbend,Foggy,Carp,4,Corn,22,10
-2025-09-04,12:45,Lakeview,Stormy,Perch,3,Cheese,19,28
-2025-09-05,13:30,Riverbend,Sunny,Salmon,10,Crickets,26,7
-2025-09-06,14:15,Lakeview,Cloudy,Pike,5,Minnows,21,9
-2025-09-07,15:00,Riverbend,Rainy,Carp,8,Corn,23,20
-2025-09-08,06:30,Lakeview,Windy,Perch,4,Cheese,24,18
-2025-09-09,07:00,Riverbend,Sunny,Salmon,10,Crickets,18,12
-2025-09-10,08:30,Lakeview,Windy,Pike,3,Minnows,20,15
-2025-09-11,09:15,Riverbend,Foggy,Carp,5,Corn,22,8
-2025-09-12,10:45,Lakeview,Stormy,Perch,2,Cheese,19,25
-2025-09-13,11:30,Riverbend,Sunny,Salmon,7,Crickets,26,10
-2025-09-14,12:00,Lakeview,Cloudy,Pike,4,Minnows,21,7
-2025-09-15,13:45,Riverbend,Rainy,Carp,6,Corn,23,18
-2025-09-16,14:30,Lakeview,Windy,Perch,3,Cheese,24,20
-2025-09-17,15:15,Riverbend,Foggy,Salmon,8,Crickets,25,9
-2025-09-18,06:45,Lakeview,Stormy,Pike,2,Minnows,22,30
-2025-09-19,07:30,Riverbend,Sunny,Carp,9,Corn,27,6
-2025-09-20,08:15,Lakeview,Cloudy,Perch,5,Cheese,20,8
-2025-09-21,09:00,Riverbend,Rainy,Salmon,6,Crickets,24,15
-2025-09-22,10:30,Lakeview,Windy,Pike,7,Minnows,23,12
-2025-09-23,11:15,Riverbend,Foggy,Carp,4,Corn,22,10
-2025-09-24,12:45,Lakeview,Stormy,Perch,3,Cheese,19,28
-2025-09-25,13:30,Riverbend,Sunny,Salmon,10,Crickets,26,7
-2025-09-26,14:15,Lakeview,Cloudy,Pike,5,Minnows,21,9
-2025-09-27,15:00,Riverbend,Rainy,Carp,8,Corn,23,20
-2025-09-28,06:30,Lakeview,Windy,Perch,4,Cheese,24,18
-2025-09-29,07:00,Riverbend,Sunny,Salmon,10,Crickets,18,12
-2025-09-30,08:30,Lakeview,Windy,Pike,3,Minnows,20,15
-2025-10-01,09:15,Riverbend,Foggy,Carp,5,Corn,22,8
-2025-10-02,10:45,Lakeview,Stormy,Perch,2,Cheese,19,25
-2025-10-03,11:30,Riverbend,Sunny,Salmon,7,Crickets,26,10
-2025-10-04,12:00,Lakeview,Cloudy,Pike,4,Minnows,21,7
-2025-10-05,13:45,Riverbend,Rainy,Carp,6,Corn,23,18
-2025-10-06,14:30,Lakeview,Windy,Perch,3,Cheese,24,20
-2025-10-07,15:15,Riverbend,Foggy,Salmon,8,Crickets,25,9
-2025-10-08,06:45,Lakeview,Stormy,Pike,2,Minnows,22,30
-2025-10-09,07:30,Riverbend,Sunny,Carp,9,Corn,27,6
-2025-10-10,08:15,Lakeview,Cloudy,Perch,5,Cheese,20,8
-2025-10-11,09:00,Riverbend,Rainy,Salmon,6,Crickets,24,15
-2025-10-12,10:30,Lakeview,Windy,Pike,7,Minnows,23,12
-2025-10-13,11:15,Riverbend,Foggy,Carp,4,Corn,22,10
-2025-10-14,12:45,Lakeview,Stormy,Perch,3,Cheese,19,28
-2025-10-15,13:30,Riverbend,Sunny,Salmon,10,Crickets,26,7
-2025-10-16,14:15,Lakeview,Cloudy,Pike,5,Minnows,21,9
-2025-10-17,15:00,Riverbend,Rainy,Carp,8,Corn,23,20
-2025-10-18,06:30,Lakeview,Windy,Perch,4,Cheese,24,18
-2025-10-19,07:00,Riverbend,Sunny,Salmon,10,Crickets,18,12
-2025-10-20,08:30,Lakeview,Windy,Pike,3,Minnows,20,15
-2025-10-21,09:15,Riverbend,Foggy,Carp,5,Corn,22,8
-2025-10-22,10:45,Lakeview,Stormy,Perch,2,Cheese,19,25
-2025-10-23,11:30,Riverbend,Sunny,Salmon,7,Crickets,26,10
-2025-10-24,12:00,Lakeview,Cloudy,Pike,4,Minnows,21,7
-2025-10-25,13:45,Riverbend,Rainy,Carp,6,Corn,23,18
-2025-10-26,14:30,Lakeview,Windy,Perch,3,Cheese,24,20
-2025-10-27,15:15,Riverbend,Foggy,Salmon,8,Crickets,25,9
-2025-10-28,06:45,Lakeview,Stormy,Pike,2,Minnows,22,30
-2025-10-29,07:30,Riverbend,Sunny,Carp,9,Corn,27,6
-2025-10-30,08:15,Lakeview,Cloudy,Perch,5,Cheese,20,8
-2025-10-31,09:00,Riverbend,Rainy,Salmon,6,Crickets,24,15
-2025-11-01,10:30,Lakeview,Windy,Pike,7,Minnows,23,12
-2025-11-02,11:15,Riverbend,Foggy,Carp,4,Corn,22,10
-2025-11-03,12:45,Lakeview,Stormy,Perch,3,Cheese,19,28
-2025-11-04,13:30,Riverbend,Sunny,Salmon,10,Crickets,26,7
-2025-11-05,14:15,Lakeview,Cloudy,Pike,5,Minnows,21,9
-2025-11-06,15:00,Riverbend,Rainy,Carp,8,Corn,23,20
-2025-11-07,06:30,Lakeview,Windy,Perch,4,Cheese,24,18
-2025-11-08,07:00,Riverbend,Sunny,Salmon,10,Crickets,18,12
-2025-11-09,08:30,Lakeview,Windy,Pike,3,Minnows,20,15
-2025-11-10,09:15,Riverbend,Foggy,Carp,5,Corn,22,8
-2025-11-11,10:45,Lakeview,Stormy,Perch,2,Cheese,19,25
-2025-11-12,11:30,Riverbend,Sunny,Salmon,7,Crickets,26,10
-2025-11-13,12:00,Lakeview,Cloudy,Pike,4,Minnows,21,7
-2025-11-14,13:45,Riverbend,Rainy,Carp,6,Corn,23,18
-2025-11-15,14:30,Lakeview,Windy,Perch,3,Cheese,24,20
-2025-11-16,15:15,Riverbend,Foggy,Salmon,8,Crickets,25,9
-2025-11-17,06:45,Lakeview,Stormy,Pike,2,Minnows,22,30
-2025-11-18,07:30,Riverbend,Sunny,Carp,9,Corn,27,6
-2025-11-19,08:15,Lakeview,Cloudy,Perch,5,Cheese,20,8
-2025-11-20,09:00,Riverbend,Rainy,Salmon,6,Crickets,24,15
-2025-11-21,10:30,Lakeview,Windy,Pike,7,Minnows,23,12
-2025-11-22,11:15,Riverbend,Foggy,Carp,4,Corn,22,10
-2025-11-23,12:45,Lakeview,Stormy,Perch,3,Cheese,19,28
-2025-11-24,13:30,Riverbend,Sunny,Salmon,10,Crickets,26,7
-2025-11-25,14:15,Lakeview,Cloudy,Pike,5,Minnows,21,9
-2025-11-26,15:00,Riverbend,Rainy,Carp,8,Corn,23,20
-2025-11-27,06:30,Lakeview,Windy,Perch,4,Cheese,24,18
-2025-11-28,07:00,Riverbend,Sunny,Salmon,10,Crickets,18,12
-2025-11-29,08:30,Lakeview,Windy,Pike,3,Minnows,20,15
-2025-11-30,09:15,Riverbend,Foggy,Carp,5,Corn,22,8
-2025-12-01,10:45,Lakeview,Stormy,Perch,2,Cheese,19,25
-2025-12-02,11:30,Riverbend,Sunny,Salmon,7,Crickets,26,10
-2025-12-03,12:00,Lakeview,Cloudy,Pike,4,Minnows,21,7
-2025-12-04,13:45,Riverbend,Rainy,Carp,6,Corn,23,18
-2025-12-05,14:30,Lakeview,Windy,Perch,3,Cheese,24,20
-2025-12-06,15:15,Riverbend,Foggy,Salmon,8,Crickets,25,9
-2025-12-07,06:45,Lakeview,Stormy,Pike,2,Minnows,22,30
-2025-12-08,07:30,Riverbend,Sunny,Carp,9,Corn,27,6
-2025-12-09,08:15,Lakeview,Cloudy,Perch,5,Cheese,20,8
-2025-12-10,09:00,Riverbend,Rainy,Salmon,6,Crickets,24,15
-2025-12-11,10:30,Lakeview,Windy,Pike,7,Minnows,23,12
-2025-12-12,11:15,Riverbend,Foggy,Carp,4,Corn,22,10
-2025-12-13,12:45,Lakeview,Stormy,Perch,3,Cheese,19,28
-2025-12-14,13:30,Riverbend,Sunny,Salmon,10,Crickets,26,7
-2025-12-15,14:15,Lakeview,Cloudy,Pike,5,Minnows,21,9
-2025-12-16,15:00,Riverbend,Rainy,Carp,8,Corn,23,20
-2025-12-17,06:30,Lakeview,Windy,Perch,4,Cheese,24,18
-2025-12-18,07:00,Riverbend,Sunny,Salmon,10,Crickets,18,12
-2025-12-19,08:30,Lakeview,Windy,Pike,3,Minnows,20,15
-2025-12-20,09:15,Riverbend,Foggy,Carp,5,Corn,22,8
-2025-12-21,10:45,Lakeview,Stormy,Perch,2,Cheese,19,25
-2025-12-22,11:30,Riverbend,Sunny,Salmon,7,Crickets,26,10
-2025-12-23,12:00,Lakeview,Cloudy,Pike,4,Minnows,21,7
-2025-12-24,13:45,Riverbend,Rainy,Carp,6,Corn,23,18
-2025-12-25,14:30,Lakeview,Windy,Perch,3,Cheese,24,20
-2025-12-26,15:15,Riverbend,Foggy,Salmon,8,Crickets,25,9
-2025-12-27,06:45,Lakeview,Stormy,Pike,2,Minnows,22,30
-2025-12-28,07:30,Riverbend,Sunny,Carp,9,Corn,27,6
-2025-12-29,08:15,Lakeview,Cloudy,Perch,5,Cheese,20,8
-2025-12-30,09:00,Riverbend,Rainy,Salmon,6,Crickets,24,15
-2025-12-31,10:30,Lakeview,Windy,Pike,7,Minnows,23,12
-2026-01-01,11:15,Riverbend,Foggy,Carp,4,Corn,22,10
-2026-01-02,12:45,Lakeview,Stormy,Perch,3,Cheese,19,28
-2026-01-03,13:30,Riverbend,Sunny,Salmon,10,Crickets,26,7
-2026-01-04,14:15,Lakeview,Cloudy,Pike,5,Minnows,21,9
-2026-01-05,15:00,Riverbend,Rainy,Carp,8,Corn,23,20
-2026-01-06,06:30,Lakeview,Windy,Perch,4,Cheese,24,18
-2026-01-07,07:00,Riverbend,Sunny,Salmon,10,Crickets,18,12
-2026-01-08,08:30,Lakeview,Windy,Pike,3,Minnows,20,15
-2026-01-09,09:15,Riverbend,Foggy,Carp,5,Corn,22,8
-2026-01-10,10:45,Lakeview,Stormy,Perch,2,Cheese,19,25
-2026-01-11,11:30,Riverbend,Sunny,Salmon,7,Crickets,26,10
-2026-01-12,12:00,Lakeview,Cloudy,Pike,4,Minnows,21,7
-2026-01-13,13:45,Riverbend,Rainy,Carp,6,Corn,23,18
-2026-01-14,14:30,Lakeview,Windy,Perch,3,Cheese,24,20
-2026-01-15,15:15,Riverbend,Foggy,Salmon,8,Crickets,25,9
-2026-01-16,06:45,Lakeview,Stormy,Pike,2,Minnows,22,30
-2026-01-17,07:30,Riverbend,Sunny,Carp,9,Corn,27,6
-2026-01-18,08:15,Lakeview,Cloudy,Perch,5,Cheese,20,8
-2026-01-19,09:00,Riverbend,Rainy,Salmon,6,Crickets,24,15
-2026-01-20,10:30,Lakeview,Windy,Pike,7,Minnows,23,12
-2026-01-21,11:15,Riverbend,Foggy,Carp,4,Corn,22,10
-2026-01-22,12:45,Lakeview,Stormy,Perch,3,Cheese,19,28
-2026-01-23,13:30,Riverbend,Sunny,Salmon,10,Crickets,26,7
-2026-01-24,14:15,Lakeview,Cloudy,Pike,5,Minnows,21,9
-2026-01-25,15:00,Riverbend,Rainy,Carp,8,Corn,23,20
-2026-01-26,06:30,Lakeview,Windy,Perch,4,Cheese,24,18
-2026-01-27,07:00,Riverbend,Sunny,Salmon,10,Crickets,18,12
-2026-01-28,08:30,Lakeview,Windy,Pike,3,Minnows,20,15
-2026-01-29,09:15,Riverbend,Foggy,Carp,5,Corn,22,8
-2026-01-30,10:45,Lakeview,Stormy,Perch,2,Cheese,19,25
-2026-01-31,11:30,Riverbend,Sunny,Salmon,7,Crickets,26,10
-2026-02-01,12:00,Lakeview,Cloudy,Pike,4,Minnows,21,7
-2026-02-02,13:45,Riverbend,Rainy,Carp,6,Corn,23,18
-2026-02-03,14:30,Lakeview,Windy,Perch,3,Cheese,24,20
-2026-02-04,15:15,Riverbend,Foggy,Salmon,8,Crickets,25,9
-2026-02-05,06:45,Lakeview,Stormy,Pike,2,Minnows,22,30
-2026-02-06,07:30,Riverbend,Sunny,Carp,9,Corn,27,6
-2026-02-07,08:15,Lakeview,Cloudy,Perch,5,Cheese,20,8
-2026-02-08,09:00,Riverbend,Rainy,Salmon,6,Crickets,24,15
-2026-02-09,10:30,Lakeview,Windy,Pike,7,Minnows,23,12
-2026-02-10,11:15,Riverbend,Foggy,Carp,4,Corn,22,10
-2026-02-11,12:45,Lakeview,Stormy,Perch,3,Cheese,19,28
-2026-02-12,13:30,Riverbend,Sunny,Salmon,10,Crickets,26,7
-2026-02-13,14:15,Lakeview,Cloudy,Pike,5,Minnows,21,9
-2026-02-14,15:00,Riverbend,Rainy,Carp,8,Corn,23,20
-2026-02-15,06:30,Lakeview,Windy,Perch,4,Cheese,24,18
-2026-02-16,07:00,Riverbend,Sunny,Salmon,10,Crickets,18,12
-2026-02-17,08:30,Lakeview,Windy,Pike,3,Minnows,20,15
-2026-02-18,09:15,Riverbend,Foggy,Carp,5,Corn,22,8
-2026-02-19,10:45,Lakeview,Stormy,Perch,2,Cheese,19,25
-2026-02-20,11:30,Riverbend,Sunny,Salmon,7,Crickets,26,10
-2026-02-21,12:00,Lakeview,Cloudy,Pike,4,Minnows,21,7
-2026-02-22,13:45,Riverbend,Rainy,Carp,6,Corn,23,18
-2026-02-23,14:30,Lakeview,Windy,Perch,3,Cheese,24,20
-2026-02-24,15:15,Riverbend,Foggy,Salmon,8,Crickets,25,9
-2026-02-25,06:45,Lakeview,Stormy,Pike,2,Minnows,22,30
-2026-02-26,07:30,Riverbend,Sunny,Carp,9,Corn,27,6
-2026-02-27,08:15,Lakeview,Cloudy,Perch,5,Cheese,20,8
-2026-02-28,09:00,Riverbend,Rainy,Salmon,6,Crickets,24,15
-2026-03-01,10:30,Lakeview,Windy,Pike,7,Minnows,23,12
-2026-03-02,11:15,Riverbend,Foggy,Carp,4,Corn,22,10
-2026-03-03,12:45,Lakeview,Stormy,Perch,3,Cheese,19,28
-2026-03-04,13:30,Riverbend,Sunny,Salmon,10,Crickets,26,7
-2026-03-05,14:15,Lakeview,Cloudy,Pike,5,Minnows,21,9
-2026-03-06,15:00,Riverbend,Rainy,Carp,8,Corn,23,20
-2026-03-07,06:30,Lakeview,Windy,Perch,4,Cheese,24,18
-2026-03-08,07:00,Riverbend,Sunny,Salmon,10,Crickets,18,12
-2026-03-09,08:30,Lakeview,Windy,Pike,3,Minnows,20,15
-2026-03-10,09:15,Riverbend,Foggy,Carp,5,Corn,22,8
-2026-03-11,10:45,Lakeview,Stormy,Perch,2,Cheese,19,25
-2026-03-12,11:30,Riverbend,Sunny,Salmon,7,Crickets,26,10
-2026-03-13,12:00,Lakeview,Cloudy,Pike,4,Minnows,21,7
-2026-03-14,13:45,Riverbend,Rainy,Carp,6,Corn,23,18
-2026-03-15,14:30,Lakeview,Windy,Perch,3,Cheese,24,20
-2026-03-16,15:15,Riverbend,Foggy,Salmon,8,Crickets,25,9
-2026-03-17,06:45,Lakeview,Stormy,Pike,2,Minnows,22,30
-2026-03-18,07:30,Riverbend,Sunny,Carp,9,Corn,27,6
-2026-03-19,08:15,Lakeview,Cloudy,Perch,5,Cheese,20,8
-2026-03-20,09:00,Riverbend,Rainy,Salmon,6,Crickets,24,15
-2026-03-21,10:30,Lakeview,Windy,Pike,7,Minnows,23,12
-2026-03-22,11:15,Riverbend,Foggy,Carp,4,Corn,22,10
-2026-03-23,12:45,Lakeview,Stormy,Perch,3,Cheese,19,28
-2026-03-24,13:30,Riverbend,Sunny,Salmon,10,Crickets,26,7
-2026-03-25,14:15,Lakeview,Cloudy,Pike,5,Minnows,21,9
-2026-03-26,15:00,Riverbend,Rainy,Carp,8,Corn,23,20
-2026-03-27,06:30,Lakeview,Windy,Perch,4,Cheese,24,18
-2026-03-28,07:00,Riverbend,Sunny,Salmon,10,Crickets,18,12
-2026-03-29,08:30,Lakeview,Windy,Pike,3,Minnows,20,15
-2026-03-30,09:15,Riverbend,Foggy,Carp,5,Corn,22,8
-2026-03-31,10:45,Lakeview,Stormy,Perch,2,Cheese,19,25
-2026-04-01,11:30,Riverbend,Sunny,Salmon,7,Crickets,26,10
-2026-04-02,12:00,Lakeview,Cloudy,Pike,4,Minnows,21,7
-2026-04-03,13:45,Riverbend,Rainy,Carp,6,Corn,23,18
-2026-04-04,14:30,Lakeview,Windy,Perch,3,Cheese,24,20
-2026-04-05,15:15,Riverbend,Foggy,Salmon,8,Crickets,25,9
-2026-04-06,06:45,Lakeview,Stormy,Pike,2,Minnows,22,30
-2026-04-07,07:30,Riverbend,Sunny,Carp,9,Corn,27,6
-2026-04-08,08:15,Lakeview,Cloudy,Perch,5,Cheese,20,8
-2026-04-09,09:00,Riverbend,Rainy,Salmon,6,Crickets,24,15
-2026-04-10,10:30,Lakeview,Windy,Pike,7,Minnows,23,12
-2026-04-11,11:15,Riverbend,Foggy,Carp,4,Corn,22,10
-2026-04-12,12:45,Lakeview,Stormy,Perch,3,Cheese,19,28
-2026-04-13,13:30,Riverbend,Sunny,Salmon,10,Crickets,26,7
-2026-04-14,14:15,Lakeview,Cloudy,Pike,5,Minnows,21,9
-2026-04-15,15:00,Riverbend,Rainy,Carp,8,Corn,23,20
-2026-04-16,06:30,Lakeview,Windy,Perch,4,Cheese,24,18
-2026-04-17,07:00,Riverbend,Sunny,Salmon,10,Crickets,18,12
-2026-04-18,08:30,Lakeview,Windy,Pike,3,Minnows,20,15
-2026-04-19,09:15,Riverbend,Foggy,Carp,5,Corn,22,8
-2026-04-20,10:45,Lakeview,Stormy,Perch,2,Cheese,19,25
-2026-04-21,11:30,Riverbend,Sunny,Salmon,7,Crickets,26,10
-2026-04-22,12:00,Lakeview,Cloudy,Pike,4,Minnows,21,7
-2026-04-23,13:45,Riverbend,Rainy,Carp,6,Corn,23,18
-2026-04-24,14:30,Lakeview,Windy,Perch,3,Cheese,24,20
-2026-04-25,15:15,Riverbend,Foggy,Salmon,8,Crickets,25,9
-2026-04-26,06:45,Lakeview,Stormy,Pike,2,Minnows,22,30
-2026-04-27,07:30,Riverbend,Sunny,Carp,9,Corn,27,6
-2026-04-28,08:15,Lakeview,Cloudy,Perch,5,Cheese,20,8
-2026-04-29,09:00,Riverbend,Rainy,Salmon,6,Crickets,24,15
-2026-04-30,10:30,Lakeview,Windy,Pike,7,Minnows,23,12
-2026-05-01,11:15,Riverbend,Foggy,Carp,4,Corn,22,10
-2026-05-02,12:45,Lakeview,Stormy,Perch,3,Cheese,19,28
-2026-05-03,13:30,Riverbend,Sunny,Salmon,10,Crickets,26,7
-2026-05-04,14:15,Lakeview,Cloudy,Pike,5,Minnows,21,9
-2026-05-05,15:00,Riverbend,Rainy,Carp,8,Corn,23,20
-2026-05-06,06:30,Lakeview,Windy,Perch,4,Cheese,24,18
-2026-05-07,07:00,Riverbend,Sunny,Salmon,10,Crickets,18,12
-2026-05-08,08:30,Lakeview,Windy,Pike,3,Minnows,20,15
-2026-05-09,09:15,Riverbend,Foggy,Carp,5,Corn,22,8
-2026-05-10,10:45,Lakeview,Stormy,Perch,2,Cheese,19,25
-2026-05-11,11:30,Riverbend,Sunny,Salmon,7,Crickets,26,10
-2026-05-12,12:00,Lakeview,Cloudy,Pike,4,Minnows,21,7
-2026-05-13,13:45,Riverbend,Rainy,Carp,6,Corn,23,18
-2026-05-14,14:30,Lakeview,Windy,Perch,3,Cheese,24,20
-2026-05-15,15:15,Riverbend,Foggy,Salmon,8,Crickets,25,9
-2026-05-16,06:45,Lakeview,Stormy,Pike,2,Minnows,22,30
-2026-05-17,07:30,Riverbend,Sunny,Carp,9,Corn,27,6
-2026-05-18,08:15,Lakeview,Cloudy,Perch,5,Cheese,20,8
-2026-05-19,09:00,Riverbend,Rainy,Salmon,6,Crickets,24,15
-2026-05-20,10:30,Lakeview,Windy,Pike,7,Minnows,23,12
-2026-05-21,11:15,Riverbend,Foggy,Carp,4,Corn,22,10
-2026-05-22,12:45,Lakeview,Stormy,Perch,3,Cheese,19,28
-2026-05-23,13:30,Riverbend,Sunny,Salmon,10,Crickets,26,7
-2026-05-24,14:15,Lakeview,Cloudy,Pike,5,Minnows,21,9
-2026-05-25,15:00,Riverbend,Rainy,Carp,8,Corn,23,20
-2026-05-26,06:30,Lakeview,Windy,Perch,4,Cheese,24,18
-2026-05-27,07:00,Riverbend,Sunny,Salmon,10,Crickets,18,12
-2026-05-28,08:30,Lakeview,Windy,Pike,3,Minnows,20,15
-2026-05-29,09:15,Riverbend,Foggy,Carp,5,Corn,22,8
-2026-05-30,10:45,Lakeview,Stormy,Perch,2,Cheese,19,25
-2026-05-31,11:30,Riverbend,Sunny,Salmon,7,Crickets,26,10
-2026-06-01,12:00,Lakeview,Cloudy,Pike,4,Minnows,21,7
-2026-06-02,13:45,Riverbend,Rainy,Carp,6,Corn,23,18
-2026-06-03,14:30,Lakeview,Windy,Perch,3,Cheese,24,20
-2026-06-04,15:15,Riverbend,Foggy,Salmon,8,Crickets,25,9
-2026-06-05,06:45,Lakeview,Stormy,Pike,2,Minnows,22,30
-2026-06-06,07:30,Riverbend,Sunny,Carp,9,Corn,27,6
-2026-06-07,08:15,Lakeview,Cloudy,Perch,5,Cheese,20,8
-2026-06-08,09:00,Riverbend,Rainy,Salmon,6,Crickets,24,15
-2026-06-09,10:30,Lakeview,Windy,Pike,7,Minnows,23,12
-2026-06-10,11:15,Riverbend,Foggy,Carp,4,Corn,22,10
-2026-06-11,12:45,Lakeview,Stormy,Perch,3,Cheese,19,28
-2026-06-12,13:30,Riverbend,Sunny,Salmon,10,Crickets,26,7
-2026-06-13,14:15,Lakeview,Cloudy,Pike,5,Minnows,21,9
-2026-06-14,15:00,Riverbend,Rainy,Carp,8,Corn,23,20
-2026-06-15,06:30,Lakeview,Windy,Perch,4,Cheese,24,18
-2026-06-16,07:00,Riverbend,Sunny,Salmon,10,Crickets,18,12
-2026-06-17,08:30,Lakeview,Windy,Pike,3,Minnows,20,15
-2026-06-18,09:15,Riverbend,Foggy,Carp,5,Corn,22,8
-2026-06-19,10:45,Lakeview,Stormy,Perch,2,Cheese,19,25
-2026-06-20,11:30,Riverbend,Sunny,Salmon,7,Crickets,26,10
-2026-06-21,12:00,Lakeview,Cloudy,Pike,4,Minnows,21,7
-2026-06-22,13:45,Riverbend,Rainy,Carp,6,Corn,23,18
-2026-06-23,14:30,Lakeview,Windy,Perch,3,Cheese,24,20
-2026-06-24,15:15,Riverbend,Foggy,Salmon,8,Crickets,25,9
-2026-06-25,06:45,Lakeview,Stormy,Pike,2,Minnows,22,30
-2026-06-26,07:30,Riverbend,Sunny,Carp,9,Corn,27,6
-2026-06-27,08:15,Lakeview,Cloudy,Perch,5,Cheese,20,8
-2026-06-28,09:00,Riverbend,Rainy,Salmon,6,Crickets,24,15
-2026-06-29,10:30,Lakeview,Windy,Pike,7,Minnows,23,12
-2026-06-30,11:15,Riverbend,Foggy,Carp,4,Corn,22,10
-2026-07-01,12:45,Lakeview,Stormy,Perch,3,Cheese,19,28
-2026-07-02,13:30,Riverbend,Sunny,Salmon,10,Crickets,26,7
-2026-07-03,14:15,Lakeview,Cloudy,Pike,5,Minnows,21,9
-2026-07-04,15:00,Riverbend,Rainy,Carp,8,Corn,23,20
-2026-07-05,06:30,Lakeview,Windy,Perch,4,Cheese,24,18
-2026-07-06,07:00,Riverbend,Sunny,Salmon,10,Crickets,18,12
-2026-07-07,08:30,Lakeview,Windy,Pike,3,Minnows,20,15
-2026-07-08,09:15,Riverbend,Foggy,Carp,5,Corn,22,8
-2026-07-09,10:45,Lakeview,Stormy,Perch,2,Cheese,19,25
-2026-07-10,11:30,Riverbend,Sunny,Salmon,7,Crickets,26,10
-2026-07-11,12:00,Lakeview,Cloudy,Pike,4,Minnows,21,7
-2026-07-12,13:45,Riverbend,Rainy,Carp,6,Corn,23,18
-2026-07-13,14:30,Lakeview,Windy,Perch,3,Cheese,24,20
-2026-07-14,15:15,Riverbend,Foggy,Salmon,8,Crickets,25,9
-2026-07-15,06:45,Lakeview,Stormy,Pike,2,Minnows,22,30
-2026-07-16,07:30,Riverbend,Sunny,Carp,9,Corn,27,6
-2026-07-17,08:15,Lakeview,Cloudy,Perch,5,Cheese,20,8
-2026-07-18,09:00,Riverbend,Rainy,Salmon,6,Crickets,24,15
-2026-07-19,10:30,Lakeview,Windy,Pike,7,Minnows,23,12
-2026-07-20,11:15,Riverbend,Foggy,Carp,4,Corn,22,10
-2026-07-21,12:45,Lakeview,Stormy,Perch,3,Cheese,19,28
-2026-07-22,13:30,Riverbend,Sunny,Salmon,10,Crickets,26,7
-2026-07-23,14:15,Lakeview,Cloudy,Pike,5,Minnows,21,9
-2026-07-24,15:00,Riverbend,Rainy,Carp,8,Corn,23,20
-2026-07-25,06:30,Lakeview,Windy,Perch,4,Cheese,24,18
-2026-07-26,07:00,Riverbend,Sunny,Salmon,10,Crickets,18,12
-2026-07-27,08:30,Lakeview,Windy,Pike,3,Minnows,20,15
-2026-07-28,09:15,Riverbend,Foggy,Carp,5,Corn,22,8
-2026-07-29,10:45,Lakeview,Stormy,Perch,2,Cheese,19,25
-2026-07-30,11:30,Riverbend,Sunny,Salmon,7,Crickets,26,10
-2026-07-31,12:00,Lakeview,Cloudy,Pike,4,Minnows,21,7
-2026-08-01,13:45,Riverbend,Rainy,Carp,6,Corn,23,18
-2026-08-02,14:30,Lakeview,Windy,Perch,3,Cheese,24,20
-2026-08-03,15:15,Riverbend,Foggy,Salmon,8,Crickets,25,9
-2026-08-04,06:45,Lakeview,Stormy,Pike,2,Minnows,22,30
-2026-08-05,07:30,Riverbend,Sunny,Carp,9,Corn,27,6
-2026-08-06,08:15,Lakeview,Cloudy,Perch,5,Cheese,20,8
-2026-08-07,09:00,Riverbend,Rainy,Salmon,6,Crickets,24,15
-2026-08-08,10:30,Lakeview,Windy,Pike,7,Minnows,23,12
-2026-08-09,11:15,Riverbend,Foggy,Carp,4,Corn,22,10
-2026-08-10,12:45,Lakeview,Stormy,Perch,3,Cheese,19,28
-2026-08-11,13:30,Riverbend,Sunny,Salmon,10,Crickets,26,7
-2026-08-12,14:15,Lakeview,Cloudy,Pike,5,Minnows,21,9
-2026-08-13,15:00,Riverbend,Rainy,Carp,8,Corn,23,20
-2026-08-14,06:30,Lakeview,Windy,Perch,4,Cheese,24,18
-2026-08-15,07:00,Riverbend,Sunny,Salmon,10,Crickets,18,12
-2026-08-16,08:30,Lakeview,Windy,Pike,3,Minnows,20,15
-2026-08-17,09:15,Riverbend,Foggy,Carp,5,Corn,22,8
-2026-08-18,10:45,Lakeview,Stormy,Perch,2,Cheese,19,25
-2026-08-19,11:30,Riverbend,Sunny,Salmon,7,Crickets,26,10
-2026-08-20,12:00,Lakeview,Cloudy,Pike,4,Minnows,21,7
-2026-08-21,13:45,Riverbend,Rainy,Carp,6,Corn,23,18
-2026-08-22,14:30,Lakeview,Windy,Perch,3,Cheese,24,20
-2026-08-23,15:15,Riverbend,Foggy,Salmon,8,Crickets,25,9
-2026-08-24,06:45,Lakeview,Stormy,Pike,2,Minnows,22,30
-2026-08-25,07:30,Riverbend,Sunny,Carp,9,Corn,27,6
-2026-08-26,08:15,Lakeview,Cloudy,Perch,5,Cheese,20,8
-2026-08-27,09:00,Riverbend,Rainy,Salmon,6,Crickets,24,15
-2026-08-28,10:30,Lakeview,Windy,Pike,7,Minnows,23,12
-2026-08-29,11:15,Riverbend,Foggy,Carp,4,Corn,22,10
-2026-08-30,12:45,Lakeview,Stormy,Perch,3,Cheese,19,28
-2026-08-31,13:30,Riverbend,Sunny,Salmon,10,Crickets,26,7
-2026-09-01,14:15,Lakeview,Cloudy,Pike,5,Minnows,21,9
-2026-09-02,15:00,Riverbend,Rainy,Carp,8,Corn,23,20
-2026-09-03,06:30,Lakeview,Windy,Perch,4,Cheese,24,18
-2026-09-04,07:00,Riverbend,Sunny,Salmon,10,Crickets,18,12
-2026-09-05,08:30,Lakeview,Windy,Pike,3,Minnows,20,15
-2026-09-06,09:15,Riverbend,Foggy,Carp,5,Corn,22,8
-2026-09-07,10:45,Lakeview,Stormy,Perch,2,Cheese,19,25
-2026-09-08,11:30,Riverbend,Sunny,Salmon,7,Crickets,26,10
-2026-09-09,12:00,Lakeview,Cloudy,Pike,4,Minnows,21,7
-2026-09-10,13:45,Riverbend,Rainy,Carp,6,Corn,23,18
-2026-09-11,14:30,Lakeview,Windy,Perch,3,Cheese,24,20
-2026-09-12,15:15,Riverbend,Foggy,Salmon,8,Crickets,25,9
-2026-09-13,06:45,Lakeview,Stormy,Pike,2,Minnows,22,30
-2026-09-14,07:30,Riverbend,Sunny,Carp,9,Corn,27,6
-2026-09-15,08:15,Lakeview,Cloudy,Perch,5,Cheese,20,8
-2026-09-16,09:00,Riverbend,Rainy,Salmon,6,Crickets,24,15
-2026-09-17,10:30,Lakeview,Windy,Pike,7,Minnows,23,12
-2026-09-18,11:15,Riverbend,Foggy,Carp,4,Corn,22,10
-2026-09-19,12:45,Lakeview,Stormy,Perch,3,Cheese,19,28
-2026-09-20,13:30,Riverbend,Sunny,Salmon,10,Crickets,26,7
-2026-09-21,14:15,Lakeview,Cloudy,Pike,5,Minnows,21,9
-2026-09-22,15:00,Riverbend,Rainy,Carp,8,Corn,23,20
-2026-09-23,06:30,Lakeview,Windy,Perch,4,Cheese,24,18
-2026-09-24,07:00,Riverbend,Sunny,Salmon,10,Crickets,18,12
-2026-09-25,08:30,Lakeview,Windy,Pike,3,Minnows,20,15
-2026-09-26,09:15,Riverbend,Foggy,Carp,5,Corn,22,8
-2026-09-27,10:45,Lakeview,Stormy,Perch,2,Cheese,19,25
-2026-09-28,11:30,Riverbend,Sunny,Salmon,7,Crickets,26,10
-2026-09-29,12:00,Lakeview,Cloudy,Pike,4,Minnows,21,7
-2026-09-30,13:45,Riverbend,Rainy,Carp,6,Corn,23,18
-2026-10-01,14:30,Lakeview,Windy,Perch,3,Cheese,24,20
-2026-10-02,15:15,Riverbend,Foggy,Salmon,8,Crickets,25,9
-2026-10-03,06:45,Lakeview,Stormy,Pike,2,Minnows,22,30
-2026-10-04,07:30,Riverbend,Sunny,Carp,9,Corn,27,6
-2026-10-05,08:15,Lakeview,Cloudy,Perch,5,Cheese,20,8
-2026-10-06,09:00,Riverbend,Rainy,Salmon,6,Crickets,24,15
-2026-10-07,10:30,Lakeview,Windy,Pike,7,Minnows,23,12
-2026-10-08,11:15,Riverbend,Foggy,Carp,4,Corn,22,10
-2026-10-09,12:45,Lakeview,Stormy,Perch,3,Cheese,19,28
-2026-10-10,13:30,Riverbend,Sunny,Salmon,10,Crickets,26,7
-2026-10-11,14:15,Lakeview,Cloudy,Pike,5,Minnows,21,9
-2026-10-12,15:00,Riverbend,Rainy,Carp,8,Corn,23,20
-2026-10-13,06:30,Lakeview,Windy,Perch,4,Cheese,24,18
-2026-10-14,07:00,Riverbend,Sunny,Salmon,10,Crickets,18,12
-2026-10-15,08:30,Lakeview,Windy,Pike,3,Minnows,20,15
-2026-10-16,09:15,Riverbend,Foggy,Carp,5,Corn,22,8
-2026-10-17,10:45,Lakeview,Stormy,Perch,2,Cheese,19,25
-2026-10-18,11:30,Riverbend,Sunny,Salmon,7,Crickets,26,10
-2026-10-19,12:00,Lakeview,Cloudy,Pike,4,Minnows,21,7
-2026-10-20,13:45,Riverbend,Rainy,Carp,6,Corn,23,18
-2026-10-21,14:30,Lakeview,Windy,Perch,3,Cheese,24,20
-2026-10-22,15:15,Riverbend,Foggy,Salmon,8,Crickets,25,9
-2026-10-23,06:45,Lakeview,Stormy,Pike,2,Minnows,22,30
-2026-10-24,07:30,Riverbend,Sunny,Carp,9,Corn,27,6
-2026-10-25,08:15,Lakeview,Cloudy,Perch,5,Cheese,20,8
-2026-10-26,09:00,Riverbend,Rainy,Salmon,6,Crickets,24,15
-2026-10-27,10:30,Lakeview,Windy,Pike,7,Minnows,23,12
-2026-10-28,11:15,Riverbend,Foggy,Carp,4,Corn,22,10
-2026-10-29,12:45,Lakeview,Stormy,Perch,3,Cheese,19,28
-2026-10-30,13:30,Riverbend,Sunny,Salmon,10,Crickets,26,7
-2026-10-31,14:15,Lakeview,Cloudy,Pike,5,Minnows,21,9
-2026-11-01,15:00,Riverbend,Rainy,Carp,8,Corn,23,20
-2026-11-02,06:30,Lakeview,Windy,Perch,4,Cheese,24,18
-2026-11-03,07:00,Riverbend,Sunny,Salmon,10,Crickets,18,12
-2026-11-04,08:30,Lakeview,Windy,Pike,3,Minnows,20,15
-2026-11-05,09:15,Riverbend,Foggy,Carp,5,Corn,22,8
-2026-11-06,10:45,Lakeview,Stormy,Perch,2,Cheese,19,25
-2026-11-07,11:30,Riverbend,Sunny,Salmon,7,Crickets,26,10
-2026-11-08,12:00,Lakeview,Cloudy,Pike,4,Minnows,21,7
-2026-11-09,13:45,Riverbend,Rainy,Carp,6,Corn,23,18
-2026-11-10,14:30,Lakeview,Windy,Perch,3,Cheese,24,20
-2026-11-11,15:15,Riverbend,Foggy,Salmon,8,Crickets,25,9
-2026-11-12,06:45,Lakeview,Stormy,Pike,2,Minnows,22,30
-2026-11-13,07:30,Riverbend,Sunny,Carp,9,Corn,27,6
-2026-11-14,08:15,Lakeview,Cloudy,Perch,5,Cheese,20,8
-2026-11-15,09:00,Riverbend,Rainy,Salmon,6,Crickets,24,15
-2026-11-16,10:30,Lakeview,Windy,Pike,7,Minnows,23,12
-2026-11-17,11:15,Riverbend,Foggy,Carp,4,Corn,22,10
-2026-11-18,12:45,Lakeview,Stormy,Perch,3,Cheese,19,28
-2026-11-19,13:30,Riverbend,Sunny,Salmon,10,Crickets,26,7
-2026-11-20,14:15,Lakeview,Cloudy,Pike,5,Minnows,21,9
-2026-11-21,15:00,Riverbend,Rainy,Carp,8,Corn,23,20
-2026-11-22,06:30,Lakeview,Windy,Perch,4,Cheese,24,18
-2026-11-23,07:00,Riverbend,Sunny,Salmon,10,Crickets,18,12
-2026-11-24,08:30,Lakeview,Windy,Pike,3,Minnows,20,15
-2026-11-25,09:15,Riverbend,Foggy,Carp,5,Corn,22,8
-2026-11-26,10:45,Lakeview,Stormy,Perch,2,Cheese,19,25
-2026-11-27,11:30,Riverbend,Sunny,Salmon,7,Crickets,26,10
-2026-11-28,12:00,Lakeview,Cloudy,Pike,4,Minnows,21,7
-2026-11-29,13:45,Riverbend,Rainy,Carp,6,Corn,23,18
-2026-11-30,14:30,Lakeview,Windy,Perch,3,Cheese,24,20
-2026-12-01,15:15,Riverbend,Foggy,Salmon,8,Crickets,25,9
-2026-12-02,06:45,Lakeview,Stormy,Pike,2,Minnows,22,30
-2026-12-03,07:30,Riverbend,Sunny,Carp,9,Corn,27,6
-2026-12-04,08:15,Lakeview,Cloudy,Perch,5,Cheese,20,8
-2026-12-05,09:00,Riverbend,Rainy,Salmon,6,Crickets,24,15
-2026-12-06,10:30,Lakeview,Windy,Pike,7,Minnows,23,12
-2026-12-07,11:15,Riverbend,Foggy,Carp,4,Corn,22,10
-2026-12-08,12:45,Lakeview,Stormy,Perch,3,Cheese,19,28
-2026-12-09,13:30,Riverbend,Sunny,Salmon,10,Crickets,26,7
-2026-12-10,14:15,Lakeview,Cloudy,Pike,5,Minnows,21,9
-2026-12-11,15:00,Riverbend,Rainy,Carp,8,Corn,23,20
-2026-12-12,06:30,Lakeview,Windy,Perch,4,Cheese,24,18
-2026-12-13,07:00,Riverbend,Sunny,Salmon,10,Crickets,18,12
-2026-12-14,08:30,Lakeview,Windy,Pike,3,Minnows,20,15
-2026-12-15,09:15,Riverbend,Foggy,Carp,5,Corn,22,8
-2026-12-16,10:45,Lakeview,Stormy,Perch,2,Cheese,19,25
-2026-12-17,11:30,Riverbend,Sunny,Salmon,7,Crickets,26,10
-2026-12-18,12:00,Lakeview,Cloudy,Pike,4,Minnows,21,7
-2026-12-19,13:45,Riverbend,Rainy,Carp,6,Corn,23,18
-2026-12-20,14:30,Lakeview,Windy,Perch,3,Cheese,24,20
-2026-12-21,15:15,Riverbend,Foggy,Salmon,8,Crickets,25,9
-2026-12-22,06:45,Lakeview,Stormy,Pike,2,Minnows,22,30
-2026-12-23,07:30,Riverbend,Sunny,Carp,9,Corn,27,6
-2026-12-24,08:15,Lakeview,Cloudy,Perch,5,Cheese,20,8
-2026-12-25,09:00,Riverbend,Rainy,Salmon,6,Crickets,24,15
-2026-12-26,10:30,Lakeview,Windy,Pike,7,Minnows,23,12
-2026-12-27,11:15,Riverbend,Foggy,Carp,4,Corn,22,10
-2026-12-28,12:45,Lakeview,Stormy,Perch,3,Cheese,19,28
-2026-12-29,13:30,Riverbend,Sunny,Salmon,10,Crickets,26,7
-2026-12-30,14:15,Lakeview,Cloudy,Pike,5,Minnows,21,9
-2026-12-31,15:00,Riverbend,Rainy,Carp,8,Corn,23,20
-2027-01-01,06:30,Lakeview,Windy,Perch,4,Cheese,24,18
-2027-01-02,07:00,Riverbend,Sunny,Salmon,10,Crickets,18,12
-2027-01-03,08:30,Lakeview,Windy,Pike,3,Minnows,20,15
-2027-01-04,09:15,Riverbend,Foggy,Carp,5,Corn,22,8
-2027-01-05,10:45,Lakeview,Stormy,Perch,2,Cheese,19,25
-2027-01-06,11:30,Riverbend,Sunny,Salmon,7,Crickets,26,10
-2027-01-07,12:00,Lakeview,Cloudy,Pike,4,Minnows,21,7
-2027-01-08,13:45,Riverbend,Rainy,Carp,6,Corn,23,18
-2027-01-09,14:30,Lakeview,Windy,Perch,3,Cheese,24,20
-2027-01-10,15:15,Riverbend,Foggy,Salmon,8,Crickets,25,9
-2027-01-11,06:45,Lakeview,Stormy,Pike,2,Minnows,22,30
-2027-01-12,07:30,Riverbend,Sunny,Carp,9,Corn,27,6
-2027-01-13,08:15,Lakeview,Cloudy,Perch,5,Cheese,20,8
-2027-01-14,09:00,Riverbend,Rainy,Salmon,6,Crickets,24,15
-2027-01-15,10:30,Lakeview,Windy,Pike,7,Minnows,23,12
-2027-01-16,11:15,Riverbend,Foggy,Carp,4,Corn,22,10
-2027-01-17,12:45,Lakeview,Stormy,Perch,3,Cheese,19,28
-2027-01-18,13:30,Riverbend,Sunny,Salmon,10,Crickets,26,7
-2027-01-19,14:15,Lakeview,Cloudy,Pike,5,Minnows,21,9
-2027-01-20,15:00,Riverbend,Rainy,Carp,8,Corn,23,20
-2027-01-21,06:30,Lakeview,Windy,Perch,4,Cheese,24,18
-2027-01-22,07:00,Riverbend,Sunny,Salmon,10,Crickets,18,12
-2027-01-23,08:30,Lakeview,Windy,Pike,3,Minnows,20,15
-2027-01-24,09:15,Riverbend,Foggy,Carp,5,Corn,22,8
-2027-01-25,10:45,Lakeview,Stormy,Perch,2,Cheese,19,25
-2027-01-26,11:30,Riverbend,Sunny,Salmon,7,Crickets,26,10
-2027-01-27,12:00,Lakeview,Cloudy,Pike,4,Minnows,21,7
-2027-01-28,13:45,Riverbend,Rainy,Carp,6,Corn,23,18
-2027-01-29,14:30,Lakeview,Windy,Perch,3,Cheese,24,20
-2027-01-30,15:15,Riverbend,Foggy,Salmon,8,Crickets,25,9
-2027-01-31,06:45,Lakeview,Stormy,Pike,2,Minnows,22,30
-2027-02-01,07:30,Riverbend,Sunny,Carp,9,Corn,27,6
-2027-02-02,08:15,Lakeview,Cloudy,Perch,5,Cheese,20,8
+Date,Time,Location,Weather,Fish Caught,Amount of Fish,Bait Used,Water Temp (°F),Wind Speed (mph)
+2025-04-01,14:15 AM,Powderhorn Lake,Stormy,Walleye,1,Crankbait,66.5,2
+2025-04-02,14:30 AM,Cedar Lake,Overcast,Perch,0,Spinnerbait,74.2,19
+2025-04-03,11:00 PM,Powderhorn Lake,Sunny,Muskie,5,Worms,73.2,1
+2025-04-04,14:45 AM,Minnehaha Creek,Foggy,Bluegill,6,Spinnerbait,76.7,1
+2025-04-05,5:30 PM,Powderhorn Lake,Overcast,Bass,3,Soft Plastics,56.5,6
+2025-04-06,6:15 AM,Mississippi River,Overcast,Northern Pike,5,Worms,70.1,8
+2025-04-07,5:30 PM,Mississippi River,Stormy,Crappie,4,Artificial Lure,77.2,4
+2025-04-08,17:00 AM,Bde Maka Ska,Foggy,Northern Pike,2,Minnows,79.6,4
+2025-04-09,14:00 AM,Mississippi River,Rainy,Perch,3,Minnows,69.7,2
+2025-04-10,13:30 AM,Lake Nokomis,Clear,Muskie,0,Spinnerbait,65.1,19
+2025-04-11,7:00 PM,Lake Harriet,Windy,None,0,Crankbait,65.9,6
+2025-04-12,18:00 PM,Lake of the Isles,Sunny,Crappie,6,Live Bait,75.6,10
+2025-04-13,18:15 AM,Lake Nokomis,Foggy,Sunfish,1,Topwater,56.5,3
+2025-04-14,14:15 PM,Lake Calhoun,Partly Cloudy,Bass,3,Soft Plastics,74.4,3
+2025-04-15,18:30 AM,Cedar Lake,Clear,Crappie,5,Crankbait,77.4,18
+2025-04-16,9:45 PM,Lake Harriet,Stormy,Perch,7,Live Bait,63.2,16
+2025-04-17,6:00 PM,Bde Maka Ska,Stormy,Perch,2,Soft Plastics,76.9,18
+2025-04-18,12:00 PM,Lake of the Isles,Hot and humid,Crappie,4,Spinnerbait,76.0,1
+2025-04-19,5:15 PM,Lake Harriet,Stormy,Walleye,1,Live Bait,72.3,15
+2025-04-20,11:00 AM,Minnehaha Creek,Stormy,Catfish,2,Spinnerbait,64.7,19
+2025-04-21,16:30 PM,Bryant Lake,Windy,Bluegill,1,Live Bait,77.1,18
+2025-04-22,5:15 PM,Lake Calhoun,Stormy,None,0,Minnows,77.2,20
+2025-04-23,7:15 PM,Mississippi River,Windy,Muskie,6,Artificial Lure,57.5,18
+2025-04-24,11:00 AM,Mississippi River,Cloudy,Perch,3,Soft Plastics,60.3,14
+2025-04-25,18:30 PM,Cedar Lake,Windy,Bluegill,1,Live Bait,58.7,5
+2025-04-26,6:15 PM,Lake Harriet,Sunny,Walleye,5,Spinnerbait,74.6,16
+2025-04-27,7:45 AM,Lake of the Isles,Partly Cloudy,Bass,3,Live Bait,58.2,5
+2025-04-28,5:00 AM,Cedar Lake,Hot and humid,Perch,0,Topwater,59.6,2
+2025-04-29,14:45 AM,Cedar Lake,Windy,Bluegill,4,Spinnerbait,65.6,0
+2025-04-30,13:15 AM,Powderhorn Lake,Hot and humid,Crappie,0,Spinnerbait,66.8,10
+2025-05-01,14:30 PM,Lake Calhoun,Partly Cloudy,Crappie,5,Crankbait,74.8,10
+2025-05-02,11:15 PM,Lake Calhoun,Rainy,Walleye,4,Soft Plastics,64.1,9
+2025-05-03,14:45 AM,Lake Calhoun,Cloudy,Northern Pike,6,Crankbait,64.6,19
+2025-05-04,13:45 PM,Lake of the Isles,Rainy,Bluegill,1,Minnows,67.4,11
+2025-05-05,10:00 PM,Bryant Lake,Foggy,None,0,Minnows,56.4,20
+2025-05-06,15:45 PM,Lake Harriet,Overcast,Muskie,5,Soft Plastics,61.1,17
+2025-05-07,14:00 PM,Cedar Lake,Partly Cloudy,Bluegill,1,Artificial Lure,55.0,18
+2025-05-08,12:45 AM,Lake Calhoun,Foggy,None,0,Minnows,62.2,14
+2025-05-09,14:15 AM,Bryant Lake,Hot and humid,Crappie,6,Live Bait,64.9,14
+2025-05-10,8:30 AM,Lake of the Isles,Partly Cloudy,Bass,5,Topwater,77.1,3
+2025-05-11,9:15 AM,Mississippi River,Clear,Sunfish,3,Crankbait,68.5,8
+2025-05-12,10:15 PM,Cedar Lake,Partly Cloudy,Catfish,6,Live Bait,60.5,16
+2025-05-13,6:15 AM,Minnehaha Creek,Partly Cloudy,Perch,6,Topwater,63.1,0
+2025-05-14,14:45 AM,Cedar Lake,Foggy,Muskie,4,Crankbait,60.9,1
+2025-05-15,11:30 AM,Mississippi River,Foggy,Northern Pike,7,Worms,68.0,16
+2025-05-16,18:15 PM,Powderhorn Lake,Windy,None,0,Worms,62.3,19
+2025-05-17,15:15 PM,Bde Maka Ska,Sunny,Crappie,4,Worms,67.1,8
+2025-05-18,9:15 AM,Bde Maka Ska,Rainy,Walleye,5,Spinnerbait,69.0,4
+2025-05-19,16:15 PM,Lake of the Isles,Hot and humid,Bluegill,6,Worms,70.8,5
+2025-05-20,15:45 AM,Minnehaha Creek,Cloudy,Catfish,6,Live Bait,75.6,19
+2025-05-21,6:15 AM,Bde Maka Ska,Partly Cloudy,Walleye,6,Artificial Lure,78.0,12
+2025-05-22,8:30 AM,Bde Maka Ska,Sunny,Bass,7,Soft Plastics,76.4,18
+2025-05-23,6:00 PM,Lake of the Isles,Hot and humid,Bluegill,4,Worms,71.6,1
+2025-05-24,17:45 PM,Powderhorn Lake,Hot and humid,Perch,5,Topwater,66.1,14
+2025-05-25,11:00 AM,Bde Maka Ska,Foggy,None,0,Worms,74.0,19
+2025-05-26,10:30 AM,Cedar Lake,Cloudy,Walleye,0,Crankbait,71.7,3
+2025-05-27,16:30 AM,Lake of the Isles,Hot and humid,Muskie,2,Artificial Lure,60.7,16
+2025-05-28,7:15 AM,Minnehaha Creek,Partly Cloudy,None,0,Minnows,67.8,16
+2025-05-29,5:45 AM,Cedar Lake,Partly Cloudy,Muskie,5,Worms,70.1,9
+2025-05-30,11:30 PM,Lake of the Isles,Overcast,Walleye,2,Worms,79.5,4
+2025-05-31,9:15 AM,Powderhorn Lake,Cloudy,Bass,3,Topwater,76.6,2
+2025-06-01,17:30 AM,Bryant Lake,Cloudy,Walleye,3,Topwater,79.9,13
+2025-06-02,7:45 PM,Bde Maka Ska,Windy,Crappie,1,Topwater,59.4,17
+2025-06-03,18:30 PM,Cedar Lake,Stormy,Muskie,5,Spinnerbait,66.2,6
+2025-06-04,16:00 PM,Lake Nokomis,Hot and humid,Northern Pike,6,Crankbait,59.3,7
+2025-06-05,6:15 PM,Minnehaha Creek,Cloudy,Bluegill,2,Spinnerbait,63.9,6
+2025-06-06,14:45 AM,Mississippi River,Overcast,None,0,Crankbait,66.9,1
+2025-06-07,9:15 AM,Lake Harriet,Hot and humid,Sunfish,2,Crankbait,77.2,0
+2025-06-08,10:00 PM,Lake Nokomis,Cloudy,Crappie,4,Worms,69.8,16
+2025-06-09,13:00 PM,Bde Maka Ska,Partly Cloudy,Muskie,3,Minnows,79.1,12
+2025-06-10,12:00 PM,Powderhorn Lake,Sunny,Catfish,7,Spinnerbait,67.9,6
+2025-06-11,17:00 AM,Lake Nokomis,Foggy,Catfish,7,Crankbait,73.2,14
+2025-06-12,14:00 PM,Lake Nokomis,Foggy,Bass,1,Worms,77.4,8
+2025-06-13,13:15 AM,Minnehaha Creek,Overcast,Perch,1,Soft Plastics,79.7,4
+2025-06-14,15:15 AM,Bryant Lake,Foggy,Catfish,6,Worms,78.0,1
+2025-06-15,7:30 AM,Bryant Lake,Partly Cloudy,Northern Pike,0,Soft Plastics,65.1,6
+2025-06-16,12:30 PM,Lake Nokomis,Rainy,Bass,6,Spinnerbait,78.5,12
+2025-06-17,13:45 AM,Lake Harriet,Foggy,Perch,2,Crankbait,75.4,10
+2025-06-18,11:30 PM,Mississippi River,Overcast,Crappie,6,Crankbait,61.2,4
+2025-06-19,6:00 PM,Cedar Lake,Overcast,None,0,Worms,60.4,10
+2025-06-20,11:15 AM,Lake Nokomis,Cloudy,Muskie,3,Live Bait,64.4,3
+2025-06-21,12:15 AM,Cedar Lake,Partly Cloudy,Muskie,4,Minnows,70.0,3
+2025-06-22,5:15 PM,Powderhorn Lake,Clear,Catfish,2,Minnows,75.8,2
+2025-06-23,6:15 AM,Cedar Lake,Overcast,Northern Pike,4,Crankbait,75.7,8
+2025-06-24,18:00 PM,Lake Calhoun,Foggy,Muskie,1,Spinnerbait,72.5,15
+2025-06-25,6:30 AM,Lake Nokomis,Stormy,Sunfish,6,Worms,78.7,2
+2025-06-26,6:45 PM,Bde Maka Ska,Foggy,None,0,Worms,61.3,19
+2025-06-27,6:00 PM,Lake of the Isles,Sunny,Crappie,4,Topwater,65.9,11
+2025-06-28,16:45 PM,Cedar Lake,Rainy,Perch,3,Spinnerbait,64.8,4
+2025-06-29,15:15 AM,Mississippi River,Cloudy,None,0,Crankbait,60.1,12
+2025-06-30,5:30 AM,Mississippi River,Stormy,Bluegill,0,Minnows,60.5,7
+2025-07-01,9:00 PM,Bryant Lake,Partly Cloudy,None,0,Soft Plastics,55.8,8
+2025-07-02,11:30 AM,Bryant Lake,Foggy,Bluegill,7,Live Bait,70.9,16
+2025-07-03,13:45 PM,Lake Harriet,Foggy,Bluegill,5,Topwater,59.8,2
+2025-07-04,15:15 PM,Lake of the Isles,Stormy,Catfish,6,Artificial Lure,62.5,19
+2025-07-05,6:30 PM,Mississippi River,Hot and humid,Perch,5,Spinnerbait,73.0,2
+2025-07-06,5:45 PM,Lake Calhoun,Sunny,None,0,Artificial Lure,69.3,7
+2025-07-07,5:15 PM,Mississippi River,Partly Cloudy,None,0,Crankbait,62.7,2
+2025-07-08,16:00 AM,Powderhorn Lake,Cloudy,Northern Pike,5,Soft Plastics,66.6,9
+2025-07-09,8:15 AM,Lake Harriet,Rainy,Catfish,7,Live Bait,75.9,13
