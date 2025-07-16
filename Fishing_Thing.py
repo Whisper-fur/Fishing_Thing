@@ -2,6 +2,9 @@ import csv
 import matplotlib.pyplot as plt
 from datetime import datetime
 from collections import Counter, defaultdict
+import tkinter as tk
+from tkinter import messagebox
+from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 
 
 #Logging Section 
@@ -42,7 +45,7 @@ def view_logs():
     except FileNotFoundError:
         print("No log file found yet. Go catch some fish first!")    
 
-def edit_logs():
+def edit_logs(user_input):
     filename = "fishing_log.csv"
     with open(filename, mode="r") as file:
         reader = csv.reader(file)
@@ -50,38 +53,24 @@ def edit_logs():
         rows = list(reader)
 
     if not rows:
-        print("No logs to edit.")
-        return
-
-    print("\nSelect a log to edit:")
-    for i, row in enumerate(rows, start=1):
-        print(f"{i}. {' | '.join(row)}")  
+        return "No logs to edit."
 
     try:
-        index = int(input("Enter the number of the log to edit: ")) - 1
+        index = int(user_input) - 1
         if index < 0 or index >= len(rows):
-            print("Invalid selection.")
-            return
+            return "Invalid selection."
     except ValueError:
-        print("Invalid input.")
-        return
-        
+        return "Invalid input."
+
     selected_row = rows[index]
-    print("\nEditing this entry:")
+    result = "Editing this entry:\n"
     for i, value in enumerate(selected_row):
-        new_value = input(f"{header[i]} (leave blank to keep '{value}'): ").strip()
-        if new_value:
-            selected_row[i] = new_value
+        result += f"{header[i]}: {value}\n"
 
-    with open(filename, mode="w", newline="") as file:
-        writer = csv.writer(file)
-        writer.writerow(header)
-        writer.writerows(rows)
-
-    print("Log updated successfully.")    
+    return result
 
 
-def delete_log():
+def delete_log(user_input):
     filename = "fishing_log.csv"
     with open(filename, mode="r") as file:
         reader = csv.reader(file)
@@ -89,38 +78,27 @@ def delete_log():
         rows = list(reader)
 
     if not rows:
-        print("No logs to delete.")
-        return
-
-    print("\n Select a log to delete:")
-    for i, row in enumerate(rows, start=1):
-        print(f"{i}. {' | '.join(row)}")
+        return "No logs to delete."
 
     try:
-        index = int(input("Enter the number of the log to delete: ")) - 1
+        index = int(user_input) - 1
         if index < 0 or index >= len(rows):
-            print("Invalid selection.")
-            return
+            return "Invalid selection."
     except ValueError:
-        print("Invalid input.")
-        return
+        return "Invalid input."
 
-    print("\nYou selected:")
-    print(" | ".join(rows[index]))
-    confirm = input("Are you sure you want to delete this? (y/n): ").strip().lower()
-    if confirm != "y":
-        print("Deletion canceled.")
-        return
-
-    del rows[index]
+    selected_row = rows[index]
+    result = "You selected:\n" + " | ".join(selected_row) + "\n"
+    rows.pop(index)
 
     with open(filename, mode="w", newline="") as file:
         writer = csv.writer(file)
         writer.writerow(header)
         writer.writerows(rows)
 
-    print("Log deleted successfully.")
- 
+    return "Log deleted successfully."
+
+
 ## Stats Section
 def stats():
    with open("fishing_log.csv", mode="r") as file:
@@ -204,45 +182,490 @@ def plot_fish_by_lake():
     locations = list(fish_by_location.keys())
     fish_counts = list(fish_by_location.values())
 
-    plt.bar(locations, fish_counts, color='skyblue')
-    plt.xlabel('Location')
-    plt.ylabel('Number of Fish Caught')
-    plt.title('Fish Caught by Location')
-    plt.xticks(rotation=45)
-    plt.tight_layout()
-    plt.show()
+    fig, ax = plt.subplots()
+    ax.bar(locations, fish_counts, color='skyblue')
+    ax.set_xlabel('Location')
+    ax.set_ylabel('Number of Fish Caught')
+    ax.set_title('Fish Caught by Location')
+    ax.set_xticklabels(locations, rotation=45)
+
+    return fig
+
+def plot_bait_usage():
+    with open("fishing_log.csv", mode="r") as file:
+        reader = csv.reader(file)
+        header = next(reader)
+        rows = list(reader)
+
+    bait_counts = Counter(row[6].strip().lower() for row in rows if len(row) > 6 and row[6].strip() != "")
+
+    baits = list(bait_counts.keys())
+    counts = list(bait_counts.values())
+
+    fig, ax = plt.subplots()
+    ax.pie(counts, labels=baits, autopct="%1.1f%%", startangle=140)
+    ax.set_title("Bait Usage Distribution")
+
+    return fig
+
+def plot_fish_over_time():
+    with open("fishing_log.csv", mode="r") as file:
+        reader = csv.reader(file)
+        header = next(reader)
+        rows = list(reader)
+
+    dates = [datetime.strptime(row[0], "%Y-%m-%d") for row in rows if len(row) > 0 and row[0].strip() != ""]
+    fish_counts = [int(row[5]) for row in rows if len(row) > 5 and row[5].strip().isdigit()]
+
+    fig, ax = plt.subplots()
+    ax.plot(dates, fish_counts, marker="o", linestyle="-", color="green")
+    ax.set_xlabel("Date")
+    ax.set_ylabel("Number of Fish Caught")
+    ax.set_title("Fish Caught Over Time")
+    ax.tick_params(axis='x', rotation=45)
+
+    return fig
+
+def best_fishing_conditions():
+    with open("fishing_log.csv", mode="r") as file:
+        reader = csv.reader(file)
+        next(reader)  # Skip header
+        rows = list(reader)
+
+    weather_counts = Counter(row[3].strip().lower() for row in rows if len(row) > 3 and row[3].strip() != "")
+    temp_values = [float(row[7]) for row in rows if len(row) > 7 and row[7].strip().replace('.', '', 1).isdigit()]
+    wind_values = [float(row[8]) for row in rows if len(row) > 8 and row[8].strip().replace('.', '', 1).isdigit()]
+
+    most_common_weather = weather_counts.most_common(1)[0][0] if weather_counts else "Unknown"
+    avg_temp = round(sum(temp_values) / len(temp_values), 2) if temp_values else "Unknown"
+    avg_wind = round(sum(wind_values) / len(wind_values), 2) if wind_values else "Unknown"
+
+    print("\nBest Fishing Conditions:")
+    print(f"Most common weather: {most_common_weather}")
+    print(f"Average temperature: {avg_temp}°C")
+    print(f"Average wind speed: {avg_wind} km/h")
+
+def trip_recommendations():
+    with open("fishing_log.csv", mode="r") as file:
+        reader = csv.reader(file)
+        next(reader)  # Skip header
+        rows = list(reader)
+
+    location_counts = Counter(row[2].strip().lower() for row in rows if len(row) > 2 and row[2].strip() != "")
+    bait_counts = Counter(row[6].strip().lower() for row in rows if len(row) > 6 and row[6].strip() != "")
+
+    # Recommend locations with the most trips
+    print("\nTop Locations to Fish Again:")
+    for location, count in location_counts.most_common(3):
+        print(f"{location.title()} - {count} trips")
+
+    # Recommend bait that was most effective
+    print("\nBait Recommendations Based on Past Success:")
+    for bait, count in bait_counts.most_common(3):
+        print(f"{bait.title()} - Used in {count} trips")
+
+## GUI Section 
+class FishingLogApp:
+    def __init__(self, root):
+        self.root = root
+        root.title("Fishing Logbook")
+
+        # Set default window size
+        root.geometry("800x600")
+
+        # Create a frame for buttons
+        button_frame = tk.Frame(root)
+        button_frame.pack(side=tk.TOP, fill=tk.X)
+
+        # Add buttons for menu options in a grid format
+        buttons = [
+            ("New Trip", self.new_trip),
+            ("View Logs", self.view_logs),
+            ("Edit Logs", self.edit_logs),
+            ("Delete Log", self.delete_log),
+            ("Show Stats", self.show_stats),
+            #("Visualize Fish by Lake", self.plot_fish_by_lake),
+            ("Bait Efficiency", self.bait_efficiency)
+
+        ]
+
+        for i, (text, command) in enumerate(buttons):
+            tk.Button(button_frame, text=text, command=command).grid(row=i // 2, column=i % 2, padx=5, pady=5, sticky="ew")
+
+        # Add a frame for displaying results
+        self.result_frame = tk.Frame(root)
+        self.result_frame.pack(side=tk.BOTTOM, fill=tk.BOTH, expand=True)
+
+        # Add an input frame for user input
+        self.input_frame = tk.Frame(root)
+        self.input_frame.pack(side=tk.BOTTOM, fill=tk.X)
+
+        self.input_label = tk.Label(self.input_frame, text="Input:")
+        self.input_label.pack(side=tk.LEFT, padx=5)
+
+        self.input_entry = tk.Entry(self.input_frame)
+        self.input_entry.pack(side=tk.LEFT, fill=tk.X, expand=True, padx=5)
+
+        self.input_button = tk.Button(self.input_frame, text="Submit", command=self.handle_input)
+        self.input_button.pack(side=tk.LEFT, padx=5)
+
+        # Load and display log data
+        self.load_logs()
+
+    def handle_input(self):
+        user_input = self.input_entry.get()
+        self.input_entry.delete(0, tk.END)
+
+        try:
+            index = int(user_input) - 1
+            filename = "fishing_log.csv"
+
+            with open(filename, mode="r") as file:
+                reader = csv.reader(file)
+                header = next(reader)
+                rows = list(reader)
+
+            if index < 0 or index >= len(rows):
+                messagebox.showerror("Error", "Invalid selection.")
+                return
+
+            rows.pop(index)
+
+            with open(filename, mode="w", newline="") as file:
+                writer = csv.writer(file)
+                writer.writerow(header)
+                writer.writerows(rows)
+
+            messagebox.showinfo("Success", "Log deleted successfully!")
+
+            # Refresh the log view
+            self.view_logs()
+
+        except ValueError:
+            messagebox.showerror("Error", "Please enter a valid number.")
+        except FileNotFoundError:
+            messagebox.showerror("Error", "No log file found.")
+
+    def display_result(self, text):
+        for widget in self.result_frame.winfo_children():
+            widget.destroy()
+
+        text_widget = tk.Text(self.result_frame, wrap=tk.WORD)
+        text_widget.insert(tk.END, text)
+        text_widget.pack(side=tk.TOP, fill=tk.BOTH, expand=True)
+
+    def display_plot(self, fig):
+        for widget in self.result_frame.winfo_children():
+            widget.destroy()
+
+        canvas = FigureCanvasTkAgg(fig, master=self.result_frame)
+        canvas.draw()
+        canvas.get_tk_widget().pack(side=tk.TOP, fill=tk.BOTH, expand=True)
+
+        # Close the figure to prevent memory leaks
+        plt.close(fig)
+
+    def new_trip(self):
+        user_input = self.input_entry.get()
+        self.input_entry.delete(0, tk.END)
+        log_trip()  # Modify log_trip to accept user_input if needed
+        self.display_result("Trip logged successfully!")
+        self.load_logs()
+
+    def view_logs(self):
+        # Hide the input frame as it's not needed for viewing logs
+        self.input_frame.pack_forget()
+
+        # Clear the result frame
+        for widget in self.result_frame.winfo_children():
+            widget.destroy()
+
+        try:
+            with open("fishing_log.csv", mode="r") as file:
+                reader = csv.reader(file)
+                header = next(reader)
+                rows = list(reader)
+
+                # Create a Text widget for better alignment
+                text_widget = tk.Text(self.result_frame, wrap=tk.NONE, font=("Courier", 10))
+                text_widget.pack(side=tk.TOP, fill=tk.BOTH, expand=True)
+
+                # Format and insert header
+                header_line = "Index | " + " | ".join(f"{h:<15}" for h in header)
+                text_widget.insert(tk.END, header_line + "\n")
+                text_widget.insert(tk.END, "-" * len(header_line) + "\n")
+
+                # Format and insert rows with index numbers
+                for i, row in enumerate(rows):
+                    row_line = f"{i + 1:<5} | " + " | ".join(f"{value:<15}" for value in row)
+                    text_widget.insert(tk.END, row_line + "\n")
+
+                # Disable editing
+                text_widget.config(state=tk.DISABLED)
+
+        except FileNotFoundError:
+            label = tk.Label(self.result_frame, text="No logs found. Please add a new trip.", anchor="w")
+            label.pack(fill=tk.X)
+
+    def edit_logs(self):
+        # Show the input frame for entering the log number to edit
+        self.input_frame.pack(side=tk.BOTTOM, fill=tk.X)
+
+        # Clear the result frame
+        for widget in self.result_frame.winfo_children():
+            widget.destroy()
+
+        try:
+            with open("fishing_log.csv", mode="r") as file:
+                reader = csv.reader(file)
+                header = next(reader)
+                rows = list(reader)
+
+                # Create a Text widget for displaying logs
+                text_widget = tk.Text(self.result_frame, wrap=tk.NONE, font=("Courier", 10))
+                text_widget.pack(side=tk.TOP, fill=tk.BOTH, expand=True)
+
+                # Format and insert header
+                header_line = "Index | " + " | ".join(f"{h:<15}" for h in header)
+                text_widget.insert(tk.END, header_line + "\n")
+                text_widget.insert(tk.END, "-" * len(header_line) + "\n")
+
+                # Format and insert rows with index numbers
+                for i, row in enumerate(rows):
+                    row_line = f"{i + 1:<5} | " + " | ".join(f"{value:<15}" for value in row)
+                    text_widget.insert(tk.END, row_line + "\n")
+
+                # Disable editing
+                text_widget.config(state=tk.DISABLED)
+
+        except FileNotFoundError:
+            label = tk.Label(self.result_frame, text="No logs found. Please add a new trip.", anchor="w")
+            label.pack(fill=tk.X)
+
+    def delete_log(self):
+        # Show the input frame for entering the log number to delete
+        self.input_frame.pack(side=tk.BOTTOM, fill=tk.X)
+
+        # Clear the result frame
+        for widget in self.result_frame.winfo_children():
+            widget.destroy()
+
+        try:
+            with open("fishing_log.csv", mode="r") as file:
+                reader = csv.reader(file)
+                header = next(reader)
+                rows = list(reader)
+
+                # Create a Text widget for displaying logs
+                text_widget = tk.Text(self.result_frame, wrap=tk.NONE, font=("Courier", 10))
+                text_widget.pack(side=tk.TOP, fill=tk.BOTH, expand=True)
+
+                # Format and insert header
+                header_line = "Index | " + " | ".join(f"{h:<15}" for h in header)
+                text_widget.insert(tk.END, header_line + "\n")
+                text_widget.insert(tk.END, "-" * len(header_line) + "\n")
+
+                # Format and insert rows with index numbers
+                for i, row in enumerate(rows):
+                    row_line = f"{i + 1:<5} | " + " | ".join(f"{value:<15}" for value in row)
+                    text_widget.insert(tk.END, row_line + "\n")
+
+                # Disable editing
+                text_widget.config(state=tk.DISABLED)
+
+        except FileNotFoundError:
+            label = tk.Label(self.result_frame, text="No logs found. Please add a new trip.", anchor="w")
+            label.pack(fill=tk.X)
+
+    def handle_delete_log(self):
+        user_input = self.input_entry.get()
+        self.input_entry.delete(0, tk.END)
+
+        try:
+            index = int(user_input) - 1
+            filename = "fishing_log.csv"
+
+            with open(filename, mode="r") as file:
+                reader = csv.reader(file)
+                header = next(reader)
+                rows = list(reader)
+
+            if index < 0 or index >= len(rows):
+                messagebox.showerror("Error", "Invalid selection.")
+                return
+
+            rows.pop(index)
+
+            with open(filename, mode="w", newline="") as file:
+                writer = csv.writer(file)
+                writer.writerow(header)
+                writer.writerows(rows)
+
+            messagebox.showinfo("Success", "Log deleted successfully!")
+
+            # Refresh the log view
+            self.delete_log()
+
+        except ValueError:
+            messagebox.showerror("Error", "Please enter a valid number.")
+        except FileNotFoundError:
+            messagebox.showerror("Error", "No log file found.")
+
+    def show_stats(self):
+        # Hide the input frame as it's not needed for showing stats
+        self.input_frame.pack_forget()
+
+        with open("fishing_log.csv", mode="r") as file:
+            reader = csv.reader(file)
+            next(reader)
+            rows = list(reader)
+
+            trips = len(rows)
+            fish = sum(int(row[5]) for row in rows if row[5].isdigit())
+            avg_fish_per_trip = round(fish / trips, 2) if trips else 0
+
+            trips_by_location = defaultdict(int)
+            fish_by_location = defaultdict(int)
+
+            for row in rows:
+                location = row[2].strip()
+                trips_by_location[location] += 1
+                if row[5].isdigit():
+                    fish_by_location[location] += int(row[5])
+
+            catch_rate_result = "\nCatch Rate by Lake:\n"
+            for location in sorted(trips_by_location.keys()):
+                trips = trips_by_location[location]
+                fish = fish_by_location.get(location, 0)
+                avg = round(fish / trips, 2) if trips else 0
+                catch_rate_result += f"{location}: {fish} fish / {trips} trips → {avg} per trip\n"
+
+            result = (
+                f"Total trips: {trips}\n"
+                f"Total fish caught: {fish}\n"
+                f"Average fish per trip: {avg_fish_per_trip}\n"
+                f"{catch_rate_result}"
+            )
+            self.display_result(result)
+
+    def load_logs(self):
+        for widget in self.result_frame.winfo_children():
+            widget.destroy()
+
+        try:
+            with open("fishing_log.csv", mode="r") as file:
+                reader = csv.reader(file)
+                next(reader)
+                rows = list(reader)
+                for row in rows:
+                    log_entry = " | ".join(row)
+                    label = tk.Label(self.result_frame, text=log_entry, anchor="w")
+                    label.pack(fill=tk.X)
+        except FileNotFoundError:
+            label = tk.Label(self.result_frame, text="No logs found. Please add a new trip.", anchor="w")
+            label.pack(fill=tk.X)
 
 
-def menu():
-    while True:
-        print("\n=== Fishing Tracker Menu ===")
-        print("1. Log new trip")
-        print("2. View past logs") 
-        print("3. Edit a log")
-        print("4. Delete a log")
-        print("5. Basic Stat overview")
-        print("6. Catch Rate by Lake")
-        print("7. Visual Analysis (Fish by Lake)")
-        choice = input("Choose an option (1-6 or type 'exit' to leave.): ")
+    def bait_efficiency(self):
+        # Hide the input frame as it's not needed for bait efficiency
+        self.input_frame.pack_forget()
 
-        if choice == "1":
-            log_trip()
-        elif choice == "2":
-            view_logs()
-        elif choice == "3":
-            edit_logs()
-        elif choice == "4":
-            delete_log()
-        elif choice == "5":
-            stats()
-        elif choice == "6":
-            catch_rate()
-        elif choice == "7":
-            plot_fish_by_lake()
-        elif choice == "exit":
-            print("Tight lines! Goodbye.")
-            break
-        else:
-            print("Invalid option.")
+        # Clear the result frame
+        for widget in self.result_frame.winfo_children():
+            widget.destroy()
 
-menu()
+        try:
+            with open("fishing_log.csv", mode="r") as file:
+                reader = csv.reader(file)
+                next(reader)  # Skip header
+                rows = list(reader)
+
+            bait_usage = defaultdict(int)
+            fish_by_bait = defaultdict(int)
+
+            for row in rows:
+                if len(row) > 6 and row[6].strip() != "":
+                    bait = row[6].strip()
+                    bait_usage[bait] += 1
+                    if len(row) > 5 and row[5].strip().isdigit():
+                        fish_by_bait[bait] += int(row[5])
+
+            # Prepare data for the bar chart
+            bait_efficiency_data = sorted(
+                ((bait, fish_by_bait[bait] / bait_usage[bait]) for bait in bait_usage),
+                key=lambda x: x[1],
+                reverse=True
+            )
+            baits = [item[0] for item in bait_efficiency_data]
+            efficiency = [item[1] for item in bait_efficiency_data]
+
+            # Create the bar chart
+            fig, ax = plt.subplots()
+            ax.bar(baits, efficiency, color='skyblue')
+            ax.set_xlabel('Bait')
+            ax.set_ylabel('Efficiency (Fish per Use)')
+            ax.set_title('Bait Efficiency Ranking')
+            ax.set_xticklabels(baits, rotation=45)
+
+            # Display the plot dynamically sized with the window
+            canvas = FigureCanvasTkAgg(fig, master=self.result_frame)
+            canvas.draw()
+            canvas.get_tk_widget().pack(side=tk.TOP, fill=tk.BOTH, expand=True)
+
+            # Close the figure to prevent memory leaks
+            plt.close(fig)
+
+        except FileNotFoundError:
+            label = tk.Label(self.result_frame, text="No logs found. Please add a new trip.", anchor="w")
+            label.pack(fill=tk.X)
+
+
+    def plot_fish_by_lake(self):
+        # Hide the input frame as it's not needed for plotting fish by lake
+        self.input_frame.pack_forget()
+
+        with open("fishing_log.csv", mode="r") as file:
+            reader = csv.reader(file)
+            header = next(reader)
+            rows = list(reader)
+
+        fish_by_location = defaultdict(int)
+
+        for row in rows:
+            if len(row) > 5 and row[4].strip().lower() != "none":
+                try:
+                    location = row[2].strip()
+                    fish = int(row[5])
+                    fish_by_location[location] += fish
+                except ValueError:
+                    pass
+
+        locations = list(fish_by_location.keys())
+        fish_counts = list(fish_by_location.values())
+
+        fig, ax = plt.subplots()
+        ax.bar(locations, fish_counts, color='skyblue')
+        ax.set_xlabel('Location')
+        ax.set_ylabel('Number of Fish Caught')
+        ax.set_title('Fish Caught by Location')
+        ax.set_xticklabels(locations, rotation=45)
+
+        # Clear previous widgets in the result frame
+        for widget in self.result_frame.winfo_children():
+            widget.destroy()
+
+        # Display the plot dynamically sized with the window
+        canvas = FigureCanvasTkAgg(fig, master=self.result_frame)
+        canvas.draw()
+        canvas.get_tk_widget().pack(side=tk.TOP, fill=tk.BOTH, expand=True)
+
+        # Close the figure to prevent memory leaks
+        plt.close(fig)
+
+def main():
+    root = tk.Tk()
+    app = FishingLogApp(root)
+    root.mainloop()
+
+if __name__ == "__main__":
+    main()
