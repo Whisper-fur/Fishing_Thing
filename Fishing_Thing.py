@@ -136,139 +136,6 @@ def stats():
    print('Best time of day: ')
    print('Best Water Temp: ')
 
-def catch_rate():
-    with open("fishing_log.csv", mode="r") as file:
-        reader = csv.reader(file)
-        next(reader)  # Skip header
-        rows = list(reader)
-
-    trips_by_location = defaultdict(int)
-    fish_by_location = defaultdict(int)
-
-    for row in rows:
-        if len(row) > 5:
-            location = row[2].strip()
-            trips_by_location[location] += 1
-
-            if row[4].strip().lower() != "none":
-                try:
-                    fish_by_location[location] += int(row[5])
-                except ValueError:
-                    pass
-
-    print("\n🎣 Catch Rate by Lake:")
-    for location in sorted(trips_by_location.keys()):
-        trips = trips_by_location[location]
-        fish = fish_by_location.get(location, 0)
-        avg = round(fish / trips, 2) if trips else 0
-        print(f"{location}: {fish} fish / {trips} trips → {avg} per trip")
-
-# Visual Stats with matplotlib
-
-def plot_fish_by_lake():
-    with open("fishing_log.csv", mode="r") as file:
-        reader = csv.reader(file)
-        header = next(reader)
-        rows = list(reader)
-
-    fish_by_location = defaultdict(int)
-
-    for row in rows:
-        if len(row) > 5 and row[4].strip().lower() != "none":
-            try:
-                location = row[2].strip()
-                fish = int(row[5])
-                fish_by_location[location] += fish
-            except ValueError:
-                pass
-
-    locations = list(fish_by_location.keys())
-    fish_counts = list(fish_by_location.values())
-
-    fig, ax = plt.subplots()
-    ax.bar(locations, fish_counts, color='skyblue')
-    ax.set_xlabel('Location')
-    ax.set_ylabel('Number of Fish Caught')
-    ax.set_title('Fish Caught by Location')
-    ax.set_xticklabels(locations, rotation=45)
-
-    return fig
-
-def plot_bait_usage():
-    with open("fishing_log.csv", mode="r") as file:
-        reader = csv.reader(file)
-        header = next(reader)
-        rows = list(reader)
-
-    bait_counts = Counter(row[6].strip().lower() for row in rows if len(row) > 6 and row[6].strip() != "")
-
-    baits = list(bait_counts.keys())
-    counts = list(bait_counts.values())
-
-    fig, ax = plt.subplots()
-    ax.pie(counts, labels=baits, autopct="%1.1f%%", startangle=140)
-    ax.set_title("Bait Usage Distribution")
-
-    return fig
-
-
-
-def plot_fish_over_time():
-    with open("fishing_log.csv", mode="r") as file:
-        reader = csv.reader(file)
-        header = next(reader)
-        rows = list(reader)
-
-    dates = [datetime.strptime(row[0], "%Y-%m-%d") for row in rows if len(row) > 0 and row[0].strip() != ""]
-    fish_counts = [int(row[5]) for row in rows if len(row) > 5 and row[5].strip().isdigit()]
-
-    fig, ax = plt.subplots()
-    ax.plot(dates, fish_counts, marker="o", linestyle="-", color="green")
-    ax.set_xlabel("Date")
-    ax.set_ylabel("Number of Fish Caught")
-    ax.set_title("Fish Caught Over Time")
-    ax.tick_params(axis='x', rotation=45)
-
-    return fig
-
-def best_fishing_conditions():
-    with open("fishing_log.csv", mode="r") as file:
-        reader = csv.reader(file)
-        next(reader)  # Skip header
-        rows = list(reader)
-
-    weather_counts = Counter(row[3].strip().lower() for row in rows if len(row) > 3 and row[3].strip() != "")
-    temp_values = [float(row[7]) for row in rows if len(row) > 7 and row[7].strip().replace('.', '', 1).isdigit()]
-    wind_values = [float(row[8]) for row in rows if len(row) > 8 and row[8].strip().replace('.', '', 1).isdigit()]
-
-    most_common_weather = weather_counts.most_common(1)[0][0] if weather_counts else "Unknown"
-    avg_temp = round(sum(temp_values) / len(temp_values), 2) if temp_values else "Unknown"
-    avg_wind = round(sum(wind_values) / len(wind_values), 2) if wind_values else "Unknown"
-
-    print("\nBest Fishing Conditions:")
-    print(f"Most common weather: {most_common_weather}")
-    print(f"Average temperature: {avg_temp}°C")
-    print(f"Average wind speed: {avg_wind} km/h")
-
-def trip_recommendations():
-    with open("fishing_log.csv", mode="r") as file:
-        reader = csv.reader(file)
-        next(reader)  # Skip header
-        rows = list(reader)
-
-    location_counts = Counter(row[2].strip().lower() for row in rows if len(row) > 2 and row[2].strip() != "")
-    bait_counts = Counter(row[6].strip().lower() for row in rows if len(row) > 6 and row[6].strip() != "")
-
-    # Recommend locations with the most trips
-    print("\nTop Locations to Fish Again:")
-    for location, count in location_counts.most_common(3):
-        print(f"{location.title()} - {count} trips")
-
-    # Recommend bait that was most effective
-    print("\nBait Recommendations Based on Past Success:")
-    for bait, count in bait_counts.most_common(3):
-        print(f"{bait.title()} - Used in {count} trips")
-
 # GUI Section
 class FishingLogApp:
     def __init__(self, root):
@@ -291,7 +158,7 @@ class FishingLogApp:
 
         right_buttons = [
             ("Bait Efficiency", self.bait_efficiency),
-            ("Bait Performance Over Time", self.bait_performance_over_time),
+            ("Bait Performance Over Time", self.plot_bait_over_time),
             ("Seasonal Trend Breakdown", self.seasonal_trend_breakdown),
             ("Catch Rate Over Time", self.catch_rate_over_time),
             ("Outlier Detection", self.outlier_detection)
@@ -589,6 +456,7 @@ class FishingLogApp:
             label.pack(fill=tk.X)
 
 
+#Visualization Section
     def bait_efficiency(self):
         # Hide the input frame as it's not needed for bait efficiency
         self.input_frame.pack_forget()
@@ -642,8 +510,6 @@ class FishingLogApp:
             label = tk.Label(self.result_frame, text="No logs found. Please add a new trip.", anchor="w")
             label.pack(fill=tk.X)
 
-    def bait_performance_over_time(self):
-        return
 
     def seasonal_trend_breakdown(self):
         return
@@ -706,47 +572,10 @@ class FishingLogApp:
         # Close the figure to prevent memory leaks
         plt.close(fig)
 
-    def plot_fish_by_lake(self):
-        # Hide the input frame as it's not needed for plotting fish by lake
-        self.input_frame.pack_forget()
+    def plot_bait_over_time(self):
+        
 
-        with open("fishing_log.csv", mode="r") as file:
-            reader = csv.reader(file)
-            header = next(reader)
-            rows = list(reader)
-
-        fish_by_location = defaultdict(int)
-
-        for row in rows:
-            if len(row) > 5 and row[4].strip().lower() != "none":
-                try:
-                    location = row[2].strip()
-                    fish = int(row[5])
-                    fish_by_location[location] += fish
-                except ValueError:
-                    pass
-
-        locations = list(fish_by_location.keys())
-        fish_counts = list(fish_by_location.values())
-
-        fig, ax = plt.subplots()
-        ax.bar(locations, fish_counts, color='skyblue')
-        ax.set_xlabel('Location')
-        ax.set_ylabel('Number of Fish Caught')
-        ax.set_title('Fish Caught by Location')
-        ax.set_xticklabels(locations, rotation=45)
-
-        # Clear previous widgets in the result frame
-        for widget in self.result_frame.winfo_children():
-            widget.destroy()
-
-        # Display the plot dynamically sized with the window
-        canvas = FigureCanvasTkAgg(fig, master=self.result_frame)
-        canvas.draw()
-        canvas.get_tk_widget().pack(side=tk.TOP, fill=tk.BOTH, expand=True)
-
-        # Close the figure to prevent memory leaks
-        plt.close(fig)
+        return fig
 
 # Main Function
 def main():
