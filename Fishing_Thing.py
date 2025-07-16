@@ -1,3 +1,4 @@
+# Imports
 import csv
 import matplotlib.pyplot as plt
 from datetime import datetime
@@ -7,8 +8,7 @@ from tkinter import messagebox
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 import pandas as pd
 
-
-#Logging Section 
+# Logging Section
 def log_trip():
     date = input("Date (YYYY-MM-DD): ") or datetime.today().strftime('%Y-%m-%d')
     time = input('Time?')
@@ -29,7 +29,8 @@ def load_log_data():
         reader = csv.reader(file)
         next(reader)  # Skip header
         return list(reader)
-    
+
+# Function for viewing logs
 def view_logs():
     print("\nFishing Trip Log:\n")
 
@@ -45,6 +46,7 @@ def view_logs():
 
     except FileNotFoundError:
         print("No log file found yet. Go catch some fish first!")    
+
 
 def edit_logs(user_input):
     filename = "fishing_log.csv"
@@ -100,7 +102,7 @@ def delete_log(user_input):
     return "Log deleted successfully."
 
 
-## Stats Section
+# Stats Section
 def stats():
    with open("fishing_log.csv", mode="r") as file:
         reader = csv.reader(file)
@@ -161,7 +163,7 @@ def catch_rate():
         avg = round(fish / trips, 2) if trips else 0
         print(f"{location}: {fish} fish / {trips} trips → {avg} per trip")
 
-## Visual Stats with matplotlib
+# Visual Stats with matplotlib
 
 def plot_fish_by_lake():
     with open("fishing_log.csv", mode="r") as file:
@@ -208,6 +210,8 @@ def plot_bait_usage():
     ax.set_title("Bait Usage Distribution")
 
     return fig
+
+
 
 def plot_fish_over_time():
     with open("fishing_log.csv", mode="r") as file:
@@ -265,11 +269,11 @@ def trip_recommendations():
     for bait, count in bait_counts.most_common(3):
         print(f"{bait.title()} - Used in {count} trips")
 
-## GUI Section 
+# GUI Section
 class FishingLogApp:
     def __init__(self, root):
         root.title("Fishing Logbook")
-        root.attributes("-fullscreen", True)  # Open the GUI in full screen
+        # root.attributes("-fullscreen", True)  # Removed fullscreen attribute
 
         # Set default window size
         root.geometry("800x600")
@@ -278,21 +282,38 @@ class FishingLogApp:
         button_frame = tk.Frame(root)
         button_frame.pack(side=tk.TOP, fill=tk.X)
 
-        # Add buttons for menu options in a grid format
-        buttons = [
-            ("New Trip", self.new_trip),
+        # Add buttons for menu options in two columns
+        left_buttons = [
             ("View Logs", self.view_logs),
             ("Edit Logs", self.edit_logs),
             ("Delete Log", self.delete_log),
-            #("Show Stats", self.show_stats),
-            #("Visualize Fish by Lake", self.plot_fish_by_lake),
-            ("Bait Efficiency", self.bait_efficiency),
-            ("Catch Rate over time", self.catch_rate_over_time),
-
         ]
 
-        for i, (text, command) in enumerate(buttons):
-            tk.Button(button_frame, text=text, command=command).grid(row=i // 2, column=i % 2, padx=5, pady=5, sticky="ew")
+        right_buttons = [
+            ("Bait Efficiency", self.bait_efficiency),
+            ("Bait Performance Over Time", self.bait_performance_over_time),
+            ("Seasonal Trend Breakdown", self.seasonal_trend_breakdown),
+            ("Catch Rate Over Time", self.catch_rate_over_time),
+            ("Outlier Detection", self.outlier_detection)
+        ]
+
+    
+
+        # Add left column buttons
+        left_frame = tk.Frame(button_frame)
+        left_frame.pack(side=tk.LEFT, fill=tk.Y, padx=5, pady=5)
+        for text, command in left_buttons:
+            tk.Button(left_frame, text=text, command=command).pack(fill=tk.X, pady=2)
+
+        # Add a thin gray line between columns
+        separator = tk.Frame(button_frame, width=2, bg="gray")
+        separator.pack(side=tk.LEFT, fill=tk.Y, padx=5)
+
+        # Add right column buttons
+        right_frame = tk.Frame(button_frame)
+        right_frame.pack(side=tk.LEFT, fill=tk.Y, padx=5, pady=5)
+        for text, command in right_buttons:
+            tk.Button(right_frame, text=text, command=command).pack(fill=tk.X, pady=2)
 
         # Add a frame for displaying results
         self.result_frame = tk.Frame(root)
@@ -313,6 +334,7 @@ class FishingLogApp:
 
         # Load and display log data
         self.load_logs()
+
 
     def handle_input(self):
         user_input = self.input_entry.get()
@@ -388,14 +410,17 @@ class FishingLogApp:
                 text_widget = tk.Text(self.result_frame, wrap=tk.NONE, font=("Courier", 10))
                 text_widget.pack(side=tk.TOP, fill=tk.BOTH, expand=True)
 
+                # Calculate column widths based on the longest value in each column
+                column_widths = [max(len(str(value)) for value in col) for col in zip(header, *rows)]
+
                 # Format and insert header
-                header_line = "Index | " + " | ".join(f"{h:<15}" for h in header)
+                header_line = "Index | " + " | ".join(f"{h:<{column_widths[i]}}" for i, h in enumerate(header))
                 text_widget.insert(tk.END, header_line + "\n")
                 text_widget.insert(tk.END, "-" * len(header_line) + "\n")
 
                 # Format and insert rows with index numbers
                 for i, row in enumerate(rows):
-                    row_line = f"{i + 1:<5} | " + " | ".join(f"{value:<15}" for value in row)
+                    row_line = f"{i + 1:<5} | " + " | ".join(f"{value:<{column_widths[j]}}" for j, value in enumerate(row))
                     text_widget.insert(tk.END, row_line + "\n")
 
                 # Disable editing
@@ -617,6 +642,15 @@ class FishingLogApp:
             label = tk.Label(self.result_frame, text="No logs found. Please add a new trip.", anchor="w")
             label.pack(fill=tk.X)
 
+    def bait_performance_over_time(self):
+        return
+
+    def seasonal_trend_breakdown(self):
+        return
+
+    def outlier_detection(self):
+        return
+    
     def catch_rate_over_time(self):
         # Hide the input frame as it's not needed for plotting catch rate over time
         self.input_frame.pack_forget()
@@ -714,6 +748,7 @@ class FishingLogApp:
         # Close the figure to prevent memory leaks
         plt.close(fig)
 
+# Main Function
 def main():
     root = tk.Tk()
     app = FishingLogApp(root)
