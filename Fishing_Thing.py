@@ -545,35 +545,35 @@ class FishingLogApp:
             header = next(reader)
             rows = list(reader)
 
-        # Group data by months and bait types
-        monthly_catch_by_bait = defaultdict(lambda: defaultdict(int))
-        monthly_trips_by_bait = defaultdict(lambda: defaultdict(int))
+        # Group data by quarters and bait types
+        quarterly_catch_by_bait = defaultdict(lambda: defaultdict(int))
+        quarterly_trips_by_bait = defaultdict(lambda: defaultdict(int))
 
         for row in rows:
             if len(row) > 6 and row[6].strip() != "":
                 try:
                     date = datetime.strptime(row[0], "%Y-%m-%d")
-                    month = date.strftime("%Y-%m")  # Format as Year-Month
+                    quarter = f"Q{(date.month - 1) // 3 + 1} {date.year}"  # Format as Quarter-Year
                     bait = row[6].strip()
                     fish_caught = int(row[5]) if row[5].strip().isdigit() else 0
-                    monthly_catch_by_bait[bait][month] += fish_caught
-                    monthly_trips_by_bait[bait][month] += 1
+                    quarterly_catch_by_bait[bait][quarter] += fish_caught
+                    quarterly_trips_by_bait[bait][quarter] += 1
                 except ValueError:
                     pass
 
         # Prepare data for plotting
         fig, ax = plt.subplots()
-        for bait, monthly_catch in monthly_catch_by_bait.items():
-            months = sorted(monthly_catch.keys())
+        for bait, quarterly_catch in quarterly_catch_by_bait.items():
+            quarters = sorted(quarterly_catch.keys())
             catch_rates = [
-                round(monthly_catch[month] / monthly_trips_by_bait[bait][month], 2) if monthly_trips_by_bait[bait][month] > 0 else 0
-                for month in months
+                round(quarterly_catch[quarter] / quarterly_trips_by_bait[bait][quarter], 2) if quarterly_trips_by_bait[bait][quarter] > 0 else 0
+                for quarter in quarters
             ]
-            ax.plot(months, catch_rates, label=bait)
+            ax.plot(quarters, catch_rates, label=bait)
 
-        ax.set_xlabel("Month")
+        ax.set_xlabel("Quarter")
         ax.set_ylabel("Catch Rate (Fish per Trip)")
-        ax.set_title("Bait Performance Over Time (Grouped by Month)")
+        ax.set_title("Bait Performance Over Time (Grouped by Quarter)")
         ax.tick_params(axis="x", rotation=45)
         ax.grid(True, linestyle='--', alpha=0.5)
         plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left')
@@ -650,47 +650,44 @@ class FishingLogApp:
             header = next(reader)
             rows = list(reader)
 
-        # Group data by weeks
-        weekly_catch = defaultdict(int)
-        weekly_trips = defaultdict(int)
+        # Group data by quarters
+        quarterly_catch = defaultdict(int)
+        quarterly_trips = defaultdict(int)
 
         for row in rows:
             if len(row) > 5 and row[5].strip().isdigit():
                 try:
                     date = datetime.strptime(row[0], "%Y-%m-%d")
-                    week = date.strftime("%Y-W%U")  # Format as Year-WeekNumber
+                    quarter = f"Q{(date.month - 1) // 3 + 1} {date.year}"  # Format as Quarter-Year
                     fish_caught = int(row[5])
-                    weekly_catch[week] += fish_caught
-                    weekly_trips[week] += 1
+                    quarterly_catch[quarter] += fish_caught
+                    quarterly_trips[quarter] += 1
                 except ValueError:
                     pass
 
-        weeks = sorted(weekly_catch.keys())
+        quarters = sorted(quarterly_catch.keys())
         catch_rates = [
-            round(weekly_catch[week] / weekly_trips[week], 2) if weekly_trips[week] > 0 else 0
-            for week in weeks
+            round(quarterly_catch[quarter] / quarterly_trips[quarter], 2) if quarterly_trips[quarter] > 0 else 0
+            for quarter in quarters
         ]
 
         # Ensure pandas DataFrame is created correctly
-        df = pd.DataFrame({'week': weeks, 'rate': catch_rates})
-        df['moving_avg'] = df['rate'].rolling(window=5, center=True).mean()
+        df = pd.DataFrame({'quarter': quarters, 'rate': catch_rates})
+        df['moving_avg'] = df['rate'].rolling(window=2, center=True).mean()
 
         # Create the line graph
         fig, ax = plt.subplots()
-        ax.plot(df['week'], df['rate'], color='steelblue', linewidth=2.5, marker='o', markersize=6, label='Catch Rate')
-        ax.plot(df['week'], df['rate'].rolling(window=5, center=True).mean(), color='orange', linestyle='--', linewidth=2, label='3-week Moving Avg')
+        ax.plot(df['quarter'], df['rate'], color='steelblue', linewidth=2.5, marker='o', markersize=6, label='Catch Rate')
+        ax.plot(df['quarter'], df['moving_avg'], color='orange', linestyle='--', linewidth=2, label='2-quarter Moving Avg')
 
-        ax.set_xlabel("Week")
+        ax.set_xlabel("Quarter")
         ax.set_ylabel("Catch Rate (Fish per Trip)")
-        ax.set_title("Catch Rate Over Time (Grouped by Weeks)")
+        ax.set_title("Catch Rate Over Time (Grouped by Quarter)")
         ax.tick_params(axis="x", rotation=45)
         ax.grid(True, linestyle='--', alpha=0.5)
-
-        # Adjust x-axis ticks for better readability
-        ax.set_xticks(df['week'][::1])  # Display every week
         ax.legend()
 
-        # Adjust layout to prevent date cutoff
+        # Adjust layout to prevent label cutoff
         plt.tight_layout()
 
         # Display the plot dynamically sized with the window
