@@ -202,6 +202,7 @@ class FishingLogApp:
         tk.Label(outlier_frame, text="Data Cleaning", font=("Arial", 12, "bold")).pack(pady=5)
 
         tk.Button(outlier_frame, text="Outlier Detection", command=self.outlier_detection).pack(fill=tk.X, pady=2)
+        tk.Button(outlier_frame, text="Remove Duplicates", command=self.remove_duplicates).pack(fill=tk.X, pady=2)
 
         # Add a frame for displaying results
         self.result_frame = tk.Frame(root)
@@ -700,6 +701,35 @@ class FishingLogApp:
 # Data Cleaning Section
     def outlier_detection(self):
         return
+
+    def remove_duplicates(self):
+        # Hide the input frame as it's not needed for removing duplicates
+        self.input_frame.pack_forget()
+
+        try:
+            filename = "data/fishing_log.csv"
+            with open(filename, mode="r") as file:
+                reader = csv.reader(file)
+                header = next(reader)
+                rows = list(reader)
+
+            # Remove duplicate rows
+            unique_rows = list({tuple(row) for row in rows})
+
+            with open(filename, mode="w", newline="") as file:
+                writer = csv.writer(file)
+                writer.writerow(header)
+                writer.writerows(unique_rows)
+
+            messagebox.showinfo("Success", "Duplicates removed successfully!")
+
+            # Refresh the log view
+            self.view_logs()
+
+        except FileNotFoundError:
+            messagebox.showerror("Error", "No log file found.")
+        except Exception as e:
+            messagebox.showerror("Error", f"An error occurred: {e}")
 
 # Main Function
 def main():
