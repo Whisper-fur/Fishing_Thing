@@ -8,21 +8,15 @@ Recently I have been getting into fishing and would like to make a program to he
 ## Core Logging
 - [x] Log fishing trip (date, time, location, fish caught, bait, etc.)
 - [x] View all logs
-- [x] Delete/edit a log
+- [x] Delete Log
+- [ ] Edit Log
 - [ ] Import/export logs (CSV)
 
-## Stats 
-- [x] Total trips
-- [x] Total fish 
-- [x] Most common fish species
-- [x] Most used bait
-- [x] Average fish per trip
-    ## Visual Stats
-    - [ ] Best location
-    - [ ] Best time of day 
-    - [ ] Best water temp
-
-## Analysis (Planned)
+## Visual Stats
+- [x] Bait Effiecency
+- [x] Bait Performance Over Time
+- [x] Seasonal Trend Break Down
+- [x] Catch Rate Over Time
 - [ ] Show most caught fish by month
 - [ ] Graph catch rate by time of day
 - [ ] Recommend bait based on past success
