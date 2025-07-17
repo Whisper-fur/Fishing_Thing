@@ -102,7 +102,7 @@ def delete_log(user_input):
     return "Log deleted successfully."
 
 
-# Stats Section
+# Stats Section (First method) Keeping for memories
 def stats():
    with open("fishing_log.csv", mode="r") as file:
         reader = csv.reader(file)
@@ -169,6 +169,10 @@ class FishingLogApp:
         # Add left column buttons
         left_frame = tk.Frame(button_frame)
         left_frame.pack(side=tk.LEFT, fill=tk.Y, padx=5, pady=5)
+
+        # Add header above left column buttons
+        tk.Label(left_frame, text="Log Options", font=("Arial", 12, "bold")).pack(pady=5)
+
         for text, command in left_buttons:
             tk.Button(left_frame, text=text, command=command).pack(fill=tk.X, pady=2)
 
@@ -179,8 +183,25 @@ class FishingLogApp:
         # Add right column buttons
         right_frame = tk.Frame(button_frame)
         right_frame.pack(side=tk.LEFT, fill=tk.Y, padx=5, pady=5)
-        for text, command in right_buttons:
+
+        # Add header above right column buttons
+        tk.Label(right_frame, text="Statistics", font=("Arial", 12, "bold")).pack(pady=5)
+
+        for text, command in right_buttons[:-1]:  # Exclude "Outlier Detection"
             tk.Button(right_frame, text=text, command=command).pack(fill=tk.X, pady=2)
+
+        # Add another separator for "Outlier Detection"
+        separator_outlier = tk.Frame(button_frame, width=2, bg="gray")
+        separator_outlier.pack(side=tk.LEFT, fill=tk.Y, padx=5)
+
+        # Add "Outlier Detection" button separately
+        outlier_frame = tk.Frame(button_frame)
+        outlier_frame.pack(side=tk.LEFT, fill=tk.Y, padx=5, pady=5)
+
+        # Add header above "Outlier Detection" button
+        tk.Label(outlier_frame, text="Data Cleaning", font=("Arial", 12, "bold")).pack(pady=5)
+
+        tk.Button(outlier_frame, text="Outlier Detection", command=self.outlier_detection).pack(fill=tk.X, pady=2)
 
         # Add a frame for displaying results
         self.result_frame = tk.Frame(root)
@@ -202,7 +223,7 @@ class FishingLogApp:
         # Load and display log data
         self.load_logs()
 
-
+# Utilities Section
     def handle_input(self):
         user_input = self.input_entry.get()
         self.input_entry.delete(0, tk.END)
@@ -259,6 +280,7 @@ class FishingLogApp:
     def new_trip(self): #TODO: Implement new trip functionality
         return
 
+    # Logging Section
     def view_logs(self):
         # Hide the input frame as it's not needed for viewing logs
         self.input_frame.pack_forget()
@@ -401,6 +423,7 @@ class FishingLogApp:
         except FileNotFoundError:
             messagebox.showerror("Error", "No log file found.")
 
+#Check if this is still needed
     def show_stats(self):
         # Hide the input frame as it's not needed for showing stats
         self.input_frame.pack_forget()
@@ -510,13 +533,111 @@ class FishingLogApp:
             label = tk.Label(self.result_frame, text="No logs found. Please add a new trip.", anchor="w")
             label.pack(fill=tk.X)
 
+    def plot_bait_over_time(self):
+        # Hide the input frame as it's not needed for plotting bait performance over time
+        self.input_frame.pack_forget()
+
+        with open("fishing_log.csv", mode="r") as file:
+            reader = csv.reader(file)
+            header = next(reader)
+            rows = list(reader)
+
+        # Group data by months and bait types
+        monthly_catch_by_bait = defaultdict(lambda: defaultdict(int))
+        monthly_trips_by_bait = defaultdict(lambda: defaultdict(int))
+
+        for row in rows:
+            if len(row) > 6 and row[6].strip() != "":
+                try:
+                    date = datetime.strptime(row[0], "%Y-%m-%d")
+                    month = date.strftime("%Y-%m")  # Format as Year-Month
+                    bait = row[6].strip()
+                    fish_caught = int(row[5]) if row[5].strip().isdigit() else 0
+                    monthly_catch_by_bait[bait][month] += fish_caught
+                    monthly_trips_by_bait[bait][month] += 1
+                except ValueError:
+                    pass
+
+        # Prepare data for plotting
+        fig, ax = plt.subplots()
+        for bait, monthly_catch in monthly_catch_by_bait.items():
+            months = sorted(monthly_catch.keys())
+            catch_rates = [
+                round(monthly_catch[month] / monthly_trips_by_bait[bait][month], 2) if monthly_trips_by_bait[bait][month] > 0 else 0
+                for month in months
+            ]
+            ax.plot(months, catch_rates, label=bait)
+
+        ax.set_xlabel("Month")
+        ax.set_ylabel("Catch Rate (Fish per Trip)")
+        ax.set_title("Bait Performance Over Time (Grouped by Month)")
+        ax.tick_params(axis="x", rotation=45)
+        ax.grid(True, linestyle='--', alpha=0.5)
+        plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left')
+        plt.tight_layout()
+
+        # Display the plot dynamically sized with the window
+        self.display_plot(fig)
+
+        # Close the figure to prevent memory leaks
+        plt.close(fig)
 
     def seasonal_trend_breakdown(self):
-        return
+        # Hide the input frame as it's not needed for seasonal trend breakdown
+        self.input_frame.pack_forget()
 
-    def outlier_detection(self):
-        return
-    
+        with open("fishing_log.csv", mode="r") as file:
+            reader = csv.reader(file)
+            header = next(reader)
+            rows = list(reader)
+
+        # Group data by seasons
+        seasonal_catch = defaultdict(int)
+        seasonal_trips = defaultdict(int)
+
+        for row in rows:
+            if len(row) > 5 and row[5].strip().isdigit():
+                try:
+                    date = datetime.strptime(row[0], "%Y-%m-%d")
+                    month = date.month
+                    fish_caught = int(row[5])
+
+                    # Determine season based on month
+                    if month in [12, 1, 2]:
+                        season = "Winter"
+                    elif month in [3, 4, 5]:
+                        season = "Spring"
+                    elif month in [6, 7, 8]:
+                        season = "Summer"
+                    else:
+                        season = "Fall"
+
+                    seasonal_catch[season] += fish_caught
+                    seasonal_trips[season] += 1
+                except ValueError:
+                    pass
+
+        # Prepare data for plotting
+        seasons = ["Winter", "Spring", "Summer", "Fall"]
+        catch_rates = [
+            round(seasonal_catch[season] / seasonal_trips[season], 2) if seasonal_trips[season] > 0 else 0
+            for season in seasons
+        ]
+
+        # Create the bar chart
+        fig, ax = plt.subplots()
+        ax.bar(seasons, catch_rates, color='lightgreen')
+        ax.set_xlabel("Season")
+        ax.set_ylabel("Catch Rate (Fish per Trip)")
+        ax.set_title("Seasonal Trend Breakdown")
+        ax.grid(True, linestyle='--', alpha=0.5)
+
+        # Display the plot dynamically sized with the window
+        self.display_plot(fig)
+
+        # Close the figure to prevent memory leaks
+        plt.close(fig)
+
     def catch_rate_over_time(self):
         # Hide the input frame as it's not needed for plotting catch rate over time
         self.input_frame.pack_forget()
@@ -572,10 +693,10 @@ class FishingLogApp:
         # Close the figure to prevent memory leaks
         plt.close(fig)
 
-    def plot_bait_over_time(self):
-        
-
-        return fig
+    
+# Data Cleaning Section
+    def outlier_detection(self):
+        return
 
 # Main Function
 def main():
