@@ -1,501 +1,501 @@
 Date,Time,Location,Weather,Fish Caught,Amount of Fish,Bait Used,Water Temp (°F),Wind Speed (mph)
-2023-05-28,7:45,Boundary Waters,Windy,Pike,4,Crankbait,64.7,9.6
-2024-03-15,5:30,Rainy Lake,Windy,"Perch, Catfish, Walleye",8,Crankbait,77.8,5.5
-2023-05-10,10:45,Boundary Waters,Hot,"Trout, Pike, Walleye",7,Worms,78.3,4.7
-2023-09-18,10:30,Boundary Waters,Cloudy,"Walleye, Catfish, Pike",5,Minnows,54.8,15.2
-2022-10-13,10:00,Lake Harriet,Cold,"Bluegill, Catfish",1,Minnows,79.4,13.1
-2022-08-12,9:00,Lake Minnetonka,Rainy,Bass,10,Spinnerbait,57.0,5.5
-2023-12-09,10:30,Boundary Waters,Cold,Walleye,9,Artificial Lure,57.8,6.8
-2022-01-13,9:00,Rainy Lake,Windy,"Walleye, Catfish",7,Artificial Lure,67.6,18.1
-2024-05-22,5:15,Lake Minnetonka,Cold,"Bass, Catfish",8,Worms,53.8,12.8
-2023-07-17,9:45,Rainy Lake,Hot,"Catfish, Bass",9,Minnows,66.0,5.9
-2023-09-07,7:30,Rainy Lake,Rainy,"Catfish, Perch, Trout",4,Artificial Lure,68.9,8.1
-2024-04-28,11:15,Lake Superior,Sunny,"Walleye, Catfish, Bass",7,Artificial Lure,70.4,19.0
-2024-06-02,9:00,Lake Superior,Rainy,"Walleye, Bluegill, Catfish",10,Spinnerbait,64.1,16.9
-2023-05-04,9:30,Lake Minnetonka,Cloudy,Trout,8,Spinnerbait,59.3,4.5
-2023-01-24,9:15,Rainy Lake,Windy,"Bass, Pike",8,Minnows,59.5,1.3
-2024-03-02,11:00,Lake Minnetonka,Hot,"Bluegill, Bass",4,Crankbait,63.7,6.0
+2022-05-27,7:45,Lake Superior,Rainy,"Walleye, Trout",8,Crankbait,54.6,1.0
+2023-01-22,5:45,Rainy Lake,Cold,"Perch, Bass, Walleye",9,Worms,65.7,13.7
 2022-10-02,10:15,Boundary Waters,Sunny,"Pike, Bluegill, Trout",6,Worms,78.9,17.9
-2023-03-08,8:30,Lake Minnetonka,Sunny,"Bass, Bluegill",5,Minnows,53.0,15.2
-2022-01-09,6:30,Rainy Lake,Cold,"Walleye, Trout, Pike",8,Worms,53.5,15.4
-2024-03-11,11:15,Lake Superior,Sunny,Catfish,5,Worms,70.8,15.1
-2022-01-12,7:45,Rainy Lake,Sunny,Bass,1,Artificial Lure,79.5,0.6
-2024-05-14,10:30,Boundary Waters,Windy,Trout,8,Worms,50.5,6.4
-2022-11-18,9:00,Boundary Waters,Hot,Walleye,6,Worms,65.3,13.3
-2022-04-08,10:45,Lake Minnetonka,Hot,"Bluegill, Perch",2,Spinnerbait,66.0,19.5
-2023-07-17,11:00,Boundary Waters,Cold,Perch,9,Worms,73.7,8.1
-2023-03-28,9:00,Lake Harriet,Sunny,"Catfish, Perch",6,Artificial Lure,63.0,8.9
-2023-03-31,8:00,Lake Minnetonka,Cold,Bluegill,1,Spinnerbait,67.3,10.7
-2022-02-15,10:00,Lake Harriet,Cloudy,"Walleye, Pike, Perch",1,Minnows,70.1,3.3
-2022-02-21,9:30,Lake Minnetonka,Hot,"Pike, Bass",6,Minnows,72.0,0.5
-2024-03-13,8:30,Lake Minnetonka,Rainy,"Perch, Bluegill, Bass",7,Artificial Lure,66.2,14.0
-2023-11-11,9:45,Lake Harriet,Windy,"Catfish, Pike, Bluegill",3,Worms,68.2,0.4
-2022-03-19,8:30,Lake Minnetonka,Cold,"Perch, Pike",10,Worms,72.3,14.9
-2023-05-10,5:30,Rainy Lake,Windy,"Walleye, Bass, Bluegill",7,Worms,75.7,0.4
-2024-05-26,10:30,Boundary Waters,Hot,"Pike, Trout, Bass",1,Spinnerbait,62.6,19.4
-2023-10-06,11:45,Lake Harriet,Cold,Trout,2,Worms,56.3,2.3
-2022-06-02,8:45,Lake Minnetonka,Cold,Trout,10,Worms,58.5,4.3
-2022-02-05,9:30,Boundary Waters,Windy,"Perch, Bluegill",4,Artificial Lure,62.4,18.9
-2023-03-17,8:00,Lake Harriet,Cold,"Perch, Walleye",5,Worms,64.5,9.2
-2023-03-24,9:45,Boundary Waters,Sunny,"Pike, Walleye",9,Artificial Lure,78.3,19.3
-2023-09-28,8:45,Boundary Waters,Cold,"Perch, Catfish, Walleye",32,Worms,75.9,0.1
-2023-05-31,11:45,Boundary Waters,Cold,Walleye,6,Spinnerbait,51.2,3.7
-2022-09-29,11:45,Boundary Waters,Cold,"Bass, Bluegill, Trout",10,Spinnerbait,65.1,3.7
-2022-04-07,8:30,Lake Minnetonka,Hot,"Bass, Trout",4,Crankbait,79.4,5.7
-2022-12-30,10:00,Lake Minnetonka,Hot,"Perch, Pike, Bluegill",5,Artificial Lure,61.8,3.1
-2023-08-02,8:00,Rainy Lake,Cloudy,"Perch, Bluegill",2,Spinnerbait,69.6,14.9
-2024-04-25,9:30,Boundary Waters,Rainy,None,0,Minnows,68.8,12.9
-2022-01-09,8:45,Lake Superior,Windy,Catfish,6,Crankbait,70.9,3.5
-2023-11-08,6:45,Lake Minnetonka,Hot,Walleye,3,Worms,57.4,10.6
-2022-06-18,11:45,Rainy Lake,Cloudy,"Walleye, Catfish",4,Crankbait,72.7,14.2
-2024-02-03,10:15,Boundary Waters,Rainy,Bass,3,Spinnerbait,53.5,2.0
-2024-03-26,10:45,Lake Superior,Cold,"Bass, Walleye",3,Spinnerbait,70.7,15.1
-2022-04-07,7:00,Lake Harriet,Cold,"Bass, Trout",22,Spinnerbait,71.2,3.3
-2022-12-08,9:15,Lake Harriet,Cloudy,"Bluegill, Walleye",10,Artificial Lure,53.0,12.4
-2024-05-17,8:00,Lake Harriet,Hot,None,0,Crankbait,76.4,17.3
-2024-05-01,9:45,Lake Minnetonka,Hot,"Bluegill, Catfish",9,Crankbait,74.9,5.6
-2022-02-12,11:45,Boundary Waters,Hot,Walleye,8,Spinnerbait,56.0,10.4
-2023-03-30,6:45,Lake Minnetonka,Sunny,"Catfish, Walleye",3,Crankbait,65.0,12.3
-2023-09-05,5:00,Boundary Waters,Windy,"Trout, Walleye, Pike",8,Spinnerbait,72.8,10.3
-2023-07-01,5:30,Rainy Lake,Cloudy,"Catfish, Bluegill",8,Minnows,50.3,7.9
-2023-04-09,8:30,Lake Harriet,Hot,"Pike, Bass",10,Crankbait,78.8,15.6
-2022-07-25,7:15,Boundary Waters,Cold,"Trout, Bluegill, Pike",29,Minnows,79.9,0.4
-2022-12-05,8:00,Lake Minnetonka,Cloudy,"Bluegill, Pike, Walleye",8,Worms,67.5,14.8
-2023-12-21,8:30,Lake Harriet,Rainy,None,0,Worms,58.3,14.2
-2023-12-31,9:45,Lake Minnetonka,Sunny,"Trout, Pike, Walleye",2,Minnows,77.5,1.7
-2022-08-09,10:30,Lake Harriet,Cold,"Bass, Pike, Catfish",6,Artificial Lure,57.6,10.3
-2022-07-16,7:15,Lake Minnetonka,Cold,Pike,3,Worms,71.4,17.9
-2023-06-07,11:30,Boundary Waters,Cold,Bass,1,Crankbait,76.2,1.8
-2022-04-19,10:45,Lake Harriet,Cold,Pike,26,Artificial Lure,55.7,15.5
-2022-05-15,8:30,Rainy Lake,Sunny,"Pike, Perch",6,Artificial Lure,52.0,18.8
-2024-03-10,10:00,Lake Superior,Windy,"Bluegill, Bass, Perch",2,Artificial Lure,54.6,6.5
-2023-01-04,6:45,Lake Harriet,Rainy,"Walleye, Pike",10,Spinnerbait,69.3,7.1
-2022-02-02,5:15,Boundary Waters,Sunny,None,0,Minnows,51.5,13.1
-2022-05-25,9:00,Lake Superior,Rainy,"Trout, Catfish",6,Spinnerbait,68.8,5.2
 2022-09-27,5:45,Lake Superior,Cold,"Pike, Trout, Catfish",1,Worms,62.7,16.7
-2023-06-22,9:15,Lake Minnetonka,Sunny,"Bass, Bluegill, Walleye",3,Spinnerbait,78.2,14.4
-2022-09-09,6:45,Rainy Lake,Cold,"Bluegill, Perch",2,Crankbait,74.4,8.0
-2023-10-23,8:00,Lake Minnetonka,Hot,"Walleye, Catfish",4,Minnows,64.9,10.4
-2024-01-24,7:00,Lake Superior,Sunny,"Perch, Pike, Catfish",9,Artificial Lure,61.7,8.5
-2024-05-24,10:00,Lake Harriet,Rainy,"Bass, Perch",2,Artificial Lure,62.1,9.9
-2022-06-02,11:00,Rainy Lake,Windy,Trout,4,Crankbait,75.9,9.0
-2023-10-21,8:00,Lake Harriet,Windy,"Bass, Catfish",4,Crankbait,53.9,4.9
-2024-01-09,5:45,Lake Harriet,Cloudy,Catfish,2,Minnows,60.8,2.0
-2023-05-24,10:30,Lake Superior,Cold,Trout,10,Artificial Lure,60.9,18.6
-2024-03-21,11:30,Lake Minnetonka,Hot,Perch,3,Artificial Lure,54.4,9.7
-2023-09-05,10:00,Boundary Waters,Windy,"Trout, Bluegill",2,Artificial Lure,66.5,4.1
-2023-03-14,5:45,Lake Minnetonka,Sunny,"Catfish, Walleye, Pike",8,Artificial Lure,77.4,8.8
-2024-06-05,9:15,Lake Minnetonka,Cloudy,"Bluegill, Catfish",5,Worms,67.8,5.5
-2022-10-03,9:00,Boundary Waters,Windy,"Perch, Pike, Bass",2,Minnows,53.3,1.7
-2022-07-19,6:15,Lake Harriet,Cold,"Trout, Catfish, Pike",1,Artificial Lure,64.7,5.1
-2022-05-29,11:45,Lake Harriet,Windy,Perch,7,Spinnerbait,55.0,14.3
-2023-04-11,8:00,Lake Superior,Rainy,"Walleye, Bluegill",6,Spinnerbait,64.3,7.4
-2024-06-17,11:45,Lake Superior,Sunny,"Bass, Bluegill",3,Artificial Lure,71.1,17.0
-2023-10-21,11:30,Rainy Lake,Rainy,Bass,8,Crankbait,52.5,19.3
-2023-09-20,5:30,Lake Minnetonka,Sunny,Bluegill,2,Spinnerbait,74.6,17.9
-2024-05-15,7:15,Lake Harriet,Windy,"Bluegill, Trout, Walleye",3,Worms,53.5,7.6
-2022-11-28,8:45,Rainy Lake,Rainy,"Pike, Bass, Bluegill",9,Worms,64.1,2.6
-2024-03-02,10:00,Boundary Waters,Sunny,Bluegill,8,Artificial Lure,58.7,18.9
-2022-03-07,7:15,Rainy Lake,Windy,Perch,7,Artificial Lure,50.3,7.8
-2024-01-17,7:30,Lake Harriet,Hot,"Walleye, Catfish",8,Minnows,71.5,6.3
-2022-01-28,9:45,Rainy Lake,Windy,"Perch, Bass, Bluegill",4,Spinnerbait,74.7,2.1
-2024-04-21,8:30,Boundary Waters,Rainy,Catfish,9,Minnows,65.3,3.5
-2023-06-17,7:00,Lake Minnetonka,Windy,"Bluegill, Pike, Perch",3,Worms,56.0,19.2
-2024-06-01,10:45,Rainy Lake,Sunny,Bluegill,5,Worms,50.5,18.2
-2023-03-05,6:45,Lake Harriet,Windy,"Bass, Trout",7,Crankbait,71.4,4.0
-2024-01-29,8:00,Lake Superior,Windy,"Bluegill, Trout, Walleye",9,Worms,69.9,0.6
-2024-02-09,8:00,Lake Superior,Cloudy,"Bass, Trout",7,Artificial Lure,79.1,13.4
-2023-01-22,11:45,Boundary Waters,Windy,"Bass, Walleye",2,Worms,57.7,16.1
-2022-03-05,10:00,Rainy Lake,Windy,"Bass, Walleye",10,Spinnerbait,54.9,13.4
-2023-10-05,8:30,Lake Minnetonka,Cloudy,"Walleye, Bluegill",10,Minnows,73.6,15.1
-2023-01-26,6:00,Lake Superior,Cold,"Pike, Trout, Catfish",5,Minnows,53.5,1.0
-2023-03-01,11:00,Lake Harriet,Cold,"Pike, Bass",5,Worms,52.4,2.3
-2022-06-09,7:45,Boundary Waters,Sunny,"Perch, Trout",6,Worms,78.7,17.9
-2022-10-03,11:45,Lake Superior,Cold,"Walleye, Perch, Catfish",2,Minnows,69.8,2.5
-2023-10-22,6:00,Lake Superior,Sunny,"Catfish, Pike, Walleye",7,Spinnerbait,50.2,5.3
-2022-08-26,9:45,Lake Minnetonka,Sunny,"Pike, Perch",4,Spinnerbait,78.3,3.3
-2023-01-08,9:30,Lake Harriet,Windy,"Bluegill, Catfish, Perch",8,Spinnerbait,67.8,18.9
-2022-12-29,10:00,Lake Minnetonka,Sunny,None,0,Worms,65.3,15.7
-2023-08-05,6:30,Lake Minnetonka,Windy,"Walleye, Catfish",7,Minnows,67.0,2.4
-2022-08-05,9:15,Boundary Waters,Sunny,"Perch, Trout, Catfish",4,Worms,50.7,1.0
-2023-03-15,5:15,Rainy Lake,Rainy,Catfish,8,Minnows,51.4,13.4
-2022-12-07,5:00,Lake Harriet,Cloudy,"Pike, Trout",32,Worms,71.4,1.8
-2023-01-05,10:15,Lake Minnetonka,Cloudy,"Bluegill, Bass, Walleye",2,Minnows,51.1,11.7
-2022-06-14,10:00,Boundary Waters,Hot,Pike,2,Spinnerbait,53.1,5.5
-2024-02-05,10:45,Boundary Waters,Hot,"Bluegill, Perch",3,Worms,62.4,15.9
-2024-05-11,6:30,Boundary Waters,Cloudy,"Trout, Perch",5,Minnows,65.4,4.0
-2022-07-16,9:30,Lake Harriet,Hot,"Walleye, Bass, Pike",5,Worms,56.4,12.1
-2022-04-03,7:30,Lake Minnetonka,Cold,"Bluegill, Walleye, Perch",4,Worms,76.5,17.7
-2024-02-17,10:45,Lake Harriet,Rainy,None,0,Crankbait,54.9,18.0
-2023-11-20,6:45,Lake Harriet,Cold,Bluegill,4,Crankbait,73.6,8.9
-2022-09-17,11:15,Boundary Waters,Hot,Trout,9,Crankbait,63.7,1.3
-2022-11-28,8:45,Rainy Lake,Rainy,"Catfish, Perch, Trout",9,Worms,56.1,1.3
-2022-06-17,6:15,Rainy Lake,Sunny,"Catfish, Bass, Trout",7,Minnows,69.3,5.5
-2022-07-18,9:45,Rainy Lake,Sunny,"Pike, Trout, Perch",1,Crankbait,76.0,9.0
-2022-02-23,9:15,Rainy Lake,Hot,"Bluegill, Bass, Catfish",5,Spinnerbait,55.8,9.3
-2023-06-27,5:45,Rainy Lake,Cold,Perch,10,Worms,56.6,12.1
-2023-11-05,8:00,Boundary Waters,Sunny,None,0,Spinnerbait,75.8,17.4
-2024-05-04,11:00,Boundary Waters,Hot,"Trout, Pike",1,Minnows,63.9,1.5
-2023-12-17,10:15,Lake Harriet,Rainy,"Perch, Bluegill, Catfish",6,Artificial Lure,79.1,6.0
-2022-11-08,9:15,Lake Superior,Hot,Pike,9,Minnows,61.2,16.1
-2022-12-24,7:30,Boundary Waters,Cold,Perch,5,Minnows,72.4,19.7
-2024-03-22,7:45,Lake Harriet,Windy,"Walleye, Bass, Pike",5,Minnows,68.2,19.8
-2023-01-04,5:15,Lake Minnetonka,Sunny,Pike,1,Crankbait,66.3,15.1
-2023-08-26,9:45,Lake Superior,Windy,"Trout, Bass",3,Crankbait,77.0,8.8
-2022-01-14,5:00,Lake Minnetonka,Hot,"Walleye, Trout, Perch",7,Spinnerbait,59.2,10.8
-2023-05-30,6:15,Lake Superior,Hot,"Trout, Bluegill, Walleye",3,Spinnerbait,75.9,7.7
-2022-05-17,7:45,Boundary Waters,Sunny,Bluegill,5,Crankbait,52.5,5.1
-2023-07-26,5:00,Lake Superior,Windy,"Walleye, Catfish, Bass",10,Minnows,65.7,9.0
-2023-04-06,10:15,Lake Superior,Hot,Walleye,8,Spinnerbait,69.3,8.9
-2023-05-11,11:15,Lake Superior,Rainy,"Catfish, Walleye",2,Artificial Lure,52.5,9.6
-2023-08-31,7:30,Lake Minnetonka,Hot,"Pike, Bass, Bluegill",3,Crankbait,79.2,7.1
-2023-09-24,5:15,Lake Superior,Hot,"Trout, Bluegill, Walleye",8,Spinnerbait,54.3,7.4
-2022-02-25,5:30,Lake Harriet,Windy,Trout,6,Spinnerbait,65.0,2.0
-2023-12-19,5:45,Rainy Lake,Rainy,"Bluegill, Catfish, Bass",4,Minnows,61.7,1.3
-2022-09-17,6:00,Rainy Lake,Rainy,"Catfish, Pike",3,Minnows,57.9,6.2
-2023-08-11,7:00,Rainy Lake,Hot,"Catfish, Walleye",1,Worms,54.7,2.9
-2022-10-21,7:15,Lake Superior,Sunny,Trout,5,Crankbait,73.0,4.4
-2022-06-05,8:45,Boundary Waters,Windy,Walleye,6,Worms,52.6,15.0
-2023-02-22,9:00,Boundary Waters,Windy,"Trout, Bass",3,Worms,66.0,8.5
-2022-12-18,7:45,Rainy Lake,Hot,Perch,9,Worms,70.9,0.7
-2023-08-30,10:15,Lake Harriet,Windy,"Walleye, Trout, Bluegill",2,Minnows,69.8,17.6
-2023-11-06,10:45,Lake Minnetonka,Cold,"Bass, Walleye",10,Worms,52.6,11.5
-2022-08-05,6:15,Lake Superior,Cloudy,Catfish,5,Spinnerbait,70.3,2.7
-2024-02-06,10:30,Boundary Waters,Cloudy,Catfish,4,Crankbait,51.0,1.6
-2022-12-31,11:15,Lake Superior,Sunny,"Walleye, Catfish, Perch",9,Minnows,60.3,9.8
-2022-01-07,6:15,Rainy Lake,Cold,Walleye,7,Spinnerbait,63.9,17.7
-2023-11-13,5:00,Lake Harriet,Windy,Pike,5,Worms,65.0,15.6
-2023-07-25,6:30,Lake Minnetonka,Hot,"Perch, Bass, Catfish",4,Spinnerbait,79.1,0.8
-2022-12-11,5:45,Lake Minnetonka,Rainy,"Catfish, Pike",10,Spinnerbait,69.0,18.6
-2022-09-28,10:45,Rainy Lake,Cloudy,Bluegill,8,Crankbait,56.0,18.3
-2022-08-16,11:15,Rainy Lake,Hot,"Trout, Bluegill",4,Spinnerbait,54.8,9.9
-2022-06-15,7:45,Lake Superior,Cloudy,Walleye,9,Spinnerbait,52.4,18.1
-2022-12-24,5:15,Lake Minnetonka,Windy,"Bluegill, Trout",6,Spinnerbait,71.8,5.7
-2024-01-01,8:45,Lake Minnetonka,Rainy,"Perch, Pike, Trout",10,Minnows,72.0,7.2
-2023-04-24,8:30,Lake Minnetonka,Hot,Perch,4,Spinnerbait,56.4,10.9
-2022-08-04,10:00,Lake Harriet,Windy,"Pike, Trout",2,Spinnerbait,58.9,6.0
-2024-05-17,7:15,Lake Harriet,Cold,Catfish,8,Worms,62.6,18.1
-2023-11-10,7:45,Lake Superior,Windy,Bass,6,Spinnerbait,70.4,14.4
-2024-05-18,5:15,Lake Harriet,Windy,"Bass, Catfish",2,Spinnerbait,71.0,4.6
-2022-09-23,5:00,Rainy Lake,Hot,"Trout, Walleye",1,Artificial Lure,61.0,2.0
-2024-01-19,6:45,Lake Minnetonka,Rainy,"Catfish, Bass",3,Crankbait,68.5,3.4
-2022-08-15,8:45,Lake Superior,Hot,Trout,5,Artificial Lure,66.5,19.1
-2024-05-27,7:30,Boundary Waters,Sunny,Catfish,8,Artificial Lure,74.1,12.1
-2022-08-16,9:45,Rainy Lake,Hot,Bass,6,Worms,60.3,6.8
-2023-07-06,6:00,Lake Minnetonka,Cloudy,Bass,24,Artificial Lure,73.8,5.8
-2023-06-14,10:45,Lake Minnetonka,Cold,"Trout, Pike",5,Artificial Lure,70.0,0.6
-2022-07-16,7:45,Lake Harriet,Hot,"Trout, Bluegill",2,Worms,61.8,3.2
-2023-01-10,5:00,Rainy Lake,Cloudy,None,0,Artificial Lure,66.1,0.8
-2023-05-13,9:30,Lake Minnetonka,Hot,"Perch, Bass",6,Crankbait,76.4,17.2
-2022-10-18,9:00,Lake Harriet,Windy,None,0,Artificial Lure,51.4,18.5
-2023-07-25,7:45,Lake Minnetonka,Rainy,Catfish,4,Artificial Lure,64.4,17.4
-2024-02-26,9:45,Rainy Lake,Cold,"Pike, Bass, Walleye",9,Crankbait,59.8,12.8
-2024-01-22,10:30,Lake Minnetonka,Cloudy,"Catfish, Walleye, Pike",8,Crankbait,53.4,18.9
-2023-06-04,8:00,Lake Superior,Windy,"Pike, Perch, Catfish",3,Minnows,76.1,18.6
-2022-01-23,7:45,Rainy Lake,Rainy,Walleye,3,Crankbait,75.7,12.0
-2023-12-19,9:30,Lake Harriet,Hot,"Trout, Pike, Perch",9,Worms,55.2,4.7
-2024-03-20,5:00,Lake Superior,Cloudy,None,0,Artificial Lure,70.6,0.6
-2022-07-03,8:15,Lake Superior,Cloudy,Bluegill,6,Minnows,69.3,1.1
-2022-05-17,10:00,Lake Superior,Hot,Catfish,8,Crankbait,52.5,19.4
+2023-09-22,9:30,Boundary Waters,Hot,Perch,26,Worms,68.0,1.1
 2022-10-17,7:45,Lake Superior,Windy,"Pike, Trout, Bass",25,Spinnerbait,69.2,18.6
-2022-02-26,11:45,Lake Minnetonka,Sunny,"Perch, Trout",5,Crankbait,59.4,5.0
-2023-09-05,11:00,Lake Minnetonka,Rainy,"Bluegill, Catfish",8,Worms,60.0,12.8
-2023-02-13,10:15,Rainy Lake,Sunny,Catfish,2,Worms,72.3,10.4
-2022-05-21,5:45,Boundary Waters,Hot,Perch,7,Spinnerbait,70.9,13.5
-2024-03-19,9:00,Lake Superior,Hot,None,0,Minnows,73.0,7.8
-2022-04-04,11:30,Lake Harriet,Cloudy,Perch,9,Worms,50.5,5.5
-2023-05-16,7:15,Lake Minnetonka,Rainy,Perch,9,Minnows,77.4,8.3
-2022-02-22,11:45,Rainy Lake,Rainy,"Catfish, Perch",21,Worms,73.2,7.5
-2022-07-03,9:30,Boundary Waters,Cloudy,"Walleye, Trout",10,Crankbait,64.0,10.9
-2023-12-15,8:00,Rainy Lake,Sunny,Bluegill,10,Spinnerbait,63.0,1.6
-2023-08-08,9:30,Lake Superior,Rainy,"Pike, Bass, Bluegill",10,Minnows,68.4,12.0
-2023-01-01,9:30,Lake Minnetonka,Cold,Pike,8,Crankbait,64.2,1.5
-2022-05-11,7:45,Lake Superior,Cloudy,"Bass, Pike",7,Spinnerbait,70.0,11.2
-2023-12-25,11:00,Rainy Lake,Cloudy,"Perch, Catfish, Bass",7,Worms,62.9,7.5
-2023-04-15,10:30,Rainy Lake,Windy,"Perch, Bluegill, Trout",6,Artificial Lure,54.0,12.8
-2022-03-10,5:30,Lake Superior,Hot,"Bass, Pike",3,Artificial Lure,54.0,13.1
-2022-02-10,7:00,Rainy Lake,Hot,Catfish,7,Artificial Lure,66.2,2.0
 2023-06-14,5:15,Lake Minnetonka,Windy,"Catfish, Bluegill, Trout",2,Minnows,51.9,15.2
-2022-01-03,9:15,Lake Superior,Windy,"Bass, Bluegill, Trout",10,Minnows,68.3,12.7
-2022-04-26,6:00,Boundary Waters,Rainy,Trout,10,Spinnerbait,57.8,10.8
-2023-03-30,5:30,Rainy Lake,Cloudy,"Bluegill, Walleye",10,Worms,77.5,0.1
-2023-06-18,6:45,Rainy Lake,Windy,"Bluegill, Bass, Trout",5,Artificial Lure,74.1,4.4
-2023-01-31,5:15,Lake Minnetonka,Rainy,"Catfish, Bluegill, Bass",10,Crankbait,57.6,4.2
-2022-08-01,5:15,Boundary Waters,Windy,"Pike, Bass, Walleye",5,Worms,58.8,17.1
-2024-06-07,9:15,Lake Minnetonka,Windy,"Bass, Bluegill, Perch",10,Artificial Lure,51.7,13.3
-2023-12-02,10:30,Lake Harriet,Cloudy,"Walleye, Trout, Bass",7,Artificial Lure,78.1,17.4
-2022-10-13,6:45,Lake Harriet,Rainy,"Trout, Walleye, Pike",7,Crankbait,71.7,13.3
-2024-03-30,11:00,Lake Harriet,Cold,Perch,7,Minnows,58.7,16.6
-2024-04-19,9:15,Lake Harriet,Sunny,"Catfish, Trout",4,Minnows,74.3,14.8
-2022-07-01,11:15,Lake Superior,Sunny,Pike,2,Crankbait,79.9,4.6
-2022-07-22,5:15,Rainy Lake,Cold,"Pike, Bass",2,Crankbait,55.7,9.3
-2022-03-04,6:30,Lake Minnetonka,Windy,Trout,8,Artificial Lure,50.3,3.4
-2022-08-22,10:30,Boundary Waters,Cold,"Walleye, Catfish",2,Spinnerbait,58.3,7.9
-2022-11-27,6:45,Boundary Waters,Cold,"Bluegill, Trout",4,Minnows,58.8,14.0
-2023-03-09,10:00,Rainy Lake,Hot,"Walleye, Bluegill",4,Crankbait,57.6,15.1
-2024-05-19,10:00,Lake Harriet,Sunny,Walleye,8,Spinnerbait,74.3,14.2
-2022-12-25,8:45,Lake Superior,Hot,Pike,1,Spinnerbait,79.5,19.9
-2023-12-07,10:45,Lake Superior,Cold,"Pike, Bluegill",5,Spinnerbait,50.6,11.4
-2023-10-20,10:00,Lake Harriet,Cloudy,"Walleye, Perch, Catfish",2,Spinnerbait,53.3,7.4
+2023-06-04,8:00,Lake Superior,Windy,"Pike, Perch, Catfish",3,Minnows,76.1,18.6
+2022-09-09,6:45,Rainy Lake,Cold,"Bluegill, Perch",2,Crankbait,74.4,8.0
+2022-01-23,7:45,Rainy Lake,Rainy,Walleye,3,Crankbait,75.7,12.0
+2022-12-11,5:45,Lake Minnetonka,Rainy,"Catfish, Pike",10,Spinnerbait,69.0,18.6
+2023-09-12,10:45,Lake Minnetonka,Hot,"Perch, Trout, Bluegill",1,Artificial Lure,66.5,13.4
+2022-05-20,8:15,Lake Harriet,Cloudy,"Catfish, Bluegill, Perch",1,Artificial Lure,71.5,11.2
+2022-01-18,11:00,Lake Minnetonka,Hot,"Perch, Catfish, Trout",9,Crankbait,58.6,15.5
+2022-07-07,6:15,Lake Superior,Sunny,"Catfish, Walleye",5,Spinnerbait,78.4,15.1
+2022-06-05,8:15,Lake Superior,Cloudy,"Perch, Catfish",1,Minnows,55.1,5.0
+2022-05-15,8:30,Rainy Lake,Sunny,"Pike, Perch",6,Artificial Lure,52.0,18.8
+2023-03-15,6:30,Lake Superior,Cloudy,Bluegill,8,Worms,54.7,19.1
+2023-12-15,8:00,Rainy Lake,Sunny,Bluegill,10,Spinnerbait,63.0,1.6
+2022-10-03,11:45,Lake Superior,Cold,"Walleye, Perch, Catfish",2,Minnows,69.8,2.5
+2023-12-26,5:15,Lake Minnetonka,Hot,None,0,Worms,72.8,18.1
+2024-04-25,9:30,Boundary Waters,Rainy,None,0,Minnows,68.8,12.9
+2022-07-24,9:30,Lake Minnetonka,Hot,Trout,10,Minnows,65.4,6.4
+2022-12-07,5:00,Lake Harriet,Cloudy,"Pike, Trout",32,Worms,71.4,1.8
+2024-04-09,11:00,Lake Superior,Cold,"Walleye, Pike",5,Crankbait,55.0,1.5
+2022-01-14,5:00,Lake Minnetonka,Hot,"Walleye, Trout, Perch",7,Spinnerbait,59.2,10.8
+2022-08-04,10:00,Lake Harriet,Windy,"Pike, Trout",2,Spinnerbait,58.9,6.0
+2024-01-17,7:30,Lake Harriet,Hot,"Walleye, Catfish",8,Minnows,71.5,6.3
+2024-05-29,11:30,Lake Superior,Sunny,"Trout, Perch",10,Artificial Lure,63.3,15.4
+2022-03-10,8:30,Boundary Waters,Hot,Bass,10,Crankbait,70.6,1.0
+2022-05-15,5:45,Rainy Lake,Cold,"Pike, Bluegill",2,Worms,57.6,0.3
+2023-11-20,6:45,Lake Harriet,Cold,Bluegill,4,Crankbait,73.6,8.9
+2023-10-05,10:00,Lake Superior,Hot,"Trout, Bluegill",4,Worms,74.9,16.0
+2022-06-17,6:15,Rainy Lake,Sunny,"Catfish, Bass, Trout",7,Minnows,69.3,5.5
+2022-11-14,11:45,Lake Minnetonka,Sunny,Bluegill,5,Worms,51.0,15.2
+2023-03-23,8:45,Rainy Lake,Cold,"Bluegill, Bass",4,Worms,59.9,0.9
+2022-08-30,6:30,Lake Superior,Cold,"Walleye, Pike",34,Worms,64.5,12.1
+2022-10-17,7:30,Lake Harriet,Hot,"Catfish, Perch, Trout",1,Worms,72.1,2.1
+2023-11-13,5:00,Lake Harriet,Windy,Pike,5,Worms,65.0,15.6
+2023-12-28,11:00,Rainy Lake,Cold,Perch,8,Artificial Lure,61.7,4.6
+2022-11-12,8:30,Lake Harriet,Cold,"Bluegill, Pike, Trout",10,Crankbait,54.0,10.7
+2022-02-03,8:15,Boundary Waters,Cloudy,"Bluegill, Catfish, Pike",2,Artificial Lure,74.5,3.2
+2023-08-08,9:30,Lake Superior,Rainy,"Pike, Bass, Bluegill",10,Minnows,68.4,12.0
+2023-09-05,10:00,Boundary Waters,Windy,"Trout, Bluegill",2,Artificial Lure,66.5,4.1
 2022-12-27,6:15,Lake Superior,Rainy,None,0,Minnows,78.6,9.4
+2022-07-01,11:15,Lake Superior,Sunny,Pike,2,Crankbait,79.9,4.6
+2023-09-21,11:45,Rainy Lake,Hot,"Catfish, Bluegill",2,Minnows,58.7,6.6
+2023-09-02,5:45,Lake Minnetonka,Sunny,Walleye,26,Minnows,71.7,9.8
+2022-03-31,7:30,Lake Minnetonka,Rainy,None,0,Worms,63.0,13.2
+2024-02-03,10:15,Boundary Waters,Rainy,Bass,3,Spinnerbait,53.5,2.0
+2024-01-18,11:30,Boundary Waters,Hot,Bluegill,1,Crankbait,67.1,11.0
+2022-09-10,7:30,Lake Superior,Sunny,"Pike, Bass, Walleye",1,Minnows,77.5,10.7
+2022-10-17,5:00,Boundary Waters,Cold,"Perch, Walleye",7,Spinnerbait,54.7,15.4
+2022-11-21,11:45,Rainy Lake,Rainy,Trout,5,Spinnerbait,61.6,11.9
+2024-01-09,5:45,Lake Harriet,Cloudy,Catfish,2,Minnows,60.8,2.0
+2024-01-17,10:00,Lake Superior,Cold,"Bass, Catfish, Trout",9,Crankbait,79.7,14.7
+2022-09-07,7:45,Lake Minnetonka,Rainy,"Catfish, Trout",6,Worms,68.3,14.2
+2023-04-11,8:00,Lake Superior,Rainy,"Walleye, Bluegill",6,Spinnerbait,64.3,7.4
+2022-06-15,7:45,Lake Superior,Cloudy,Walleye,9,Spinnerbait,52.4,18.1
+2022-08-10,7:15,Lake Harriet,Cloudy,"Perch, Bluegill, Walleye",8,Artificial Lure,57.5,8.9
+2022-08-02,7:30,Boundary Waters,Hot,Pike,9,Artificial Lure,63.6,0.9
+2022-12-19,6:30,Lake Superior,Cloudy,"Walleye, Perch, Trout",3,Minnows,71.5,19.3
+2024-05-04,11:00,Boundary Waters,Hot,"Trout, Pike",1,Minnows,63.9,1.5
+2023-11-10,7:45,Lake Superior,Windy,Bass,6,Spinnerbait,70.4,14.4
+2024-03-13,8:30,Lake Minnetonka,Rainy,"Perch, Bluegill, Bass",7,Artificial Lure,66.2,14.0
+2023-12-17,10:15,Lake Harriet,Rainy,"Perch, Bluegill, Catfish",6,Artificial Lure,79.1,6.0
+2023-07-17,11:00,Boundary Waters,Cold,Perch,9,Worms,73.7,8.1
+2022-02-24,11:00,Lake Minnetonka,Hot,"Walleye, Bluegill, Catfish",1,Minnows,61.9,4.7
+2024-04-30,10:45,Rainy Lake,Sunny,None,0,Artificial Lure,75.7,11.2
+2022-04-07,7:00,Lake Harriet,Cold,"Bass, Trout",22,Spinnerbait,71.2,3.3
+2023-06-14,10:45,Lake Minnetonka,Cold,"Trout, Pike",5,Artificial Lure,70.0,0.6
+2024-06-18,5:00,Lake Minnetonka,Windy,"Bass, Pike",3,Worms,72.5,4.5
+2023-10-21,11:30,Rainy Lake,Rainy,Bass,8,Crankbait,52.5,19.3
+2023-02-22,9:30,Rainy Lake,Rainy,"Perch, Bluegill",1,Worms,73.6,11.2
+2022-12-24,7:30,Boundary Waters,Cold,Perch,5,Minnows,72.4,19.7
+2024-04-20,9:30,Lake Minnetonka,Windy,"Trout, Bass",8,Spinnerbait,58.8,17.3
+2022-06-01,5:00,Lake Minnetonka,Cold,Perch,2,Spinnerbait,56.4,2.0
+2022-03-08,10:15,Lake Harriet,Sunny,Perch,9,Artificial Lure,61.0,13.8
+2024-06-10,9:45,Rainy Lake,Cloudy,"Trout, Bluegill",9,Spinnerbait,55.6,19.1
+2024-05-18,11:30,Lake Superior,Rainy,Walleye,2,Spinnerbait,72.4,3.0
+2022-02-28,11:45,Lake Superior,Windy,"Catfish, Bluegill",8,Worms,76.0,13.2
+2022-01-09,8:45,Lake Superior,Windy,Catfish,6,Crankbait,70.9,3.5
+2023-04-07,5:45,Lake Superior,Hot,"Bluegill, Catfish, Trout",5,Minnows,61.9,18.8
+2024-02-17,10:45,Lake Harriet,Rainy,None,0,Crankbait,54.9,18.0
+2023-03-16,5:00,Lake Minnetonka,Sunny,None,0,Worms,57.9,5.7
+2024-06-07,9:15,Lake Minnetonka,Windy,"Bass, Bluegill, Perch",10,Artificial Lure,51.7,13.3
+2023-05-17,7:30,Boundary Waters,Hot,"Bass, Walleye",7,Spinnerbait,55.7,13.1
+2023-03-14,5:45,Lake Minnetonka,Sunny,"Catfish, Walleye, Pike",8,Artificial Lure,77.4,8.8
+2023-12-25,11:00,Rainy Lake,Cloudy,"Perch, Catfish, Bass",7,Worms,62.9,7.5
+2022-06-09,7:45,Boundary Waters,Sunny,"Perch, Trout",6,Worms,78.7,17.9
+2022-03-07,7:15,Rainy Lake,Windy,Perch,7,Artificial Lure,50.3,7.8
+2024-04-21,8:30,Boundary Waters,Rainy,Catfish,9,Minnows,65.3,3.5
+2022-11-11,7:45,Boundary Waters,Hot,"Bluegill, Bass",5,Minnows,74.4,16.7
+2022-10-22,11:15,Rainy Lake,Cloudy,"Catfish, Trout",2,Artificial Lure,68.2,1.3
+2024-05-08,8:00,Lake Superior,Rainy,"Perch, Bass",6,Minnows,67.7,6.3
+2024-04-07,5:45,Lake Minnetonka,Sunny,Perch,4,Artificial Lure,54.8,5.7
 2024-06-05,6:30,Lake Minnetonka,Sunny,Bass,3,Minnows,71.5,1.1
-2022-01-12,8:00,Lake Minnetonka,Windy,"Pike, Perch",1,Artificial Lure,70.8,7.2
-2022-05-11,7:45,Lake Harriet,Windy,"Pike, Bass",1,Spinnerbait,52.2,18.3
-2022-09-03,10:30,Lake Superior,Cold,"Walleye, Perch, Trout",9,Artificial Lure,70.6,0.7
+2024-01-01,8:45,Lake Harriet,Windy,Trout,6,Minnows,65.2,15.6
+2022-07-16,7:15,Lake Minnetonka,Cold,Pike,3,Worms,71.4,17.9
+2023-03-09,10:00,Rainy Lake,Hot,"Walleye, Bluegill",4,Crankbait,57.6,15.1
+2023-03-19,10:00,Rainy Lake,Cloudy,"Perch, Trout, Bass",6,Worms,55.3,6.4
+2023-09-24,5:15,Lake Superior,Hot,"Trout, Bluegill, Walleye",8,Spinnerbait,54.3,7.4
+2024-03-30,11:00,Lake Harriet,Cold,Perch,7,Minnows,58.7,16.6
+2024-02-16,6:15,Rainy Lake,Hot,"Perch, Bass, Bluegill",5,Crankbait,57.8,2.5
+2023-05-16,7:15,Lake Minnetonka,Rainy,Perch,9,Minnows,77.4,8.3
+2022-08-07,9:00,Lake Superior,Cloudy,"Catfish, Perch, Walleye",8,Crankbait,79.1,3.2
+2022-02-26,11:45,Lake Minnetonka,Sunny,"Perch, Trout",5,Crankbait,59.4,5.0
+2023-03-30,5:30,Rainy Lake,Cloudy,"Bluegill, Walleye",10,Worms,77.5,0.1
+2022-06-20,11:15,Rainy Lake,Cloudy,Trout,9,Artificial Lure,59.7,17.5
+2022-05-11,7:45,Lake Superior,Cloudy,"Bass, Pike",7,Spinnerbait,70.0,11.2
+2022-01-29,6:00,Lake Minnetonka,Rainy,"Bass, Perch",2,Crankbait,63.9,16.2
+2023-11-11,9:45,Lake Harriet,Windy,"Catfish, Pike, Bluegill",3,Worms,68.2,0.4
+2023-11-20,9:15,Rainy Lake,Hot,"Trout, Bluegill",8,Spinnerbait,63.9,3.2
+2023-10-29,10:45,Lake Minnetonka,Hot,"Bass, Walleye, Catfish",10,Artificial Lure,50.5,4.7
+2023-04-15,10:30,Rainy Lake,Windy,"Perch, Bluegill, Trout",6,Artificial Lure,54.0,12.8
+2024-06-16,11:15,Lake Harriet,Cloudy,"Trout, Catfish, Walleye",1,Spinnerbait,55.1,17.1
+2022-01-10,10:30,Lake Superior,Rainy,"Walleye, Bluegill, Perch",8,Minnows,52.4,12.5
+2024-01-04,5:15,Lake Superior,Hot,Trout,7,Artificial Lure,67.0,19.6
+2023-04-12,9:30,Boundary Waters,Cold,"Bluegill, Bass",10,Spinnerbait,66.3,19.9
+2024-03-21,5:00,Lake Superior,Windy,Bass,4,Spinnerbait,53.2,7.2
+2022-02-25,5:30,Lake Harriet,Windy,Trout,6,Spinnerbait,65.0,2.0
+2024-05-17,7:15,Lake Harriet,Cold,Catfish,8,Worms,62.6,18.1
+2022-08-16,9:45,Rainy Lake,Hot,Bass,6,Worms,60.3,6.8
+2022-01-03,9:15,Lake Superior,Windy,"Bass, Bluegill, Trout",10,Minnows,68.3,12.7
 2023-04-01,5:00,Lake Superior,Rainy,Walleye,4,Minnows,70.8,15.9
-2024-06-15,6:30,Boundary Waters,Hot,"Walleye, Trout, Bass",4,Crankbait,79.2,4.9
-2023-12-16,7:15,Lake Harriet,Sunny,"Bass, Trout",1,Crankbait,59.5,16.4
-2022-10-01,9:00,Lake Minnetonka,Windy,None,0,Artificial Lure,71.8,0.1
-2024-02-15,5:15,Lake Minnetonka,Windy,"Perch, Bluegill",7,Minnows,71.0,16.4
-2022-05-05,7:00,Boundary Waters,Hot,"Trout, Catfish, Bluegill",7,Worms,72.4,18.2
-2023-01-14,11:45,Boundary Waters,Rainy,None,0,Spinnerbait,61.6,7.4
+2023-09-07,7:30,Rainy Lake,Rainy,"Catfish, Perch, Trout",4,Artificial Lure,68.9,8.1
+2023-10-01,5:00,Lake Harriet,Sunny,"Bluegill, Perch",9,Worms,56.0,11.0
 2024-02-06,11:45,Lake Superior,Sunny,Trout,6,Crankbait,66.9,2.1
-2022-10-25,7:00,Lake Superior,Sunny,"Bluegill, Pike, Catfish",1,Worms,55.5,11.2
-2023-09-08,6:30,Rainy Lake,Rainy,"Pike, Perch",2,Minnows,56.2,17.3
-2022-05-16,6:15,Boundary Waters,Sunny,"Bluegill, Catfish, Perch",1,Artificial Lure,54.2,11.7
-2022-11-03,5:30,Lake Minnetonka,Windy,"Trout, Pike, Bluegill",4,Artificial Lure,69.1,0.9
+2023-02-22,9:00,Boundary Waters,Windy,"Trout, Bass",3,Worms,66.0,8.5
+2022-05-05,7:00,Boundary Waters,Hot,"Trout, Catfish, Bluegill",7,Worms,72.4,18.2
+2022-02-15,10:00,Lake Harriet,Cloudy,"Walleye, Pike, Perch",1,Minnows,70.1,3.3
+2022-05-11,7:45,Lake Harriet,Windy,"Pike, Bass",1,Spinnerbait,52.2,18.3
+2022-10-08,5:00,Lake Superior,Rainy,"Trout, Walleye, Pike",10,Spinnerbait,57.3,6.7
+2022-04-19,10:45,Lake Harriet,Cold,Pike,26,Artificial Lure,55.7,15.5
+2023-05-29,6:15,Boundary Waters,Sunny,"Trout, Pike, Bluegill",3,Minnows,60.3,5.5
+2022-04-07,8:30,Lake Minnetonka,Hot,"Bass, Trout",4,Crankbait,79.4,5.7
+2023-04-27,6:15,Boundary Waters,Hot,"Bass, Bluegill",5,Spinnerbait,59.3,16.7
+2022-04-14,5:15,Lake Minnetonka,Rainy,"Pike, Trout",10,Minnows,59.9,15.3
+2022-10-24,6:15,Lake Harriet,Hot,"Walleye, Bluegill",9,Artificial Lure,51.7,18.8
+2023-11-08,6:45,Lake Minnetonka,Hot,Walleye,3,Worms,57.4,10.6
+2023-09-18,10:30,Boundary Waters,Cloudy,"Walleye, Catfish, Pike",5,Minnows,54.8,15.2
+2023-03-03,7:15,Lake Harriet,Windy,"Catfish, Bass",10,Crankbait,77.3,2.9
+2022-12-08,9:15,Lake Harriet,Cloudy,"Bluegill, Walleye",10,Artificial Lure,53.0,12.4
+2022-07-19,6:15,Lake Harriet,Cold,"Trout, Catfish, Pike",1,Artificial Lure,64.7,5.1
+2023-01-24,9:15,Rainy Lake,Windy,"Bass, Pike",8,Minnows,59.5,1.3
+2022-12-25,8:45,Lake Superior,Hot,Pike,1,Spinnerbait,79.5,19.9
+2024-03-02,10:00,Boundary Waters,Sunny,Bluegill,8,Artificial Lure,58.7,18.9
+2023-03-17,8:00,Lake Harriet,Cold,"Perch, Walleye",5,Worms,64.5,9.2
+2024-05-26,10:30,Boundary Waters,Hot,"Pike, Trout, Bass",1,Spinnerbait,62.6,19.4
+2023-12-08,11:30,Lake Minnetonka,Sunny,Catfish,6,Artificial Lure,62.5,15.2
+2023-05-10,6:30,Lake Superior,Sunny,"Perch, Bluegill, Walleye",1,Crankbait,65.9,2.3
+2022-06-02,11:00,Rainy Lake,Windy,Trout,4,Crankbait,75.9,9.0
+2022-02-12,11:45,Boundary Waters,Hot,Walleye,8,Spinnerbait,56.0,10.4
+2022-01-13,9:00,Rainy Lake,Windy,"Walleye, Catfish",7,Artificial Lure,67.6,18.1
+2023-03-28,9:00,Lake Harriet,Sunny,"Catfish, Perch",6,Artificial Lure,63.0,8.9
+2022-11-02,7:00,Rainy Lake,Rainy,"Perch, Catfish, Bluegill",9,Crankbait,62.9,11.3
+2024-05-14,10:30,Boundary Waters,Windy,Trout,8,Worms,50.5,6.4
+2023-07-06,6:00,Lake Minnetonka,Cloudy,Bass,24,Artificial Lure,73.8,5.8
+2022-05-13,5:45,Lake Harriet,Rainy,"Bass, Trout",6,Crankbait,75.7,10.8
+2022-11-12,5:15,Boundary Waters,Cloudy,"Bluegill, Trout, Walleye",4,Spinnerbait,55.9,9.2
+2022-08-28,9:45,Lake Harriet,Sunny,"Perch, Catfish, Trout",7,Minnows,59.3,2.1
+2023-04-27,6:15,Lake Minnetonka,Cold,Pike,1,Crankbait,55.7,15.3
+2024-04-20,5:00,Lake Minnetonka,Cold,"Bass, Trout, Catfish",10,Artificial Lure,50.0,0.9
+2024-02-05,10:15,Lake Superior,Cloudy,Catfish,2,Spinnerbait,64.9,16.5
+2023-06-17,7:00,Lake Minnetonka,Windy,"Bluegill, Pike, Perch",3,Worms,56.0,19.2
+2022-07-15,11:15,Rainy Lake,Hot,Perch,9,Artificial Lure,79.1,3.3
+2022-11-28,8:45,Rainy Lake,Rainy,"Catfish, Perch, Trout",9,Worms,56.1,1.3
+2023-01-22,11:45,Boundary Waters,Windy,"Bass, Walleye",2,Worms,57.7,16.1
+2022-10-14,5:00,Lake Superior,Cloudy,Perch,3,Worms,63.3,10.4
+2024-01-01,8:45,Lake Minnetonka,Rainy,"Perch, Pike, Trout",10,Minnows,72.0,7.2
+2022-06-22,5:15,Rainy Lake,Cloudy,Trout,9,Worms,65.2,18.5
+2022-02-26,6:15,Rainy Lake,Windy,"Pike, Bluegill, Bass",9,Minnows,50.4,10.8
+2022-10-24,9:30,Lake Superior,Windy,Bluegill,2,Minnows,67.2,17.7
+2022-11-14,6:45,Rainy Lake,Hot,"Bass, Pike",8,Crankbait,66.8,17.8
+2024-02-09,8:00,Lake Superior,Cloudy,"Bass, Trout",7,Artificial Lure,79.1,13.4
+2023-06-18,6:45,Rainy Lake,Windy,"Bluegill, Bass, Trout",5,Artificial Lure,74.1,4.4
+2022-06-11,11:00,Lake Minnetonka,Sunny,"Bluegill, Walleye",6,Artificial Lure,77.2,11.7
+2022-07-16,7:45,Lake Harriet,Hot,"Trout, Bluegill",2,Worms,61.8,3.2
+2023-12-29,11:45,Lake Superior,Cloudy,"Bluegill, Catfish, Walleye",9,Minnows,57.5,1.9
+2024-03-09,8:30,Lake Superior,Windy,Perch,6,Minnows,53.7,16.0
 2023-07-27,9:15,Lake Superior,Hot,"Catfish, Perch, Bluegill",3,Crankbait,68.1,3.3
 2022-04-03,5:45,Rainy Lake,Windy,Walleye,8,Spinnerbait,55.2,15.6
-2024-04-29,8:45,Boundary Waters,Cold,Walleye,8,Crankbait,72.7,11.0
-2022-02-28,11:45,Lake Superior,Windy,"Catfish, Bluegill",8,Worms,76.0,13.2
-2023-02-01,6:00,Lake Harriet,Cloudy,Trout,3,Worms,65.7,17.8
-2023-05-10,6:30,Lake Superior,Sunny,"Perch, Bluegill, Walleye",1,Crankbait,65.9,2.3
-2022-08-07,9:00,Lake Superior,Cloudy,"Catfish, Perch, Walleye",8,Crankbait,79.1,3.2
-2024-01-11,7:15,Lake Harriet,Cloudy,"Pike, Bass",9,Crankbait,75.0,5.7
-2023-10-29,10:45,Lake Minnetonka,Hot,"Bass, Walleye, Catfish",10,Artificial Lure,50.5,4.7
-2024-03-21,5:00,Lake Superior,Windy,Bass,4,Spinnerbait,53.2,7.2
-2023-01-12,5:45,Lake Superior,Rainy,Bass,7,Spinnerbait,80.0,16.9
-2024-05-17,5:45,Boundary Waters,Rainy,Perch,3,Spinnerbait,63.5,13.5
-2022-06-11,11:00,Lake Minnetonka,Sunny,"Bluegill, Walleye",6,Artificial Lure,77.2,11.7
-2022-06-20,11:15,Rainy Lake,Cloudy,Trout,9,Artificial Lure,59.7,17.5
-2024-05-08,5:15,Boundary Waters,Sunny,Walleye,8,Minnows,59.2,2.3
-2022-05-20,8:15,Lake Harriet,Cloudy,"Catfish, Bluegill, Perch",1,Artificial Lure,71.5,11.2
-2023-03-04,11:30,Boundary Waters,Sunny,Pike,5,Crankbait,54.7,6.6
-2022-10-14,5:00,Lake Superior,Cloudy,Perch,3,Worms,63.3,10.4
-2023-03-15,6:30,Lake Superior,Cloudy,Bluegill,8,Worms,54.7,19.1
-2023-05-11,9:15,Boundary Waters,Windy,"Perch, Bluegill",9,Spinnerbait,71.1,0.7
-2022-05-14,8:45,Boundary Waters,Sunny,Perch,2,Minnows,51.4,6.7
-2024-03-09,8:30,Lake Superior,Windy,Perch,6,Minnows,53.7,16.0
-2022-02-22,8:15,Rainy Lake,Rainy,"Walleye, Perch, Bluegill",1,Minnows,60.4,17.8
-2022-09-02,6:00,Lake Harriet,Rainy,"Walleye, Catfish",6,Spinnerbait,56.0,9.6
-2024-02-05,10:15,Lake Superior,Cloudy,Catfish,2,Spinnerbait,64.9,16.5
-2024-03-14,9:30,Lake Minnetonka,Rainy,Catfish,5,Minnows,67.4,14.5
-2023-09-22,9:30,Boundary Waters,Hot,Perch,26,Worms,68.0,1.1
-2022-10-22,11:15,Rainy Lake,Cloudy,"Catfish, Trout",2,Artificial Lure,68.2,1.3
-2022-02-04,9:15,Boundary Waters,Sunny,"Bluegill, Catfish",1,Worms,77.5,5.4
-2023-03-08,10:30,Lake Superior,Rainy,"Pike, Walleye, Bass",2,Crankbait,54.4,1.6
-2022-06-22,9:30,Lake Minnetonka,Cloudy,"Catfish, Walleye",9,Spinnerbait,53.5,7.3
-2022-08-11,10:30,Lake Harriet,Rainy,"Catfish, Trout, Bluegill",4,Spinnerbait,65.5,0.1
-2023-09-15,11:45,Boundary Waters,Sunny,"Catfish, Pike, Perch",3,Spinnerbait,77.2,6.6
-2022-11-20,7:30,Boundary Waters,Hot,"Perch, Walleye",8,Minnows,55.1,9.9
-2022-08-24,8:30,Rainy Lake,Cloudy,Pike,1,Worms,73.9,2.5
-2023-05-29,6:15,Boundary Waters,Sunny,"Trout, Pike, Bluegill",3,Minnows,60.3,5.5
-2023-08-14,6:15,Lake Harriet,Hot,Perch,9,Worms,54.2,14.7
-2022-11-02,7:00,Rainy Lake,Rainy,"Perch, Catfish, Bluegill",9,Crankbait,62.9,11.3
-2023-05-21,11:45,Boundary Waters,Hot,Perch,6,Artificial Lure,50.2,8.4
-2023-03-03,10:45,Lake Superior,Cloudy,Trout,4,Artificial Lure,78.3,18.7
-2024-04-08,6:45,Rainy Lake,Sunny,"Bluegill, Walleye",7,Spinnerbait,66.3,5.6
-2022-09-09,11:45,Boundary Waters,Cold,Walleye,9,Spinnerbait,62.7,18.2
-2023-07-09,8:15,Lake Minnetonka,Hot,"Catfish, Walleye",1,Spinnerbait,56.6,13.1
-2023-11-20,9:15,Rainy Lake,Hot,"Trout, Bluegill",8,Spinnerbait,63.9,3.2
-2024-01-18,11:30,Boundary Waters,Hot,Bluegill,1,Crankbait,67.1,11.0
-2022-03-09,6:30,Lake Minnetonka,Hot,Bluegill,4,Artificial Lure,55.1,5.4
-2022-08-17,11:15,Rainy Lake,Rainy,Walleye,8,Worms,78.0,4.5
-2023-03-13,8:00,Boundary Waters,Windy,Pike,1,Worms,54.2,16.8
-2023-02-12,9:45,Rainy Lake,Sunny,"Trout, Catfish, Bluegill",4,Artificial Lure,70.1,12.5
-2022-10-17,5:00,Boundary Waters,Cold,"Perch, Walleye",7,Spinnerbait,54.7,15.4
-2022-02-01,7:30,Boundary Waters,Windy,"Pike, Bass",2,Artificial Lure,73.3,0.3
-2022-08-10,7:15,Lake Harriet,Cloudy,"Perch, Bluegill, Walleye",8,Artificial Lure,57.5,8.9
-2023-03-03,7:15,Lake Harriet,Windy,"Catfish, Bass",10,Crankbait,77.3,2.9
-2022-11-14,6:45,Rainy Lake,Hot,"Bass, Pike",8,Crankbait,66.8,17.8
-2022-05-27,7:45,Lake Superior,Rainy,"Walleye, Trout",8,Crankbait,54.6,1.0
-2024-01-01,8:45,Lake Harriet,Windy,Trout,6,Minnows,65.2,15.6
-2022-08-16,8:45,Rainy Lake,Cloudy,"Bluegill, Catfish",8,Minnows,78.8,8.6
-2024-01-17,10:00,Lake Superior,Cold,"Bass, Catfish, Trout",9,Crankbait,79.7,14.7
-2023-03-09,5:30,Lake Superior,Windy,Trout,4,Artificial Lure,52.8,16.7
-2022-12-19,6:30,Lake Superior,Cloudy,"Walleye, Perch, Trout",3,Minnows,71.5,19.3
-2022-11-11,7:45,Boundary Waters,Hot,"Bluegill, Bass",5,Minnows,74.4,16.7
-2022-02-13,10:00,Lake Harriet,Rainy,"Perch, Pike",2,Worms,75.3,4.8
-2024-01-21,11:45,Lake Minnetonka,Cloudy,"Walleye, Catfish, Pike",9,Minnows,77.1,7.4
-2022-11-29,6:30,Rainy Lake,Cloudy,Perch,5,Artificial Lure,71.3,7.4
-2024-01-08,6:30,Rainy Lake,Rainy,Bluegill,10,Crankbait,61.2,13.1
-2024-04-08,11:30,Rainy Lake,Rainy,"Catfish, Pike, Perch",1,Minnows,53.1,13.8
-2022-10-24,6:15,Lake Harriet,Hot,"Walleye, Bluegill",9,Artificial Lure,51.7,18.8
-2024-05-07,6:00,Boundary Waters,Rainy,Catfish,5,Minnows,79.5,13.4
-2024-06-04,10:00,Lake Superior,Hot,Pike,9,Artificial Lure,58.6,6.9
-2022-06-01,5:00,Lake Minnetonka,Cold,Perch,2,Spinnerbait,56.4,2.0
-2023-09-02,5:45,Lake Minnetonka,Sunny,Walleye,26,Minnows,71.7,9.8
-2023-08-21,7:45,Rainy Lake,Windy,Catfish,2,Spinnerbait,56.7,12.1
-2022-07-14,5:30,Lake Minnetonka,Rainy,Perch,9,Worms,59.0,13.7
-2022-08-02,7:30,Boundary Waters,Hot,Pike,9,Artificial Lure,63.6,0.9
-2022-11-14,11:45,Lake Minnetonka,Sunny,Bluegill,5,Worms,51.0,15.2
-2022-09-10,7:30,Lake Superior,Sunny,"Pike, Bass, Walleye",1,Minnows,77.5,10.7
-2024-02-22,7:00,Lake Minnetonka,Hot,"Catfish, Perch",1,Minnows,68.5,4.9
-2022-07-15,11:15,Rainy Lake,Hot,Perch,9,Artificial Lure,79.1,3.3
-2022-05-15,5:45,Rainy Lake,Cold,"Pike, Bluegill",2,Worms,57.6,0.3
-2023-09-12,10:45,Lake Minnetonka,Hot,"Perch, Trout, Bluegill",1,Artificial Lure,66.5,13.4
-2022-07-07,6:15,Lake Superior,Sunny,"Catfish, Walleye",5,Spinnerbait,78.4,15.1
-2022-01-29,6:00,Lake Minnetonka,Rainy,"Bass, Perch",2,Crankbait,63.9,16.2
-2022-05-19,11:30,Lake Superior,Hot,"Catfish, Perch",9,Minnows,62.7,16.5
-2024-06-16,11:15,Lake Harriet,Cloudy,"Trout, Catfish, Walleye",1,Spinnerbait,55.1,17.1
-2022-10-14,9:15,Boundary Waters,Windy,Walleye,6,Spinnerbait,51.6,0.1
-2022-08-04,7:45,Lake Minnetonka,Sunny,Bluegill,2,Crankbait,66.2,7.5
-2022-01-23,7:30,Lake Minnetonka,Cloudy,"Trout, Catfish",4,Spinnerbait,55.8,3.8
-2023-05-14,8:30,Lake Minnetonka,Hot,"Walleye, Bluegill, Catfish",5,Worms,74.9,10.0
-2022-09-12,11:15,Rainy Lake,Sunny,"Pike, Walleye",8,Crankbait,60.5,6.0
-2024-06-09,7:45,Lake Minnetonka,Rainy,"Trout, Catfish",6,Worms,57.7,3.7
-2024-04-09,11:00,Lake Superior,Cold,"Walleye, Pike",5,Crankbait,55.0,1.5
-2022-11-12,5:15,Boundary Waters,Cloudy,"Bluegill, Trout, Walleye",4,Spinnerbait,55.9,9.2
-2022-01-07,10:00,Rainy Lake,Cold,Perch,10,Worms,76.1,17.0
-2024-01-30,10:45,Lake Minnetonka,Cloudy,None,0,Crankbait,68.6,1.6
-2022-09-26,6:30,Lake Superior,Cold,None,0,Spinnerbait,78.2,0.5
-2023-04-18,6:00,Boundary Waters,Sunny,Bluegill,23,Worms,58.3,18.4
-2024-05-25,5:15,Lake Minnetonka,Windy,"Perch, Trout, Bass",3,Worms,79.7,5.6
-2022-07-17,7:00,Lake Superior,Cold,"Pike, Trout, Walleye",6,Worms,79.6,14.1
-2022-02-26,6:15,Rainy Lake,Windy,"Pike, Bluegill, Bass",9,Minnows,50.4,10.8
-2023-10-19,9:30,Rainy Lake,Cloudy,Perch,3,Worms,72.5,10.6
-2023-02-21,9:30,Rainy Lake,Sunny,"Pike, Catfish",6,Spinnerbait,70.0,8.6
-2023-07-01,5:30,Lake Superior,Hot,Pike,8,Artificial Lure,65.7,0.2
-2022-02-03,8:15,Boundary Waters,Cloudy,"Bluegill, Catfish, Pike",2,Artificial Lure,74.5,3.2
-2024-02-17,10:30,Rainy Lake,Windy,Pike,9,Minnows,75.4,4.0
-2024-04-13,5:15,Rainy Lake,Cloudy,Perch,5,Worms,66.4,0.3
-2022-10-04,9:30,Lake Harriet,Rainy,Trout,2,Crankbait,67.8,5.9
-2023-12-24,9:00,Rainy Lake,Hot,"Catfish, Bass",2,Worms,51.8,12.4
-2023-01-22,5:45,Rainy Lake,Cold,"Perch, Bass, Walleye",9,Worms,65.7,13.7
-2023-02-18,11:15,Lake Harriet,Sunny,Catfish,9,Spinnerbait,69.4,0.4
-2024-06-18,5:00,Lake Minnetonka,Windy,"Bass, Pike",3,Worms,72.5,4.5
-2023-09-19,8:15,Boundary Waters,Rainy,"Trout, Bass",7,Artificial Lure,50.6,0.3
-2022-01-18,11:00,Lake Minnetonka,Hot,"Perch, Catfish, Trout",9,Crankbait,58.6,15.5
-2023-04-27,6:15,Boundary Waters,Hot,"Bass, Bluegill",5,Spinnerbait,59.3,16.7
-2024-05-29,11:30,Lake Superior,Sunny,"Trout, Perch",10,Artificial Lure,63.3,15.4
-2024-04-20,5:00,Lake Minnetonka,Cold,"Bass, Trout, Catfish",10,Artificial Lure,50.0,0.9
-2022-10-04,7:00,Lake Superior,Cold,"Trout, Bass",7,Minnows,74.4,2.2
-2024-05-08,8:00,Lake Superior,Rainy,"Perch, Bass",6,Minnows,67.7,6.3
-2023-05-31,8:00,Lake Harriet,Windy,Catfish,6,Artificial Lure,67.0,3.7
-2024-06-10,7:30,Rainy Lake,Rainy,Perch,3,Crankbait,57.9,13.8
-2023-02-22,9:30,Rainy Lake,Rainy,"Perch, Bluegill",1,Worms,73.6,11.2
-2022-10-08,5:00,Lake Superior,Rainy,"Trout, Walleye, Pike",10,Spinnerbait,57.3,6.7
-2023-03-16,5:00,Lake Minnetonka,Sunny,None,0,Worms,57.9,5.7
-2022-09-07,7:45,Lake Minnetonka,Rainy,"Catfish, Trout",6,Worms,68.3,14.2
-2023-03-31,10:45,Lake Harriet,Hot,"Trout, Bass",9,Worms,52.2,19.2
-2022-02-01,11:15,Lake Minnetonka,Rainy,"Catfish, Bluegill",8,Crankbait,67.1,0.9
-2023-02-21,11:15,Lake Harriet,Hot,"Bass, Bluegill",9,Artificial Lure,60.0,18.4
-2023-12-25,10:30,Boundary Waters,Cold,Walleye,2,Worms,58.8,6.9
-2022-11-21,11:45,Rainy Lake,Rainy,Trout,5,Spinnerbait,61.6,11.9
-2023-12-23,9:30,Lake Minnetonka,Sunny,"Perch, Trout",9,Spinnerbait,77.9,17.2
-2024-04-01,5:15,Lake Harriet,Sunny,"Bass, Trout",33,Crankbait,70.0,0.4
+2022-06-14,10:00,Boundary Waters,Hot,Pike,2,Spinnerbait,53.1,5.5
 2024-02-28,6:30,Lake Minnetonka,Sunny,"Bluegill, Bass",3,Worms,74.7,11.1
-2024-02-10,5:45,Lake Minnetonka,Hot,"Bluegill, Catfish, Perch",10,Spinnerbait,62.5,9.3
-2024-04-12,8:45,Rainy Lake,Sunny,"Trout, Walleye, Catfish",5,Artificial Lure,55.1,18.0
-2022-05-06,8:30,Lake Harriet,Sunny,"Trout, Catfish, Walleye",9,Worms,72.9,3.3
-2023-05-17,7:00,Rainy Lake,Windy,"Trout, Catfish",1,Crankbait,61.4,11.0
-2023-03-16,8:45,Boundary Waters,Cold,"Bass, Bluegill, Walleye",2,Artificial Lure,68.4,16.6
-2024-05-10,7:30,Boundary Waters,Sunny,Bass,9,Artificial Lure,56.8,10.7
-2023-06-21,8:30,Rainy Lake,Sunny,"Walleye, Perch, Bluegill",6,Minnows,54.9,4.7
-2022-01-29,9:45,Boundary Waters,Cloudy,"Trout, Pike",2,Artificial Lure,76.6,13.9
-2022-10-17,7:30,Lake Harriet,Hot,"Catfish, Perch, Trout",1,Worms,72.1,2.1
-2022-07-01,8:30,Boundary Waters,Hot,"Catfish, Bluegill",5,Worms,75.7,3.4
-2023-07-21,7:30,Lake Minnetonka,Rainy,"Bass, Bluegill, Perch",9,Artificial Lure,70.9,18.5
-2024-01-16,8:15,Lake Minnetonka,Cold,"Perch, Bluegill",2,Worms,51.0,18.1
-2023-06-09,5:15,Lake Superior,Rainy,"Walleye, Pike, Bass",4,Worms,72.0,2.5
-2023-11-16,5:00,Rainy Lake,Cold,Bass,27,Worms,77.3,3.5
-2023-12-12,9:30,Lake Harriet,Cloudy,"Bass, Perch, Catfish",6,Artificial Lure,54.1,12.7
-2023-12-26,5:15,Lake Minnetonka,Hot,None,0,Worms,72.8,18.1
-2024-04-16,10:45,Lake Superior,Hot,"Trout, Catfish, Walleye",8,Worms,66.6,7.3
-2023-05-28,7:00,Lake Harriet,Windy,"Pike, Bluegill, Bass",7,Spinnerbait,67.5,7.0
-2022-07-24,9:30,Lake Minnetonka,Hot,Trout,10,Minnows,65.4,6.4
-2022-10-28,10:30,Lake Harriet,Sunny,Walleye,9,Artificial Lure,67.1,3.3
-2022-06-27,9:15,Rainy Lake,Cold,"Trout, Walleye, Bass",2,Worms,53.6,15.7
-2022-09-14,8:45,Lake Harriet,Windy,Perch,7,Crankbait,75.8,7.3
-2023-10-01,5:00,Lake Harriet,Sunny,"Bluegill, Perch",9,Worms,56.0,11.0
-2023-05-17,7:30,Boundary Waters,Hot,"Bass, Walleye",7,Spinnerbait,55.7,13.1
-2022-10-24,9:30,Lake Superior,Windy,Bluegill,2,Minnows,67.2,17.7
-2023-09-21,11:45,Rainy Lake,Hot,"Catfish, Bluegill",2,Minnows,58.7,6.6
-2022-03-27,11:15,Rainy Lake,Cold,Trout,4,Worms,58.1,18.1
-2023-06-28,9:45,Boundary Waters,Hot,"Bluegill, Walleye",1,Artificial Lure,71.5,5.4
-2022-03-10,8:30,Boundary Waters,Hot,Bass,10,Crankbait,70.6,1.0
-2022-11-12,8:30,Lake Harriet,Cold,"Bluegill, Pike, Trout",10,Crankbait,54.0,10.7
-2024-04-25,10:45,Lake Minnetonka,Sunny,"Walleye, Bluegill",4,Worms,68.2,0.7
-2022-06-05,5:15,Rainy Lake,Hot,"Walleye, Bass, Catfish",3,Minnows,56.3,15.7
-2022-12-10,7:30,Lake Superior,Rainy,Perch,1,Spinnerbait,72.8,9.1
-2023-02-08,8:45,Rainy Lake,Cloudy,Trout,4,Spinnerbait,72.9,5.2
-2023-09-17,8:00,Lake Minnetonka,Hot,"Bass, Walleye, Trout",7,Crankbait,53.2,6.0
-2023-05-24,7:45,Lake Superior,Cloudy,"Trout, Bass, Perch",6,Artificial Lure,75.9,14.8
-2023-04-05,6:45,Lake Superior,Windy,Bass,2,Minnows,68.0,13.1
-2022-03-30,7:15,Lake Minnetonka,Windy,"Trout, Perch",5,Minnows,61.5,19.8
-2022-05-24,7:15,Lake Minnetonka,Sunny,Bass,3,Worms,79.1,14.9
-2022-04-12,7:00,Lake Superior,Cloudy,"Bluegill, Walleye, Trout",10,Spinnerbait,53.4,19.6
-2024-04-19,11:00,Lake Minnetonka,Windy,"Catfish, Bass, Trout",10,Minnows,51.4,5.0
-2024-03-26,11:30,Boundary Waters,Cloudy,"Pike, Catfish",8,Crankbait,61.4,5.3
-2022-10-26,7:15,Lake Superior,Sunny,"Catfish, Bluegill, Bass",4,Minnows,57.2,4.0
-2024-02-16,6:15,Rainy Lake,Hot,"Perch, Bass, Bluegill",5,Crankbait,57.8,2.5
-2023-07-15,9:00,Lake Superior,Cloudy,Perch,4,Crankbait,73.1,12.1
-2023-03-19,10:00,Rainy Lake,Cloudy,"Perch, Trout, Bass",6,Worms,55.3,6.4
-2024-06-10,9:45,Rainy Lake,Cloudy,"Trout, Bluegill",9,Spinnerbait,55.6,19.1
-2022-12-17,11:00,Lake Superior,Windy,Pike,1,Crankbait,62.6,8.4
-2023-01-15,5:15,Boundary Waters,Cold,Trout,10,Artificial Lure,71.8,13.3
-2022-08-15,8:00,Lake Harriet,Rainy,Pike,21,Crankbait,65.4,2.7
-2024-01-15,11:00,Boundary Waters,Cloudy,"Walleye, Bass, Bluegill",7,Worms,78.3,7.9
-2023-12-28,11:00,Rainy Lake,Cold,Perch,8,Artificial Lure,61.7,4.6
-2024-01-20,6:30,Lake Superior,Windy,"Trout, Walleye",1,Crankbait,66.4,17.7
-2022-09-12,7:45,Boundary Waters,Windy,"Perch, Walleye",4,Artificial Lure,52.5,6.4
-2024-05-18,11:30,Lake Superior,Rainy,Walleye,2,Spinnerbait,72.4,3.0
-2022-01-10,10:30,Lake Superior,Rainy,"Walleye, Bluegill, Perch",8,Minnows,52.4,12.5
-2023-06-15,11:30,Lake Harriet,Rainy,"Bluegill, Walleye, Perch",6,Minnows,50.7,12.1
-2022-08-30,6:30,Lake Superior,Cold,"Walleye, Pike",34,Worms,64.5,12.1
-2023-09-27,7:00,Lake Minnetonka,Cold,"Catfish, Bluegill",3,Minnows,68.7,16.2
-2024-02-19,11:30,Lake Superior,Windy,Pike,9,Spinnerbait,50.4,9.5
-2023-02-20,9:30,Lake Superior,Hot,"Trout, Catfish, Bluegill",31,Crankbait,52.5,15.3
-2023-10-20,6:15,Boundary Waters,Hot,"Perch, Trout, Bluegill",10,Artificial Lure,55.7,6.5
-2022-03-08,10:15,Lake Harriet,Sunny,Perch,9,Artificial Lure,61.0,13.8
-2023-10-05,10:00,Lake Superior,Hot,"Trout, Bluegill",4,Worms,74.9,16.0
-2024-04-20,9:30,Lake Minnetonka,Windy,"Trout, Bass",8,Spinnerbait,58.8,17.3
-2022-04-14,5:15,Lake Minnetonka,Rainy,"Pike, Trout",10,Minnows,59.9,15.3
-2022-07-16,8:30,Lake Superior,Cloudy,"Bluegill, Bass",31,Crankbait,52.7,6.6
-2022-09-18,8:15,Boundary Waters,Sunny,"Bluegill, Pike",3,Crankbait,60.9,11.2
-2024-04-07,5:45,Lake Minnetonka,Sunny,Perch,4,Artificial Lure,54.8,5.7
-2022-02-03,8:00,Lake Superior,Cold,"Bluegill, Pike, Catfish",9,Crankbait,54.9,8.2
-2023-06-05,11:00,Boundary Waters,Windy,"Walleye, Perch, Bass",3,Spinnerbait,70.5,6.0
-2024-06-14,11:45,Lake Harriet,Rainy,Pike,3,Worms,54.6,9.9
-2022-04-18,6:30,Rainy Lake,Cold,"Catfish, Bass",2,Crankbait,72.6,19.7
-2024-03-06,6:15,Lake Minnetonka,Cloudy,"Catfish, Walleye",6,Artificial Lure,68.6,1.7
-2023-02-13,8:45,Rainy Lake,Cloudy,"Trout, Bluegill, Perch",20,Crankbait,68.6,3.1
-2024-04-30,10:45,Rainy Lake,Sunny,None,0,Artificial Lure,75.7,11.2
-2022-06-05,8:15,Lake Superior,Cloudy,"Perch, Catfish",1,Minnows,55.1,5.0
-2023-12-29,11:45,Lake Superior,Cloudy,"Bluegill, Catfish, Walleye",9,Minnows,57.5,1.9
-2023-06-09,9:45,Rainy Lake,Windy,None,0,Artificial Lure,61.5,8.8
-2023-07-29,8:15,Rainy Lake,Cloudy,"Bluegill, Bass, Trout",1,Worms,79.3,4.4
-2022-05-31,7:45,Lake Harriet,Sunny,Trout,29,Worms,52.6,12.0
-2023-04-27,5:00,Lake Superior,Windy,"Perch, Catfish",4,Crankbait,57.6,10.3
-2023-06-25,7:30,Lake Minnetonka,Hot,"Bass, Bluegill, Perch",1,Crankbait,63.6,11.6
-2023-10-27,6:30,Lake Harriet,Sunny,"Trout, Pike, Catfish",31,Artificial Lure,69.3,18.7
-2022-11-18,8:30,Lake Minnetonka,Cold,None,0,Spinnerbait,75.8,12.8
-2022-03-11,5:15,Lake Harriet,Hot,Trout,2,Minnows,55.3,1.5
-2022-07-29,10:45,Rainy Lake,Rainy,"Bass, Catfish, Trout",2,Worms,69.8,10.9
-2022-08-28,9:45,Lake Harriet,Sunny,"Perch, Catfish, Trout",7,Minnows,59.3,2.1
-2023-04-07,5:45,Lake Superior,Hot,"Bluegill, Catfish, Trout",5,Minnows,61.9,18.8
-2022-02-10,9:45,Lake Minnetonka,Cold,"Bluegill, Pike, Trout",9,Spinnerbait,75.3,1.2
-2023-10-06,6:15,Rainy Lake,Cloudy,Trout,9,Spinnerbait,71.6,9.7
-2023-02-21,10:30,Lake Superior,Cloudy,None,0,Artificial Lure,72.6,12.4
-2023-03-23,8:45,Rainy Lake,Cold,"Bluegill, Bass",4,Worms,59.9,0.9
-2022-05-13,5:45,Lake Harriet,Rainy,"Bass, Trout",6,Crankbait,75.7,10.8
-2022-12-27,9:00,Boundary Waters,Cold,Walleye,3,Spinnerbait,75.5,1.3
-2023-04-27,6:15,Lake Minnetonka,Cold,Pike,1,Crankbait,55.7,15.3
-2022-10-20,9:15,Boundary Waters,Cloudy,"Pike, Perch",2,Artificial Lure,71.5,2.8
-2022-10-25,9:45,Rainy Lake,Cloudy,"Pike, Perch, Catfish",8,Spinnerbait,55.4,11.3
-2022-02-24,11:00,Lake Minnetonka,Hot,"Walleye, Bluegill, Catfish",1,Minnows,61.9,4.7
-2023-04-12,9:30,Boundary Waters,Cold,"Bluegill, Bass",10,Spinnerbait,66.3,19.9
-2023-09-14,6:15,Rainy Lake,Cloudy,"Perch, Bluegill, Bass",10,Worms,52.4,16.3
-2024-04-16,10:45,Lake Superior,Sunny,Perch,9,Spinnerbait,66.1,0.8
-2023-06-10,5:15,Boundary Waters,Cold,"Pike, Bluegill",10,Spinnerbait,62.7,0.6
-2022-06-22,5:15,Rainy Lake,Cloudy,Trout,9,Worms,65.2,18.5
-2023-08-12,7:45,Boundary Waters,Sunny,"Perch, Walleye, Bass",9,Artificial Lure,72.0,19.3
+2024-01-22,10:30,Lake Minnetonka,Cloudy,"Catfish, Walleye, Pike",8,Crankbait,53.4,18.9
 2023-12-16,6:15,Lake Superior,Cold,"Perch, Catfish, Walleye",3,Worms,62.5,13.8
-2024-01-04,5:15,Lake Superior,Hot,Trout,7,Artificial Lure,67.0,19.6
-2022-03-31,7:30,Lake Minnetonka,Rainy,None,0,Worms,63.0,13.2
+2022-07-18,9:45,Rainy Lake,Sunny,"Pike, Trout, Perch",1,Crankbait,76.0,9.0
+2024-02-17,10:30,Rainy Lake,Windy,Pike,9,Minnows,75.4,4.0
+2023-10-21,8:00,Lake Harriet,Windy,"Bass, Catfish",4,Crankbait,53.9,4.9
 2022-12-16,9:30,Rainy Lake,Cloudy,Trout,1,Spinnerbait,58.5,14.7
-2023-12-08,11:30,Lake Minnetonka,Sunny,Catfish,6,Artificial Lure,62.5,15.2
-2024-05-15,6:15,Lake Minnetonka,Sunny,"Catfish, Bass, Perch",7,Crankbait,62.7,6.8
-2023-04-22,9:30,Boundary Waters,Sunny,"Walleye, Pike",4,Minnows,59.0,5.1
+2022-02-13,10:00,Lake Harriet,Rainy,"Perch, Pike",2,Worms,75.3,4.8
+2024-04-08,6:45,Rainy Lake,Sunny,"Bluegill, Walleye",7,Spinnerbait,66.3,5.6
+2022-08-05,6:15,Lake Superior,Cloudy,Catfish,5,Spinnerbait,70.3,2.7
+2022-11-20,7:30,Boundary Waters,Hot,"Perch, Walleye",8,Minnows,55.1,9.9
+2023-10-06,6:15,Rainy Lake,Cloudy,Trout,9,Spinnerbait,71.6,9.7
+2022-12-31,11:15,Lake Superior,Sunny,"Walleye, Catfish, Perch",9,Minnows,60.3,9.8
+2023-12-09,10:30,Boundary Waters,Cold,Walleye,9,Artificial Lure,57.8,6.8
+2023-12-02,10:30,Lake Harriet,Cloudy,"Walleye, Trout, Bass",7,Artificial Lure,78.1,17.4
+2023-04-06,10:15,Lake Superior,Hot,Walleye,8,Spinnerbait,69.3,8.9
+2024-05-11,6:30,Boundary Waters,Cloudy,"Trout, Perch",5,Minnows,65.4,4.0
+2023-12-16,7:15,Lake Harriet,Sunny,"Bass, Trout",1,Crankbait,59.5,16.4
+2023-05-28,7:00,Lake Harriet,Windy,"Pike, Bluegill, Bass",7,Spinnerbait,67.5,7.0
+2023-07-17,9:45,Rainy Lake,Hot,"Catfish, Bass",9,Minnows,66.0,5.9
+2022-10-13,6:45,Lake Harriet,Rainy,"Trout, Walleye, Pike",7,Crankbait,71.7,13.3
+2023-12-24,9:00,Rainy Lake,Hot,"Catfish, Bass",2,Worms,51.8,12.4
+2023-04-24,8:30,Lake Minnetonka,Hot,Perch,4,Spinnerbait,56.4,10.9
+2022-01-09,6:30,Rainy Lake,Cold,"Walleye, Trout, Pike",8,Worms,53.5,15.4
+2024-06-09,7:45,Lake Minnetonka,Rainy,"Trout, Catfish",6,Worms,57.7,3.7
+2023-04-27,5:00,Lake Superior,Windy,"Perch, Catfish",4,Crankbait,57.6,10.3
+2022-01-28,9:45,Rainy Lake,Windy,"Perch, Bass, Bluegill",4,Spinnerbait,74.7,2.1
+2023-07-01,5:30,Rainy Lake,Cloudy,"Catfish, Bluegill",8,Minnows,50.3,7.9
+2023-09-27,7:00,Lake Minnetonka,Cold,"Catfish, Bluegill",3,Minnows,68.7,16.2
+2023-02-21,11:15,Lake Harriet,Hot,"Bass, Bluegill",9,Artificial Lure,60.0,18.4
+2024-01-11,7:15,Lake Harriet,Cloudy,"Pike, Bass",9,Crankbait,75.0,5.7
+2023-12-19,9:30,Lake Harriet,Hot,"Trout, Pike, Perch",9,Worms,55.2,4.7
+2022-07-16,8:30,Lake Superior,Cloudy,"Bluegill, Bass",31,Crankbait,52.7,6.6
+2024-04-12,8:45,Rainy Lake,Sunny,"Trout, Walleye, Catfish",5,Artificial Lure,55.1,18.0
+2024-04-16,10:45,Lake Superior,Hot,"Trout, Catfish, Walleye",8,Worms,66.6,7.3
+2023-06-05,11:00,Boundary Waters,Windy,"Walleye, Perch, Bass",3,Spinnerbait,70.5,6.0
+2023-01-31,5:15,Lake Minnetonka,Rainy,"Catfish, Bluegill, Bass",10,Crankbait,57.6,4.2
+2022-06-05,5:15,Rainy Lake,Hot,"Walleye, Bass, Catfish",3,Minnows,56.3,15.7
+2022-02-21,9:30,Lake Minnetonka,Hot,"Pike, Bass",6,Minnows,72.0,0.5
+2022-03-09,6:30,Lake Minnetonka,Hot,Bluegill,4,Artificial Lure,55.1,5.4
+2024-01-24,7:00,Lake Superior,Sunny,"Perch, Pike, Catfish",9,Artificial Lure,61.7,8.5
+2023-09-17,8:00,Lake Minnetonka,Hot,"Bass, Walleye, Trout",7,Crankbait,53.2,6.0
+2023-05-31,11:45,Boundary Waters,Cold,Walleye,6,Spinnerbait,51.2,3.7
+2022-09-18,8:15,Boundary Waters,Sunny,"Bluegill, Pike",3,Crankbait,60.9,11.2
+2022-02-22,11:45,Rainy Lake,Rainy,"Catfish, Perch",21,Worms,73.2,7.5
+2022-07-01,8:30,Boundary Waters,Hot,"Catfish, Bluegill",5,Worms,75.7,3.4
+2022-12-10,7:30,Lake Superior,Rainy,Perch,1,Spinnerbait,72.8,9.1
+2024-04-16,10:45,Lake Superior,Sunny,Perch,9,Spinnerbait,66.1,0.8
+2022-11-03,5:30,Lake Minnetonka,Windy,"Trout, Pike, Bluegill",4,Artificial Lure,69.1,0.9
+2024-05-22,5:15,Lake Minnetonka,Cold,"Bass, Catfish",8,Worms,53.8,12.8
+2022-01-23,7:30,Lake Minnetonka,Cloudy,"Trout, Catfish",4,Spinnerbait,55.8,3.8
+2023-06-07,11:30,Boundary Waters,Cold,Bass,1,Crankbait,76.2,1.8
+2022-05-29,11:45,Lake Harriet,Windy,Perch,7,Spinnerbait,55.0,14.3
+2023-08-05,6:30,Lake Minnetonka,Windy,"Walleye, Catfish",7,Minnows,67.0,2.4
+2024-01-16,8:15,Lake Minnetonka,Cold,"Perch, Bluegill",2,Worms,51.0,18.1
+2023-08-31,7:30,Lake Minnetonka,Hot,"Pike, Bass, Bluegill",3,Crankbait,79.2,7.1
+2023-02-21,10:30,Lake Superior,Cloudy,None,0,Artificial Lure,72.6,12.4
+2023-03-31,10:45,Lake Harriet,Hot,"Trout, Bass",9,Worms,52.2,19.2
+2022-01-07,10:00,Rainy Lake,Cold,Perch,10,Worms,76.1,17.0
+2022-09-12,11:15,Rainy Lake,Sunny,"Pike, Walleye",8,Crankbait,60.5,6.0
+2022-02-01,11:15,Lake Minnetonka,Rainy,"Catfish, Bluegill",8,Crankbait,67.1,0.9
+2022-12-17,11:00,Lake Superior,Windy,Pike,1,Crankbait,62.6,8.4
+2024-03-11,11:15,Lake Superior,Sunny,Catfish,5,Worms,70.8,15.1
+2023-08-14,6:15,Lake Harriet,Hot,Perch,9,Worms,54.2,14.7
+2023-05-30,6:15,Lake Superior,Hot,"Trout, Bluegill, Walleye",3,Spinnerbait,75.9,7.7
+2023-01-15,5:15,Boundary Waters,Cold,Trout,10,Artificial Lure,71.8,13.3
+2022-08-16,8:45,Rainy Lake,Cloudy,"Bluegill, Catfish",8,Minnows,78.8,8.6
+2022-04-18,6:30,Rainy Lake,Cold,"Catfish, Bass",2,Crankbait,72.6,19.7
+2023-05-13,9:30,Lake Minnetonka,Hot,"Perch, Bass",6,Crankbait,76.4,17.2
+2023-11-16,5:00,Rainy Lake,Cold,Bass,27,Worms,77.3,3.5
+2022-04-08,10:45,Lake Minnetonka,Hot,"Bluegill, Perch",2,Spinnerbait,66.0,19.5
+2024-04-29,8:45,Boundary Waters,Cold,Walleye,8,Crankbait,72.7,11.0
+2023-07-25,6:30,Lake Minnetonka,Hot,"Perch, Bass, Catfish",4,Spinnerbait,79.1,0.8
+2024-02-22,7:00,Lake Minnetonka,Hot,"Catfish, Perch",1,Minnows,68.5,4.9
+2023-10-22,6:00,Lake Superior,Sunny,"Catfish, Pike, Walleye",7,Spinnerbait,50.2,5.3
+2023-09-15,11:45,Boundary Waters,Sunny,"Catfish, Pike, Perch",3,Spinnerbait,77.2,6.6
+2022-11-18,8:30,Lake Minnetonka,Cold,None,0,Spinnerbait,75.8,12.8
+2023-03-16,8:45,Boundary Waters,Cold,"Bass, Bluegill, Walleye",2,Artificial Lure,68.4,16.6
+2022-03-27,11:15,Rainy Lake,Cold,Trout,4,Worms,58.1,18.1
+2023-05-24,10:30,Lake Superior,Cold,Trout,10,Artificial Lure,60.9,18.6
+2023-05-24,7:45,Lake Superior,Cloudy,"Trout, Bass, Perch",6,Artificial Lure,75.9,14.8
+2023-06-09,9:45,Rainy Lake,Windy,None,0,Artificial Lure,61.5,8.8
+2022-08-22,10:30,Boundary Waters,Cold,"Walleye, Catfish",2,Spinnerbait,58.3,7.9
+2023-01-05,10:15,Lake Minnetonka,Cloudy,"Bluegill, Bass, Walleye",2,Minnows,51.1,11.7
+2023-12-07,10:45,Lake Superior,Cold,"Pike, Bluegill",5,Spinnerbait,50.6,11.4
+2023-01-14,11:45,Boundary Waters,Rainy,None,0,Spinnerbait,61.6,7.4
+2022-11-29,6:30,Rainy Lake,Cloudy,Perch,5,Artificial Lure,71.3,7.4
+2023-07-01,5:30,Lake Superior,Hot,Pike,8,Artificial Lure,65.7,0.2
+2022-05-31,7:45,Lake Harriet,Sunny,Trout,29,Worms,52.6,12.0
+2022-12-24,5:15,Lake Minnetonka,Windy,"Bluegill, Trout",6,Spinnerbait,71.8,5.7
+2023-02-21,9:30,Rainy Lake,Sunny,"Pike, Catfish",6,Spinnerbait,70.0,8.6
+2022-09-28,10:45,Rainy Lake,Cloudy,Bluegill,8,Crankbait,56.0,18.3
+2023-05-10,10:45,Boundary Waters,Hot,"Trout, Pike, Walleye",7,Worms,78.3,4.7
+2023-05-11,9:15,Boundary Waters,Windy,"Perch, Bluegill",9,Spinnerbait,71.1,0.7
+2024-05-15,7:15,Lake Harriet,Windy,"Bluegill, Trout, Walleye",3,Worms,53.5,7.6
+2022-02-23,9:15,Rainy Lake,Hot,"Bluegill, Bass, Catfish",5,Spinnerbait,55.8,9.3
+2023-03-24,9:45,Boundary Waters,Sunny,"Pike, Walleye",9,Artificial Lure,78.3,19.3
+2022-04-26,6:00,Boundary Waters,Rainy,Trout,10,Spinnerbait,57.8,10.8
+2024-02-05,10:45,Boundary Waters,Hot,"Bluegill, Perch",3,Worms,62.4,15.9
+2023-09-14,6:15,Rainy Lake,Cloudy,"Perch, Bluegill, Bass",10,Worms,52.4,16.3
+2023-06-10,5:15,Boundary Waters,Cold,"Pike, Bluegill",10,Spinnerbait,62.7,0.6
+2024-05-24,10:00,Lake Harriet,Rainy,"Bass, Perch",2,Artificial Lure,62.1,9.9
+2023-03-08,10:30,Lake Superior,Rainy,"Pike, Walleye, Bass",2,Crankbait,54.4,1.6
+2023-10-05,8:30,Lake Minnetonka,Cloudy,"Walleye, Bluegill",10,Minnows,73.6,15.1
+2024-05-17,5:45,Boundary Waters,Rainy,Perch,3,Spinnerbait,63.5,13.5
+2024-01-08,6:30,Rainy Lake,Rainy,Bluegill,10,Crankbait,61.2,13.1
+2024-02-10,5:45,Lake Minnetonka,Hot,"Bluegill, Catfish, Perch",10,Spinnerbait,62.5,9.3
+2023-06-15,11:30,Lake Harriet,Rainy,"Bluegill, Walleye, Perch",6,Minnows,50.7,12.1
+2023-06-28,9:45,Boundary Waters,Hot,"Bluegill, Walleye",1,Artificial Lure,71.5,5.4
+2023-12-25,10:30,Boundary Waters,Cold,Walleye,2,Worms,58.8,6.9
+2024-03-19,9:00,Lake Superior,Hot,None,0,Minnows,73.0,7.8
+2023-09-19,8:15,Boundary Waters,Rainy,"Trout, Bass",7,Artificial Lure,50.6,0.3
+2022-03-11,5:15,Lake Harriet,Hot,Trout,2,Minnows,55.3,1.5
+2023-06-27,5:45,Rainy Lake,Cold,Perch,10,Worms,56.6,12.1
+2022-11-18,9:00,Boundary Waters,Hot,Walleye,6,Worms,65.3,13.3
+2023-09-05,11:00,Lake Minnetonka,Rainy,"Bluegill, Catfish",8,Worms,60.0,12.8
+2022-02-10,9:45,Lake Minnetonka,Cold,"Bluegill, Pike, Trout",9,Spinnerbait,75.3,1.2
+2024-01-15,11:00,Boundary Waters,Cloudy,"Walleye, Bass, Bluegill",7,Worms,78.3,7.9
+2022-09-17,11:15,Boundary Waters,Hot,Trout,9,Crankbait,63.7,1.3
+2023-03-13,8:00,Boundary Waters,Windy,Pike,1,Worms,54.2,16.8
+2023-05-17,7:00,Rainy Lake,Windy,"Trout, Catfish",1,Crankbait,61.4,11.0
+2022-07-14,5:30,Lake Minnetonka,Rainy,Perch,9,Worms,59.0,13.7
+2022-09-23,5:00,Rainy Lake,Hot,"Trout, Walleye",1,Artificial Lure,61.0,2.0
+2022-08-01,5:15,Boundary Waters,Windy,"Pike, Bass, Walleye",5,Worms,58.8,17.1
+2024-06-15,6:30,Boundary Waters,Hot,"Walleye, Trout, Bass",4,Crankbait,79.2,4.9
+2024-06-10,7:30,Rainy Lake,Rainy,Perch,3,Crankbait,57.9,13.8
+2023-09-05,5:00,Boundary Waters,Windy,"Trout, Walleye, Pike",8,Spinnerbait,72.8,10.3
+2022-08-15,8:45,Lake Superior,Hot,Trout,5,Artificial Lure,66.5,19.1
+2022-10-21,7:15,Lake Superior,Sunny,Trout,5,Crankbait,73.0,4.4
+2024-04-19,9:15,Lake Harriet,Sunny,"Catfish, Trout",4,Minnows,74.3,14.8
+2022-09-09,11:45,Boundary Waters,Cold,Walleye,9,Spinnerbait,62.7,18.2
+2023-10-20,6:15,Boundary Waters,Hot,"Perch, Trout, Bluegill",10,Artificial Lure,55.7,6.5
+2023-06-09,5:15,Lake Superior,Rainy,"Walleye, Pike, Bass",4,Worms,72.0,2.5
+2023-05-10,5:30,Rainy Lake,Windy,"Walleye, Bass, Bluegill",7,Worms,75.7,0.4
+2023-08-02,8:00,Rainy Lake,Cloudy,"Perch, Bluegill",2,Spinnerbait,69.6,14.9
+2024-05-08,5:15,Boundary Waters,Sunny,Walleye,8,Minnows,59.2,2.3
+2022-09-14,8:45,Lake Harriet,Windy,Perch,7,Crankbait,75.8,7.3
+2022-02-04,9:15,Boundary Waters,Sunny,"Bluegill, Catfish",1,Worms,77.5,5.4
+2022-04-04,11:30,Lake Harriet,Cloudy,Perch,9,Worms,50.5,5.5
+2023-10-23,8:00,Lake Minnetonka,Hot,"Walleye, Catfish",4,Minnows,64.9,10.4
+2024-01-30,10:45,Lake Minnetonka,Cloudy,None,0,Crankbait,68.6,1.6
+2022-05-16,6:15,Boundary Waters,Sunny,"Bluegill, Catfish, Perch",1,Artificial Lure,54.2,11.7
+2022-05-25,9:00,Lake Superior,Rainy,"Trout, Catfish",6,Spinnerbait,68.8,5.2
+2023-07-26,5:00,Lake Superior,Windy,"Walleye, Catfish, Bass",10,Minnows,65.7,9.0
+2022-08-09,10:30,Lake Harriet,Cold,"Bass, Pike, Catfish",6,Artificial Lure,57.6,10.3
+2023-03-04,11:30,Boundary Waters,Sunny,Pike,5,Crankbait,54.7,6.6
+2023-02-08,8:45,Rainy Lake,Cloudy,Trout,4,Spinnerbait,72.9,5.2
 2024-04-28,11:30,Lake Minnetonka,Hot,Catfish,1,Minnows,52.0,7.4
+2022-10-04,7:00,Lake Superior,Cold,"Trout, Bass",7,Minnows,74.4,2.2
+2022-03-04,6:30,Lake Minnetonka,Windy,Trout,8,Artificial Lure,50.3,3.4
+2024-03-26,11:30,Boundary Waters,Cloudy,"Pike, Catfish",8,Crankbait,61.4,5.3
+2022-05-17,7:45,Boundary Waters,Sunny,Bluegill,5,Crankbait,52.5,5.1
+2022-02-01,7:30,Boundary Waters,Windy,"Pike, Bass",2,Artificial Lure,73.3,0.3
 2022-12-25,10:00,Rainy Lake,Cloudy,"Bass, Pike, Perch",6,Worms,50.9,5.9
+2024-03-21,11:30,Lake Minnetonka,Hot,Perch,3,Artificial Lure,54.4,9.7
+2022-04-12,7:00,Lake Superior,Cloudy,"Bluegill, Walleye, Trout",10,Spinnerbait,53.4,19.6
+2023-07-15,9:00,Lake Superior,Cloudy,Perch,4,Crankbait,73.1,12.1
+2022-05-24,7:15,Lake Minnetonka,Sunny,Bass,3,Worms,79.1,14.9
+2024-06-04,10:00,Lake Superior,Hot,Pike,9,Artificial Lure,58.6,6.9
+2023-08-11,7:00,Rainy Lake,Hot,"Catfish, Walleye",1,Worms,54.7,2.9
+2022-02-02,5:15,Boundary Waters,Sunny,None,0,Minnows,51.5,13.1
+2023-02-20,9:30,Lake Superior,Hot,"Trout, Catfish, Bluegill",31,Crankbait,52.5,15.3
+2023-06-25,7:30,Lake Minnetonka,Hot,"Bass, Bluegill, Perch",1,Crankbait,63.6,11.6
+2024-03-20,5:00,Lake Superior,Cloudy,None,0,Artificial Lure,70.6,0.6
+2022-10-03,9:00,Boundary Waters,Windy,"Perch, Pike, Bass",2,Minnows,53.3,1.7
+2023-04-05,6:45,Lake Superior,Windy,Bass,2,Minnows,68.0,13.1
+2022-12-29,10:00,Lake Minnetonka,Sunny,None,0,Worms,65.3,15.7
+2022-08-12,9:00,Lake Minnetonka,Rainy,Bass,10,Spinnerbait,57.0,5.5
+2023-07-09,8:15,Lake Minnetonka,Hot,"Catfish, Walleye",1,Spinnerbait,56.6,13.1
+2022-11-08,9:15,Lake Superior,Hot,Pike,9,Minnows,61.2,16.1
+2022-10-28,10:30,Lake Harriet,Sunny,Walleye,9,Artificial Lure,67.1,3.3
+2023-04-22,9:30,Boundary Waters,Sunny,"Walleye, Pike",4,Minnows,59.0,5.1
+2023-01-08,9:30,Lake Harriet,Windy,"Bluegill, Catfish, Perch",8,Spinnerbait,67.8,18.9
+2024-03-15,5:30,Rainy Lake,Windy,"Perch, Catfish, Walleye",8,Crankbait,77.8,5.5
+2022-05-06,8:30,Lake Harriet,Sunny,"Trout, Catfish, Walleye",9,Worms,72.9,3.3
+2022-11-27,6:45,Boundary Waters,Cold,"Bluegill, Trout",4,Minnows,58.8,14.0
+2023-03-08,8:30,Lake Minnetonka,Sunny,"Bass, Bluegill",5,Minnows,53.0,15.2
+2023-01-01,9:30,Lake Minnetonka,Cold,Pike,8,Crankbait,64.2,1.5
+2024-03-06,6:15,Lake Minnetonka,Cloudy,"Catfish, Walleye",6,Artificial Lure,68.6,1.7
+2024-06-01,10:45,Rainy Lake,Sunny,Bluegill,5,Worms,50.5,18.2
+2023-03-03,10:45,Lake Superior,Cloudy,Trout,4,Artificial Lure,78.3,18.7
+2024-05-18,5:15,Lake Harriet,Windy,"Bass, Catfish",2,Spinnerbait,71.0,4.6
+2022-03-30,7:15,Lake Minnetonka,Windy,"Trout, Perch",5,Minnows,61.5,19.8
+2023-10-27,6:30,Lake Harriet,Sunny,"Trout, Pike, Catfish",31,Artificial Lure,69.3,18.7
+2024-03-02,11:00,Lake Minnetonka,Hot,"Bluegill, Bass",4,Crankbait,63.7,6.0
+2023-10-20,10:00,Lake Harriet,Cloudy,"Walleye, Perch, Catfish",2,Spinnerbait,53.3,7.4
+2023-12-12,9:30,Lake Harriet,Cloudy,"Bass, Perch, Catfish",6,Artificial Lure,54.1,12.7
+2022-01-29,9:45,Boundary Waters,Cloudy,"Trout, Pike",2,Artificial Lure,76.6,13.9
+2024-03-26,10:45,Lake Superior,Cold,"Bass, Walleye",3,Spinnerbait,70.7,15.1
+2023-05-31,8:00,Lake Harriet,Windy,Catfish,6,Artificial Lure,67.0,3.7
+2023-02-13,10:15,Rainy Lake,Sunny,Catfish,2,Worms,72.3,10.4
+2022-09-29,11:45,Boundary Waters,Cold,"Bass, Bluegill, Trout",10,Spinnerbait,65.1,3.7
+2022-05-21,5:45,Boundary Waters,Hot,Perch,7,Spinnerbait,70.9,13.5
+2024-01-21,11:45,Lake Minnetonka,Cloudy,"Walleye, Catfish, Pike",9,Minnows,77.1,7.4
+2022-03-05,10:00,Rainy Lake,Windy,"Bass, Walleye",10,Spinnerbait,54.9,13.4
+2024-06-14,11:45,Lake Harriet,Rainy,Pike,3,Worms,54.6,9.9
+2024-02-26,9:45,Rainy Lake,Cold,"Pike, Bass, Walleye",9,Crankbait,59.8,12.8
+2023-10-06,11:45,Lake Harriet,Cold,Trout,2,Worms,56.3,2.3
+2023-05-21,11:45,Boundary Waters,Hot,Perch,6,Artificial Lure,50.2,8.4
+2024-04-08,11:30,Rainy Lake,Rainy,"Catfish, Pike, Perch",1,Minnows,53.1,13.8
+2022-07-25,7:15,Boundary Waters,Cold,"Trout, Bluegill, Pike",29,Minnows,79.9,0.4
+2022-10-14,9:15,Boundary Waters,Windy,Walleye,6,Spinnerbait,51.6,0.1
+2024-05-15,6:15,Lake Minnetonka,Sunny,"Catfish, Bass, Perch",7,Crankbait,62.7,6.8
+2022-09-03,10:30,Lake Superior,Cold,"Walleye, Perch, Trout",9,Artificial Lure,70.6,0.7
+2022-01-07,6:15,Rainy Lake,Cold,Walleye,7,Spinnerbait,63.9,17.7
+2022-07-17,7:00,Lake Superior,Cold,"Pike, Trout, Walleye",6,Worms,79.6,14.1
+2022-08-24,8:30,Rainy Lake,Cloudy,Pike,1,Worms,73.9,2.5
+2023-09-20,5:30,Lake Minnetonka,Sunny,Bluegill,2,Spinnerbait,74.6,17.9
+2022-05-19,11:30,Lake Superior,Hot,"Catfish, Perch",9,Minnows,62.7,16.5
+2022-09-26,6:30,Lake Superior,Cold,None,0,Spinnerbait,78.2,0.5
+2023-05-28,7:45,Boundary Waters,Windy,Pike,4,Crankbait,64.7,9.6
+2024-03-22,7:45,Lake Harriet,Windy,"Walleye, Bass, Pike",5,Minnows,68.2,19.8
+2023-03-05,6:45,Lake Harriet,Windy,"Bass, Trout",7,Crankbait,71.4,4.0
+2022-06-18,11:45,Rainy Lake,Cloudy,"Walleye, Catfish",4,Crankbait,72.7,14.2
+2022-12-05,8:00,Lake Minnetonka,Cloudy,"Bluegill, Pike, Walleye",8,Worms,67.5,14.8
+2024-03-10,10:00,Lake Superior,Windy,"Bluegill, Bass, Perch",2,Artificial Lure,54.6,6.5
+2024-05-10,7:30,Boundary Waters,Sunny,Bass,9,Artificial Lure,56.8,10.7
+2022-10-13,10:00,Lake Harriet,Cold,"Bluegill, Catfish",1,Minnows,79.4,13.1
+2024-04-01,5:15,Lake Harriet,Sunny,"Bass, Trout",33,Crankbait,70.0,0.4
+2022-12-30,10:00,Lake Minnetonka,Hot,"Perch, Pike, Bluegill",5,Artificial Lure,61.8,3.1
+2023-08-30,10:15,Lake Harriet,Windy,"Walleye, Trout, Bluegill",2,Minnows,69.8,17.6
+2022-02-22,8:15,Rainy Lake,Rainy,"Walleye, Perch, Bluegill",1,Minnows,60.4,17.8
+2022-08-05,9:15,Boundary Waters,Sunny,"Perch, Trout, Catfish",4,Worms,50.7,1.0
+2023-05-14,8:30,Lake Minnetonka,Hot,"Walleye, Bluegill, Catfish",5,Worms,74.9,10.0
+2022-02-03,8:00,Lake Superior,Cold,"Bluegill, Pike, Catfish",9,Crankbait,54.9,8.2
+2023-06-21,8:30,Rainy Lake,Sunny,"Walleye, Perch, Bluegill",6,Minnows,54.9,4.7
+2023-09-08,6:30,Rainy Lake,Rainy,"Pike, Perch",2,Minnows,56.2,17.3
+2024-06-17,11:45,Lake Superior,Sunny,"Bass, Bluegill",3,Artificial Lure,71.1,17.0
+2022-08-17,11:15,Rainy Lake,Rainy,Walleye,8,Worms,78.0,4.5
+2024-04-13,5:15,Rainy Lake,Cloudy,Perch,5,Worms,66.4,0.3
+2022-10-18,9:00,Lake Harriet,Windy,None,0,Artificial Lure,51.4,18.5
+2024-02-06,10:30,Boundary Waters,Cloudy,Catfish,4,Crankbait,51.0,1.6
+2023-02-18,11:15,Lake Harriet,Sunny,Catfish,9,Spinnerbait,69.4,0.4
+2023-02-01,6:00,Lake Harriet,Cloudy,Trout,3,Worms,65.7,17.8
+2024-03-14,9:30,Lake Minnetonka,Rainy,Catfish,5,Minnows,67.4,14.5
+2022-10-01,9:00,Lake Minnetonka,Windy,None,0,Artificial Lure,71.8,0.1
+2024-01-20,6:30,Lake Superior,Windy,"Trout, Walleye",1,Crankbait,66.4,17.7
+2022-10-20,9:15,Boundary Waters,Cloudy,"Pike, Perch",2,Artificial Lure,71.5,2.8
+2022-07-16,9:30,Lake Harriet,Hot,"Walleye, Bass, Pike",5,Worms,56.4,12.1
+2024-02-19,11:30,Lake Superior,Windy,Pike,9,Spinnerbait,50.4,9.5
+2023-11-05,8:00,Boundary Waters,Sunny,None,0,Spinnerbait,75.8,17.4
+2023-03-31,8:00,Lake Minnetonka,Cold,Bluegill,1,Spinnerbait,67.3,10.7
+2023-01-12,5:45,Lake Superior,Rainy,Bass,7,Spinnerbait,80.0,16.9
+2022-08-15,8:00,Lake Harriet,Rainy,Pike,21,Crankbait,65.4,2.7
+2023-12-31,9:45,Lake Minnetonka,Sunny,"Trout, Pike, Walleye",2,Minnows,77.5,1.7
+2023-01-04,6:45,Lake Harriet,Rainy,"Walleye, Pike",10,Spinnerbait,69.3,7.1
+2023-04-09,8:30,Lake Harriet,Hot,"Pike, Bass",10,Crankbait,78.8,15.6
+2023-06-22,9:15,Lake Minnetonka,Sunny,"Bass, Bluegill, Walleye",3,Spinnerbait,78.2,14.4
+2022-10-25,9:45,Rainy Lake,Cloudy,"Pike, Perch, Catfish",8,Spinnerbait,55.4,11.3
+2022-02-10,7:00,Rainy Lake,Hot,Catfish,7,Artificial Lure,66.2,2.0
+2024-04-19,11:00,Lake Minnetonka,Windy,"Catfish, Bass, Trout",10,Minnows,51.4,5.0
+2022-07-03,9:30,Boundary Waters,Cloudy,"Walleye, Trout",10,Crankbait,64.0,10.9
+2023-09-28,8:45,Boundary Waters,Cold,"Perch, Catfish, Walleye",32,Worms,75.9,0.1
+2022-03-19,8:30,Lake Minnetonka,Cold,"Perch, Pike",10,Worms,72.3,14.9
+2022-06-27,9:15,Rainy Lake,Cold,"Trout, Walleye, Bass",2,Worms,53.6,15.7
+2024-05-19,10:00,Lake Harriet,Sunny,Walleye,8,Spinnerbait,74.3,14.2
+2024-02-15,5:15,Lake Minnetonka,Windy,"Perch, Bluegill",7,Minnows,71.0,16.4
+2024-05-07,6:00,Boundary Waters,Rainy,Catfish,5,Minnows,79.5,13.4
+2022-08-26,9:45,Lake Minnetonka,Sunny,"Pike, Perch",4,Spinnerbait,78.3,3.3
+2022-03-10,5:30,Lake Superior,Hot,"Bass, Pike",3,Artificial Lure,54.0,13.1
+2022-08-04,7:45,Lake Minnetonka,Sunny,Bluegill,2,Crankbait,66.2,7.5
+2024-05-25,5:15,Lake Minnetonka,Windy,"Perch, Trout, Bass",3,Worms,79.7,5.6
+2023-03-15,5:15,Rainy Lake,Rainy,Catfish,8,Minnows,51.4,13.4
+2023-03-30,6:45,Lake Minnetonka,Sunny,"Catfish, Walleye",3,Crankbait,65.0,12.3
+2022-06-05,8:45,Boundary Waters,Windy,Walleye,6,Worms,52.6,15.0
+2023-08-26,9:45,Lake Superior,Windy,"Trout, Bass",3,Crankbait,77.0,8.8
+2023-05-04,9:30,Lake Minnetonka,Cloudy,Trout,8,Spinnerbait,59.3,4.5
+2022-12-18,7:45,Rainy Lake,Hot,Perch,9,Worms,70.9,0.7
+2022-12-27,9:00,Boundary Waters,Cold,Walleye,3,Spinnerbait,75.5,1.3
+2023-02-13,8:45,Rainy Lake,Cloudy,"Trout, Bluegill, Perch",20,Crankbait,68.6,3.1
+2023-03-09,5:30,Lake Superior,Windy,Trout,4,Artificial Lure,52.8,16.7
+2023-01-26,6:00,Lake Superior,Cold,"Pike, Trout, Catfish",5,Minnows,53.5,1.0
+2022-05-17,10:00,Lake Superior,Hot,Catfish,8,Crankbait,52.5,19.4
+2022-02-05,9:30,Boundary Waters,Windy,"Perch, Bluegill",4,Artificial Lure,62.4,18.9
+2023-08-21,7:45,Rainy Lake,Windy,Catfish,2,Spinnerbait,56.7,12.1
+2023-04-18,6:00,Boundary Waters,Sunny,Bluegill,23,Worms,58.3,18.4
+2022-06-02,8:45,Lake Minnetonka,Cold,Trout,10,Worms,58.5,4.3
+2023-01-04,5:15,Lake Minnetonka,Sunny,Pike,1,Crankbait,66.3,15.1
+2023-05-11,11:15,Lake Superior,Rainy,"Catfish, Walleye",2,Artificial Lure,52.5,9.6
+2023-12-23,9:30,Lake Minnetonka,Sunny,"Perch, Trout",9,Spinnerbait,77.9,17.2
+2022-10-25,7:00,Lake Superior,Sunny,"Bluegill, Pike, Catfish",1,Worms,55.5,11.2
+2022-09-12,7:45,Boundary Waters,Windy,"Perch, Walleye",4,Artificial Lure,52.5,6.4
+2023-08-12,7:45,Boundary Waters,Sunny,"Perch, Walleye, Bass",9,Artificial Lure,72.0,19.3
+2023-02-12,9:45,Rainy Lake,Sunny,"Trout, Catfish, Bluegill",4,Artificial Lure,70.1,12.5
+2024-04-28,11:15,Lake Superior,Sunny,"Walleye, Catfish, Bass",7,Artificial Lure,70.4,19.0
+2022-07-03,8:15,Lake Superior,Cloudy,Bluegill,6,Minnows,69.3,1.1
+2022-04-03,7:30,Lake Minnetonka,Cold,"Bluegill, Walleye, Perch",4,Worms,76.5,17.7
+2024-05-17,8:00,Lake Harriet,Hot,None,0,Crankbait,76.4,17.3
+2023-01-10,5:00,Rainy Lake,Cloudy,None,0,Artificial Lure,66.1,0.8
+2022-08-11,10:30,Lake Harriet,Rainy,"Catfish, Trout, Bluegill",4,Spinnerbait,65.5,0.1
+2022-11-28,8:45,Rainy Lake,Rainy,"Pike, Bass, Bluegill",9,Worms,64.1,2.6
+2023-10-19,9:30,Rainy Lake,Cloudy,Perch,3,Worms,72.5,10.6
+2022-10-26,7:15,Lake Superior,Sunny,"Catfish, Bluegill, Bass",4,Minnows,57.2,4.0
+2024-04-25,10:45,Lake Minnetonka,Sunny,"Walleye, Bluegill",4,Worms,68.2,0.7
+2024-01-19,6:45,Lake Minnetonka,Rainy,"Catfish, Bass",3,Crankbait,68.5,3.4
+2023-11-06,10:45,Lake Minnetonka,Cold,"Bass, Walleye",10,Worms,52.6,11.5
+2022-08-16,11:15,Rainy Lake,Hot,"Trout, Bluegill",4,Spinnerbait,54.8,9.9
+2023-07-29,8:15,Rainy Lake,Cloudy,"Bluegill, Bass, Trout",1,Worms,79.3,4.4
+2024-06-02,9:00,Lake Superior,Rainy,"Walleye, Bluegill, Catfish",10,Spinnerbait,64.1,16.9
+2023-07-21,7:30,Lake Minnetonka,Rainy,"Bass, Bluegill, Perch",9,Artificial Lure,70.9,18.5
+2022-01-12,8:00,Lake Minnetonka,Windy,"Pike, Perch",1,Artificial Lure,70.8,7.2
+2022-09-17,6:00,Rainy Lake,Rainy,"Catfish, Pike",3,Minnows,57.9,6.2
+2022-07-22,5:15,Rainy Lake,Cold,"Pike, Bass",2,Crankbait,55.7,9.3
+2024-06-05,9:15,Lake Minnetonka,Cloudy,"Bluegill, Catfish",5,Worms,67.8,5.5
+2024-05-01,9:45,Lake Minnetonka,Hot,"Bluegill, Catfish",9,Crankbait,74.9,5.6
+2023-12-21,8:30,Lake Harriet,Rainy,None,0,Worms,58.3,14.2
+2022-10-04,9:30,Lake Harriet,Rainy,Trout,2,Crankbait,67.8,5.9
+2024-01-29,8:00,Lake Superior,Windy,"Bluegill, Trout, Walleye",9,Worms,69.9,0.6
+2023-12-19,5:45,Rainy Lake,Rainy,"Bluegill, Catfish, Bass",4,Minnows,61.7,1.3
+2022-05-14,8:45,Boundary Waters,Sunny,Perch,2,Minnows,51.4,6.7
+2022-07-29,10:45,Rainy Lake,Rainy,"Bass, Catfish, Trout",2,Worms,69.8,10.9
+2023-03-01,11:00,Lake Harriet,Cold,"Pike, Bass",5,Worms,52.4,2.3
+2024-05-27,7:30,Boundary Waters,Sunny,Catfish,8,Artificial Lure,74.1,12.1
+2022-09-02,6:00,Lake Harriet,Rainy,"Walleye, Catfish",6,Spinnerbait,56.0,9.6
+2022-06-22,9:30,Lake Minnetonka,Cloudy,"Catfish, Walleye",9,Spinnerbait,53.5,7.3
+2022-01-12,7:45,Rainy Lake,Sunny,Bass,1,Artificial Lure,79.5,0.6
+2023-07-25,7:45,Lake Minnetonka,Rainy,Catfish,4,Artificial Lure,64.4,17.4
