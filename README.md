@@ -1,7 +1,7 @@
 # Fishing-Thing
-This is where I am gonna be holding the code for my small personal project. I figured this is a way to come up with something interesting as well as be able to show understanding of general concepts in Python.
+This is where I am gonna be holding the code for my small personal project. I figured this is a way to come up with something interesting as well as be able to show understanding of general concepts in Python and data science. As you may have noticed, the sample data set is non-standardized and contains outliers, invalid data, and issues. This is because I wanted to give myself an obstacle to work through and for testing purposes. Also, my friend Adrien was signed into gitHub on my computer which I didn't realize on my first commit, but just wanted to explain the 2nd contributor.
 
-Recently I have been getting into fishing and would like to make a program to help me predict good fishing days and other useful info. My goal is to build this in an iterative way by coding a basic bones program and add features that help me learn or experiment with new concepts.
+Recently, I have been getting into fishing and would like to make a program to help me predict good fishing days and other useful info. My goal is to build this in an iterative way by coding a basic bones program and add features that help me learn or experiment with new concepts.
 
 # Fishing Tracker Features
 
