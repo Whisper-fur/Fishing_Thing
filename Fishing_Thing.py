@@ -20,12 +20,12 @@ def log_trip():
     temp = input('What was the temperature?')
     wind = input('What was the wind speed?')
 
-    with open("fishing_log.csv", mode="a", newline="") as file:
+    with open("data/fishing_log.csv", mode="a", newline="") as file:
       writer = csv.writer(file)
       writer.writerow([date, time, location, weather, fish_caught, amount, bait, temp, wind])
 
 def load_log_data():
-    with open("fishing_log.csv", mode="r") as file:
+    with open("data/fishing_log.csv", mode="r") as file:
         reader = csv.reader(file)
         next(reader)  # Skip header
         return list(reader)
@@ -35,7 +35,7 @@ def view_logs():
     print("\nFishing Trip Log:\n")
 
     try:
-        with open("fishing_log.csv", mode="r") as file:
+        with open("data/fishing_log.csv", mode="r") as file:
             reader = csv.reader(file)
             header = next(reader)  # Read the header row
             print(" | ".join(header))  # Print header titles
@@ -49,7 +49,7 @@ def view_logs():
 
 
 def edit_logs(user_input):
-    filename = "fishing_log.csv"
+    filename = "data/fishing_log.csv"
     with open(filename, mode="r") as file:
         reader = csv.reader(file)
         header = next(reader)
@@ -74,7 +74,7 @@ def edit_logs(user_input):
 
 
 def delete_log(user_input):
-    filename = "fishing_log.csv"
+    filename = "data/fishing_log.csv"
     with open(filename, mode="r") as file:
         reader = csv.reader(file)
         header = next(reader)
@@ -104,7 +104,7 @@ def delete_log(user_input):
 
 # Stats Section (First method) Keeping for memories
 def stats():
-   with open("fishing_log.csv", mode="r") as file:
+   with open("data/fishing_log.csv", mode="r") as file:
         reader = csv.reader(file)
         next(reader)  # Skip header
         rows = list(reader)
@@ -230,7 +230,7 @@ class FishingLogApp:
 
         try:
             index = int(user_input) - 1
-            filename = "fishing_log.csv"
+            filename = "data/fishing_log.csv"
 
             with open(filename, mode="r") as file:
                 reader = csv.reader(file)
@@ -290,7 +290,7 @@ class FishingLogApp:
             widget.destroy()
 
         try:
-            with open("fishing_log.csv", mode="r") as file:
+            with open("data/fishing_log.csv", mode="r") as file:
                 reader = csv.reader(file)
                 header = next(reader)
                 rows = list(reader)
@@ -328,7 +328,7 @@ class FishingLogApp:
             widget.destroy()
 
         try:
-            with open("fishing_log.csv", mode="r") as file:
+            with open("data/fishing_log.csv", mode="r") as file:
                 reader = csv.reader(file)
                 header = next(reader)
                 rows = list(reader)
@@ -363,7 +363,7 @@ class FishingLogApp:
             widget.destroy()
 
         try:
-            with open("fishing_log.csv", mode="r") as file:
+            with open("data/fishing_log.csv", mode="r") as file:
                 reader = csv.reader(file)
                 header = next(reader)
                 rows = list(reader)
@@ -395,7 +395,7 @@ class FishingLogApp:
 
         try:
             index = int(user_input) - 1
-            filename = "fishing_log.csv"
+            filename = "data/fishing_log.csv"
 
             with open(filename, mode="r") as file:
                 reader = csv.reader(file)
@@ -428,7 +428,7 @@ class FishingLogApp:
         # Hide the input frame as it's not needed for showing stats
         self.input_frame.pack_forget()
 
-        with open("fishing_log.csv", mode="r") as file:
+        with open("data/fishing_log.csv", mode="r") as file:
             reader = csv.reader(file)
             next(reader)
             rows = list(reader)
@@ -466,7 +466,7 @@ class FishingLogApp:
             widget.destroy()
 
         try:
-            with open("fishing_log.csv", mode="r") as file:
+            with open("data/fishing_log.csv", mode="r") as file:
                 reader = csv.reader(file)
                 next(reader)
                 rows = list(reader)
@@ -489,7 +489,7 @@ class FishingLogApp:
             widget.destroy()
 
         try:
-            with open("fishing_log.csv", mode="r") as file:
+            with open("data/fishing_log.csv", mode="r") as file:
                 reader = csv.reader(file)
                 next(reader)  # Skip header
                 rows = list(reader)
@@ -540,7 +540,7 @@ class FishingLogApp:
         # Hide the input frame as it's not needed for plotting bait performance over time
         self.input_frame.pack_forget()
 
-        with open("fishing_log.csv", mode="r") as file:
+        with open("data/fishing_log.csv", mode="r") as file:
             reader = csv.reader(file)
             header = next(reader)
             rows = list(reader)
@@ -589,7 +589,7 @@ class FishingLogApp:
         # Hide the input frame as it's not needed for seasonal trend breakdown
         self.input_frame.pack_forget()
 
-        with open("fishing_log.csv", mode="r") as file:
+        with open("data/fishing_log.csv", mode="r") as file:
             reader = csv.reader(file)
             header = next(reader)
             rows = list(reader)
@@ -645,7 +645,7 @@ class FishingLogApp:
         # Hide the input frame as it's not needed for plotting catch rate over time
         self.input_frame.pack_forget()
 
-        with open("fishing_log.csv", mode="r") as file:
+        with open("data/fishing_log.csv", mode="r") as file:
             reader = csv.reader(file)
             header = next(reader)
             rows = list(reader)
