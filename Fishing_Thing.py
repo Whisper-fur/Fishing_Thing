@@ -521,6 +521,9 @@ class FishingLogApp:
             ax.set_title('Bait Efficiency Ranking')
             ax.set_xticklabels(baits, rotation=45)
 
+            # Adjust layout to prevent label cutoff
+            plt.tight_layout()
+
             # Display the plot dynamically sized with the window
             canvas = FigureCanvasTkAgg(fig, master=self.result_frame)
             canvas.draw()
@@ -686,6 +689,9 @@ class FishingLogApp:
         # Adjust x-axis ticks for better readability
         ax.set_xticks(df['week'][::1])  # Display every week
         ax.legend()
+
+        # Adjust layout to prevent date cutoff
+        plt.tight_layout()
 
         # Display the plot dynamically sized with the window
         self.display_plot(fig)
