@@ -33,10 +33,11 @@ Recently I have been getting into fishing and would like to make a program to he
 - [ ] Personal stats (XP, rank, streaks)
 
 
+
 Examples of layout. (I will try my best to keep this current. The plan is to update these every so often when significant changes happen.)
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/38637589-5bd9-470f-aa63-009298240882" width="45%" />
-  <img src="https://github.com/user-attachments/assets/02fc3c67-db10-40df-9f58-1fc2ade570dc" width="45%" />
+  <img src="https://github.com/user-attachments/assets/0f3a5336-253e-4620-bbbf-c76c0bc97398" width="45%" />
+  <img src="https://github.com/user-attachments/assets/3cfc8c65-08e6-4570-b620-311336706384" width="45%" />
 </p>
 
 
